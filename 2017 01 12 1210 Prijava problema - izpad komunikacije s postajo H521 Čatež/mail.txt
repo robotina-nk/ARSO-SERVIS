@@ -1,0 +1,20 @@
+Pozdravljeni!
+
+V priponki pošiljam prijavo problema - izpad postaje H521 Èatež.
+
+Postaja pogosto izpade za dlje èasa (cca 8 ur) in se potem ponovno vrne. Od zadnjega izpada 10.1.2017 se komunikacija ni veè ponovno vzpostavila.
+
+Prosimo za:
+- izvedbo meritev brezžiènega signala z obstojeèo in palièasto opremo in po potrebi stisniti nov konektor za anteno,
+- odpravo napake na komunikaciji,
+- analizo izpada, èe se izkaže, da napaka ni "hardwareske" narave (pregled dnevnikov s postaje; npr. zakaj ne pride do avtomatskega reseta modema, èe postaja ni veè dosegljiva).
+
+Za dodatne informacije glede posameznih postopkov me lahko kontaktirate.
+
+Lep pozdrav,
+Gregor Žuniè
+
+
+
+
+(See attached file: Prijava probl, - izpad postaje H521 Catez.doc)
