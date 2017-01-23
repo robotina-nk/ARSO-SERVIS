@@ -1,0 +1,22 @@
+
+
+From: Marko Prunk 
+Sent: Friday, October 07, 2016 10:37 AM
+To: Nikola Kostic; Marino Montani
+Subject: Servis krn
+
+Ugotovilo se je, da za servis na krnu katerega se je opravilo 8.9.16 ni nobenega zapisnika, zato ga bom napisal sedaj:
+
+Na postaji se je namestil optièni kabel med EO in RO omaro
+V omari EO se je zamenjala moxa eds-208a z eds-208a-m-st-t
+
+Kamere:
+V vseh treh dozah kamer je bila voda.(priloga slika 1)
+Predvidevamo da je voda iz doze po kablu prišla do RO omare in unièila konektorje v RO omari (priloga slika 2)
+Konektorji so bili zamenjani z novimi in narejene so bile meritve kablov (priloga: KrnMeritve).
+Po priklopu kamer, 1 kamera še vedno ni hotela vzpostaviti komunikacije. Ostale 2 kameri sta delovali normalno.
+Nedelujeèa kamera je bila demontirana.
+
+LP,
+Marko Prunk
+
