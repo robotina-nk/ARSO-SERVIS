@@ -1,0 +1,19 @@
+
+
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Monday, January 16, 2017 3:22 PM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si; Miha.Demsar@gov.si
+Subject: Prijava problema - nedelujoèa kamera na postaji M458 Ratitovec
+
+Pozdravljeni!
+
+V priponki pošiljam prijavo problema. Na lokaciji M458 ne deluje ena od kamer.
+
+Prosimo za odpravo napake na kameri oz. na pripadajoèi opremi (kabli, PoE ethernet stikalo).
+
+
+Lep pozdrav,
+Gregor Žuniè
+
+(See attached file: Prijava problema - M458 Ratitovec - nedelovaje kamere.doc)

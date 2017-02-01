@@ -1,0 +1,13 @@
+From: Marko Prunk 
+Sent: Tuesday, December 27, 2016 7:27 AM
+To: Marijo.crkvencic@gov.si; Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si
+Cc: Marino Montani; Marko Mlakar
+Subject: Servis H452_Dekani_Rizana
+
+V petek 23.12.16 smo bili na servisu postaje H452_Dekani_Rizana.
+
+Postaja ni delovala zaradi GSM komunikacije.
+SIM kartico smo vzeli ven, jo oèistili in ponovno vstavili. Posataj je nato zaèela normalno delovati.
+
+LP,
+Marko Prunk
