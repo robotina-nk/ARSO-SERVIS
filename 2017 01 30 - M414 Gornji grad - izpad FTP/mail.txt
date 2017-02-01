@@ -1,0 +1,119 @@
+
+
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Monday, January 30, 2017 12:55 PM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si
+Subject: Postaja M414 Gornji grad - nedelovanje prenosa podatkov preko FTP.
+
+Pozdravljeni!
+
+V priponki pošiljam prijavo problema za postajo M414 Gornji grad - nedelovanje FTP prenosa podatkov.
+
+Postaja deluje in je dosegljiva na daljavo. Ne deluje FTP prenos podatkov. Podatki v aplikaciji mobervis so na voljo.
+FTP prenos ne deluje zaradi napake na datoteènem sistemu raèunalnika UC-8410. Predlagamo, da se najprej poskusi odpraviti napako z ukazom fsck oz. z zamenjavo CF kartice.
+
+Lep pozdrav, 
+ 
+Gregor Žuniè
+ 
+REPUBLIKA SLOVENIJA
+MINISTRSTVO ZA OKOLJE IN PROSTOR
+
+AGENCIJA REPUBLIKE SLOVENIJE ZA OKOLJE
+
+Vojkova 1b, 1000 Ljubljana
+T: 01 478 41 67
+gregor.zunic@gov.si 
+(See attached file: Prijava probl, - M414 Gornji grad - nedelujoc prenos FTP podatkov.doc)
+
+----- Posredoval Gregor Žuniè/ARSO/MOP/GOV dne 27.01.2017 12:51 -----
+ 
+Od:	 
+Gregor Žuniè/ARSO/MOP/GOV
+ 
+Za:	 
+servis@robotina.com, "Marino Montani" <Marino.Montani@robotina.com>, "Patricija Cuban Palcic" <Patricija.CubanPalcic@robotina.si>, nikola.kostic@robotina.com, 
+ 
+Kp:	 
+Andreja Kolenc/ARSO/MOP/GOV@SVN, Bojan Èernaè/ARSO/MOP/GOV@SVN, Marijo Crkvenèiè/ARSO/MOP/GOV@SVN
+ 
+Datum:	 
+18.01.2017 09:44
+ 
+Zadeva:	 
+Fw: Prijava problema - izpad komunikacije s postajo H521 Èatež
+________________________________________
+
+
+Komunikacija s postajo se je sama od sebe vzpostavila.
+
+Ker na postaji prihaja do pogostih izpadov komunikacije, pušèamo priavo odprto. 
+Pri naslednjem izpadu je potreben obisk lokacije in izvedba del opisanih v prijavi.
+
+Lep pozdrav,
+Gregor Žuniè
+
+----- Posredoval Gregor Žuniè/ARSO/MOP/GOV dne 18.01.2017 09:40 -----
+ 
+Od:	 
+Gregor Žuniè/ARSO/MOP/GOV
+ 
+Za:	 
+servis@robotina.com, "Marino Montani" <Marino.Montani@robotina.com>, "Patricija Cuban Palcic" <Patricija.CubanPalcic@robotina.si>, nikola.kostic@robotina.com, 
+ 
+Kp:	 
+Andreja Kolenc/ARSO/MOP/GOV@SVN, Bojan Èernaè/ARSO/MOP/GOV@SVN, Marijo Crkvenèiè/ARSO/MOP/GOV@SVN
+ 
+Datum:	 
+12.01.2017 12:16
+ 
+Zadeva:	 
+Fw: Prijava problema - izpad komunikacije s postajo H521 Èatež
+________________________________________
+
+
+Ker gre za postajo prvega reda, je prijava URGENTNA.
+
+Lep pozdrav,
+Gregor Žuniè
+
+----- Posredoval Gregor Žuniè/ARSO/MOP/GOV dne 12.01.2017 12:13 -----
+ 
+Od:	 
+Gregor Žuniè/ARSO/MOP/GOV
+ 
+Za:	 
+servis@robotina.com, Marijo Crkvenèiè/ARSO/MOP/GOV@SVN, "Patricija Cuban Palcic" <Patricija.CubanPalcic@robotina.si>, nikola.kostic@robotina.com, 
+ 
+Kp:	 
+Andreja Kolenc/ARSO/MOP/GOV@SVN, Bojan Èernaè/ARSO/MOP/GOV@SVN
+ 
+Datum:	 
+12.01.2017 12:10
+ 
+Zadeva:	 
+Prijava problema - izpad komunikacije s postajo H521 Èatež
+________________________________________
+
+
+Pozdravljeni!
+
+V priponki pošiljam prijavo problema - izpad postaje H521 Èatež.
+
+Postaja pogosto izpade za dlje èasa (cca 8 ur) in se potem ponovno vrne. Od zadnjega izpada 10.1.2017 se komunikacija ni veè ponovno vzpostavila.
+
+Prosimo za:
+- izvedbo meritev brezžiènega signala z obstojeèo in palièasto opremo in po potrebi stisniti nov konektor za anteno,
+- odpravo napake na komunikaciji,
+- analizo izpada, èe se izkaže, da napaka ni "hardwareske" narave (pregled dnevnikov s postaje; npr. zakaj ne pride do avtomatskega reseta modema, èe postaja ni veè dosegljiva).
+
+Za dodatne informacije glede posameznih postopkov me lahko kontaktirate.
+
+Lep pozdrav,
+Gregor Žuniè
+
+
+
+
+[attachment "Prijava probl, - izpad postaje H521 Catez.doc" deleted by Gregor Žuniè/ARSO/MOP/GOV] 
