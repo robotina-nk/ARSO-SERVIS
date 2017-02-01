@@ -1,0 +1,29 @@
+
+
+From: Marko Prunk 
+Sent: Friday, January 06, 2017 9:02 AM
+To: Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si
+Cc: Marino Montani; Marko Mlakar
+Subject: Servis E401_Otlica
+
+V sredo 4.1.17 smo bili na servisu postaje E401_Otlica.
+
+
+Na postaji ne deluje senzor wmt702. V dozo je vdrla voda, ki je po UTP kablu tudi poèasi kapljala v omaro EO (Priloga: Doza A2-1 pred_posegom).
+
+Sledi vdora vode v dozo niso bile vidne. Možnosti bi bile da tesnilo pokrova doze ni tesnilo ali da je voda prišla po kablu senzorja.
+
+Zamenjali smo dozo. Med dozo in EO omaro položili nov UTP kabel in ga ustrezno zakljuèili (Priloga: Doza A2-1 po_posegu).
+
+Ker senzor še vedno ni deloval smo opravili meritev ožièenja. Meritve niso pokazale nobene napake (Priloga: Otlica wmt702_A2-1_Ožièenje-Servis).
+
+Opravili smo meritve napajanja senzorja in gretja senzorja. Izmerjene napetosti so bile v mejah normale.
+
+Opravili smo loopback test. Najprej v EO omari (Priloga: Xloopback_TEST_ttyM0_N2-1_wmt702-omara), nato pa še v dozi (Priloga: Xloopback_TEST_ttyM0_N2-1_wmt702-doza). Oba testa niso pokazala nobenih posebnosti.
+
+Steber senzorja smo zvrnili in odklopili wmt ter omsko pomerili kabel med dozo in senzorjem, ki so pokazale normalno prevodnost.
+
+Predvidevamo da je napaka v wmt senzorju, zato je bil demonitiran in bo ob prvi priložnosti predan g. Žunièu.
+
+LP,
+Marko Prunk

@@ -1,0 +1,88 @@
+
+
+From: Danijel Vukovic [mailto:danijel.vukovic@eltratec.com] 
+Sent: Tuesday, January 17, 2017 11:46 AM
+To: Marijo.Crkvencic@gov.si; Nikola Kostic; servis robotina; Marino Montani; Patricija Cuban Palcic
+Cc: Bojan.Cernac@gov.si; Andreja.Kolenc@gov.si; Gregor.Zunic@gov.si
+Subject: RE: Izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11)
+
+Pozdrav,
+
+Mbio, ki je bil na postaji v Raèah, in smo ga v èetrtek zamenjali, je delujoè in nima nobenih napak. Tako, da mislimo, da je težava drugje.
+
+Bo prvi priliki bomo mbIO vrnili na lokacijo, tako da z naše strani ne bo nobene spremembe.
+
+Lep pozdrav,
+Danijel Vukoviè
+Eltratec d.o.o.
+
+From: Marijo.Crkvencic@gov.si [mailto:Marijo.Crkvencic@gov.si] 
+Sent: Tuesday, January 17, 2017 10:07 AM
+To: Nikola Kostic <Nikola.Kostic@robotina.com>; servis@robotina.com; Marino Montani <Marino.Montani@robotina.si>; Patricija Cuban Palcic <Patricija.CubanPalcic@robotina.com>
+Cc: Bojan.Cernac@gov.si; Andreja.Kolenc@gov.si; Gregor.Zunic@gov.si; andrej.cimerman@eltratec.com; danijel.vukovic@eltratec.com; silvo.lavrencic@eltratec.com
+Subject: RE: Izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11)
+
+16.1.2017 ob 9:00 je ponovno prislo do izpada postaje. 
+Prosim za ponovni pregled postaje in vzpostavitev prenosa podatkov. 
+
+Lep pozdrav 
+Marijo Crkvencic 
+
+
+Od: 	Nikola Kostic <Nikola.Kostic@robotina.com> 
+Za: 	"Marijo.Crkvencic@gov.si" <Marijo.Crkvencic@gov.si> 
+Datum: 	13.01.2017 13:15 
+Zadeva: 	RE: Izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11) - dopolnitev
+
+________________________________________
+
+
+
+Pozdravljeni, 
+Eltra je bila na terenu, in so zamenjali kompleten mbio. 
+Ko dobim, javim informacijo, èe ga po servisu bodo vrnili, ali bodo tistega pustili. 
+  
+LP, Nikola 
+  
+From: Marijo.Crkvencic@gov.si [mailto:Marijo.Crkvencic@gov.si] 
+Sent: Friday, January 06, 2017 12:23 PM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Bojan.Cernac@gov.si; Andreja.Kolenc@gov.si; Gregor.Zunic@gov.si; andrej.cimerman@eltratec.com; danijel.vukovic@eltratec.com; silvo.lavrencic@eltratec.com
+Subject: Izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11) - dopolnitev 
+  
+Po podatkih vzdrževalcev ARSO je prikazovalnik komunikacijskega vmesnika mbIO120  neèitljiv. 
+Kontaktirati Eltratec, da dobavi in zamenja mbio120. 
+
+Lep pozdrav 
+Marijo Crkvencic 
+
+----- Posredoval Marijo Crkvenèiè/ARSO/MOP/GOV dne 06.01.2017 12:15 ----- 
+Od: 	Marijo Crkvenèiè/ARSO/MOP/GOV 
+Za: 	servis@robotina.com, Marino Montani <Marino.Montani@robotina.si>, Patricija Cuban Palcic <Patricija.CubanPalcic@robotina.com>, nikola.kostic@robotina.com 
+Kp: 	Bojan Èernaè/ARSO/MOP/GOV@SVN, Andreja Kolenc/ARSO/MOP/GOV@SVN, Gregor Žuniè/ARSO/MOP/GOV@SVN 
+Datum: 	05.01.2017 15:02 
+Zadeva: 	Izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11)
+
+  
+________________________________________
+
+
+
+V prilogi posiljam reklamacijo (prijavo problema) za izpad prenosa podatkov s postaje 20031_G437_Race (Rac 1-11). 
+Prosim za cimprejsnjo odpravo problema in vzpostavitev prenosa podatkov. 
+
+
+
+
+
+Lep pozdrav 
+
+Marijo Crkvencic 
+Okoljski inzenir II 
+Oddelek za razvoj merilnih mrez 
+
+MOP - Agencija RS za okolje 
+Vojkova 1b, Ljubljana 
+Tel: 01/4784477 
+Mob: 051/693356 
+E-mail: marijo.crkvencic@gov.si 
