@@ -1,0 +1,20 @@
+
+
+From: Marko Prunk 
+Sent: Wednesday, January 04, 2017 8:47 AM
+To: Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si
+Cc: Marino Montani; Marko Mlakar
+Subject: Servis M481_Vogel
+
+V petek 30.12.16 smo bili na servisu postaje M481_Vogel.
+
+Na postaji je prihajalo do slabega zajema podatkov na portu 2, kjer sta prikljuèena senzorja HMP155.
+
+V dozi A2-2 smo opravili ohmsko meritev med sponakami ketere so mostièene in izmeril med sponkama 1 visoko upornost. 
+Na vodnik smo stisnili nove votlice in ponovno opravili meritve, katere so pokazale normalno vrednost 0 ohmov.
+
+Po posegu je zajemanje podatkov iz senzorja HMP155 je zaèelo normalno delovati.
+
+
+LP,
+Marko Prunk

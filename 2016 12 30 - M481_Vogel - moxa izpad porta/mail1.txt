@@ -1,0 +1,127 @@
+
+
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Thursday, December 29, 2016 9:29 AM
+To: Marino Montani; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si
+Subject: Fw: Servis Vogel - Reklamacija - URGENTNO
+
+Pozdravljeni!
+
+Ugotovili smo, da kljub zamenjavi UC-8410 na Voglu še vedno prihaja do slabega izplena podtkov na portu 2, kjer sta prikljuèena senzorja HMP155. Reklamacija je tako še odprta.
+Izvesti bi bilo potrebno preizkus ožièenja (loop back test), napajanja ter preveriti delovanje prenapetostne zašèite. Po potrebi zamenjati prenapetostno zašèito ali kabel. 
+
+Lep pozdrav,
+Gregor Žuniè
+
+----- Posredoval Gregor Žuniè/ARSO/MOP/GOV dne 29.12.2016 09:09 -----
+ 
+Od:	 
+Andreja Kolenc/ARSO/MOP/GOV
+ 
+Za:	 
+Marino Montani <Marino.Montani@robotina.si>, Patricija Cuban Palcic <Patricija.CubanPalcic@robotina.com>, nikola.kostic@robotina.com, 
+ 
+Kp:	 
+Bojan Èernaè/ARSO/MOP/GOV@SVN, devid.palcic@robotina.si, Gregor Žuniè/ARSO/MOP/GOV@SVN, Aleš Borštnik/ARSO/MOP/GOV@SVN
+ 
+Datum:	 
+20.12.2016 11:20
+ 
+Zadeva:	 
+Fw: Servis Vogel - Reklamacija - URGENTNO
+________________________________________
+
+
+Ugotavljamo, da je spodnja reklamacija še vedno odprta - zamenjati je potrebno UC8410. Prijava/reklamacija vam je bila dana že julija 2016. Prvi port ne deluje, trenutno se težave pojavljajo tudi na portu 2 - posledièno imamo slab izplen podatkov iz obeh senzorjev temp. in vlažnosti zraka. 
+Prosimo za takojšnje ukrepanje. 
+
+Lep pozdrav,
+
+Andreja
+----- Posredoval Andreja Kolenc/ARSO/MOP/GOV dne 20.12.2016 11:14 -----
+Gregor Žuniè/ARSO/MOP/GOV  
+19.12.2016 12:09	 
+Za	 
+Andreja Kolenc/ARSO/MOP/GOV@SVN, Aleš Borštnik/ARSO/MOP/GOV@SVN
+ 
+Kp	 
+ 
+Zadeva	 
+Fw: Servis Vogel - Reklamacija
+ 
+ 
+
+Mislim, da je tole tudi še odprto v zvezi z Robotino (zamenjava UC-8410).
+
+Aleš tudi pravi, da je izplen podatkov iz HMP155 na Voglu kljub zamenjavi senzorjev še vedno slab in da gre morda za težavo s portom 2.
+
+Lep pozdrav,
+Gregor
+
+----- Posredoval Gregor Žuniè/ARSO/MOP/GOV dne 19.12.2016 12:04 -----
+ 
+Od:	 
+Andreja.Kolenc@gov.si
+ 
+Za:	 
+Marino Montani <Marino.Montani@robotina.com>, Patricija Cuban Palcic <Patricija.CubanPalcic@robotina.com>, 
+ 
+Kp:	 
+VNET - Andrej Krušèiè (andrej@vnet.si) <andrej@vnet.si>, "Bojan.Cernac@gov.si" <Bojan.Cernac@gov.si>, "Gregor.Zunic@gov.si" <Gregor.Zunic@gov.si>, Marko Prunk <Marko.Prunk@robotina.com>, "Matej Kozakiv" <Matej.Kozakiv@robotina.com>, Nikola Kostic <Nikola.Kostic@robotina.com>
+ 
+Datum:	 
+18.07.2016 14:49
+ 
+Zadeva:	 
+Re: Servis Vogel - Reklamacija
+________________________________________
+
+
+
+Danes je bil na lokaciji V-net... 
+Ugotovljeno je sledeèe... 
+Prvi port (ttyM0) na Moxi je skurjen. 
+Senzor wmt702 je sedaj povezan na tretji port (ttyM2). Podrobnosti na tasku http://pivka.arso.sigov.si/redmine/issues/907. 
+Prosimo za èimprejšnji servis/zamenjavo uc8410. 
+
+Lep pozdrav,
+
+Andreja 
+Marino Montani <Marino.Montani@robotina.com>  
+14.07.2016 08:57 	Za	"Andreja.Kolenc@gov.si" <Andreja.Kolenc@gov.si>, VNET - Andrej Krušèiè (andrej@vnet.si) <andrej@vnet.si>, "Gregor.Zunic@gov.si" <Gregor.Zunic@gov.si> 
+Kp	"Bojan.Cernac@gov.si" <Bojan.Cernac@gov.si>, Marko Prunk <Marko.Prunk@robotina.com>, Nikola Kostic <Nikola.Kostic@robotina.com>, "Matej Kozakiv" <Matej.Kozakiv@robotina.com> 
+Zadeva	Servis Vogel
+
+ 
+ 
+
+
+
+
+V zvezi s problematiko nedelovanja senzorja WMT na Voglu je bila naša ekipa v torek 12.06. na terenu. 
+ 
+Opravljeno je bilo: 
+Meritev kabla od omare do doze 
+Meritev zašèite v dozi 
+Meritev napetosti 
+ 
+Vse meritve so bile v redu. 
+Dokumentacija v prilogi (slike in meritev ožièenja).
+Napetosti: gretje 24,16V, UPS 24,32V in 12,12V. 
+ 
+Po dogovoru bo zdaj reševanje prevzel dobavitelj senzorja. 
+ 
+ 
+_______________________________________
+Marino Montani 
+Project Manager 
+
+Robotina d.o.o.
+PHN: +386 5 689 20 33 | FAX: +386 5 689 20 39 
+GSM:+386 40 191 431
+EML: marino.montani@robotina.com 
+www.robotina.com
+_______________________________________ 
+ 
+[attachment "Vogel A2-1.pdf" deleted by Andreja Kolenc/ARSO/MOP/GOV] [attachment "20160712_124018.jpg" deleted by Andreja Kolenc/ARSO/MOP/GOV] [attachment "20160712_124302.jpg" deleted by Andreja Kolenc/ARSO/MOP/GOV] 

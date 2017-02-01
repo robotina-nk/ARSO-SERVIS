@@ -1,0 +1,16 @@
+
+
+From: Marko Prunk 
+Sent: Thursday, December 29, 2016 9:01 AM
+To: Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si; Marijo.crkvencic@gov.si
+Cc: Marino Montani; Marko Mlakar
+Subject: Servis H470_Perovec_Oplotnica
+
+Vèeraj 28.12.16 smo bili na servisu postaje H470_Perovec_Oplotnica.
+
+Postaja ni bila vidna, ker ni imela nastavljenega gatewaya. 
+Po vnosu gatewaya smo poskusili pingti arso in opazili da se nekateri paketi izgubijo. Vzrok je bil v zaèiti pred modemom.
+Zašèito smo vzeli ven in postaja je zaèela normalno delovati.
+
+Lp,
+Marko Prunk
