@@ -1,0 +1,2 @@
+12.1. smo opravili servisne posega na naslednjih lokacijah:
+- G_437_Race : Zamenjava MBiO. Po testiranju in pregledu doma, smo ugotovili, da mbIO deluje brezhibno, tako da je težava verjetno drugje. Po dogovoru bo težavo odpravila Robotina. Ob prvi možnosti, bomo namestili na postajo originalni mbIO.

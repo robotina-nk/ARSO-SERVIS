@@ -1,0 +1,31 @@
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Wednesday, February 01, 2017 2:44 PM
+To: servis robotina; Marino Montani; Nikola Kostic; Patricija Cuban Palcic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si
+Subject: URGENTNO - Postaja E401 Otlica - namestitev novega anemometra WMT702
+
+Pozdravljeni!
+
+V priponki pošiljam prijavo problema za lokcijo Otlica - namestitev novega anemometra WMT702.
+
+Nov anemometer vkljuèno s kablom lahko prevzamete pri nas. Obstojeèi (pokvarjeni) anemometer je potrebno èim prej dostaviti na ARSO.
+
+Pred priklopom novega anemometra je potrebno še enkrat preveriti celotno ožièenje.
+
+Glede vremenskih razmer na lokaciji (dostop z avtom) preverite kamero in nas poklièite pred odhodom na lokacijo.
+
+Lep pozdrav,
+(See attached file: Prijava probl, - Otlica - namestitev anemometra WMT702.doc) 
+
+==============================================================================
+
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Wednesday, February 01, 2017 3:13 PM
+To: servis robotina; Marino Montani; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si
+Subject: Fw: URGENTNO - Postaja E401 Otlica - namestitev novega anemometra WMT702
+
+V priponkah še posnetek pravilne konfiguracije za WMT702 in uporabniška navodila za WMT702 (na str. 74 orientacija senzorja).
+
+Lep pozdrav,
+  (See attached file: WMT702_config_bober.txt)(See attached file: WMT700 User's Guide in English.pdf)

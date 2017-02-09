@@ -1,0 +1,13 @@
+From: Marko Prunk 
+Sent: Tuesday, December 27, 2016 3:15 PM
+To: Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si
+Cc: Marino Montani; Marko Mlakar
+Subject: Servis M481_Vogel
+
+Danes 27.12.16 smo bili na servisu postaje M481_Vogel.
+
+Na postaji smo zamenjali UC8410 in namestili software.
+WMT702 smo prikljuèili nazaj na port N2-1.
+
+S.N. stare moxe: TAEGC1006034
+S.N. nove moxe:TAFIB1094258

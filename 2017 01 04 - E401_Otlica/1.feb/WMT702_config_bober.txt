@@ -1,0 +1,51 @@
+>s address     ,1
+s autoInt     ,1.00000
+s autoPort    ,1
+s autoSend    ,0
+s startDelay  ,5
+s com1_baud   ,4
+s com1_data   ,8
+s com1_parity ,0
+s com1_stop   ,1
+s com1_delay  ,20
+s com1_protocol,0
+s com2_baud   ,5
+s com2_data   ,8
+s com2_parity ,0
+s com2_stop   ,1
+s com2_delay  ,20
+s com2_protocol,0
+s com2_interf ,0
+s msg1        ,\ss\ad:1:\wd,\ws,\wx,\wy,\wm,\wp,\gu,\lu,\dx,\dm,\w1,\rg,\er,\va,
+\se\sp\cr\lf
+s msg2        ,\ss\ad:2:\Ts,\ra,\ta,\ti,\vh,\vi,\se\sp\cr\lf
+s msg3        ,3
+s msg4        ,4
+s heaterOn    ,1.00000
+s messages    ,1
+s sleepTime   ,5
+s wndAvg      ,3.00000
+s wndCoast    ,0.00000
+s wndCover    ,4
+s wndDirOffset,0.00000
+s wndGustTime ,3.00000
+s wndOrientation,0
+s wndUnit     ,0
+s wndVector   ,0
+s aout1_g     ,1.00000
+s aout1_o     ,0.00000
+s aout1err    ,1000.00
+s aout1maxv   ,32000.0
+s aout1minv   ,0.00000
+s aout1mode   ,3
+s freqType    ,0
+s aout2_g     ,1.00000
+s aout2_o     ,0.00000
+s aout2err    ,1000.00
+s aout2maxv   ,32000.0
+s aout2minv   ,0.00000
+s aout2mode   ,7
+s cal_date    ,20131003
+s serial_n    ,J3950009
+s serial_pcb  ,0000
+>
