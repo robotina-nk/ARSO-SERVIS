@@ -1,0 +1,15 @@
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Tuesday, March 28, 2017 8:56 AM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Marijo.Crkvencic@gov.si
+Subject: Fw: Izpad podatkov na postaji 03350_H537_Mlino_Blejsko_jezero
+
+Na lokaciji H537 Mlino (Blejsko jezero) sta po novem namešèena:
+- sonda GSR120NT serijska št. 16100929 in
+- mbIO120 serijska št. 16111050.
+
+Nov Nanos lahko prevzamete pri nas. Verjetno bo potrebno na novo zgenerirati ipkg paket.
+
+Lep pozdrav, 
+ 
+Gregor Žuniè
