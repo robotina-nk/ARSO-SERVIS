@@ -1,0 +1,19 @@
+From: Marko Prunk 
+Sent: Friday, March 24, 2017 12:05 PM
+To: Marijo.crkvencic@gov.si; Gregor.Zunic@gov.si; Adrijana Koneènik; Nikola Kostic
+Cc: Marino Montani
+Subject: Servis H433_Recica Paka
+
+Bili smo na servisu postaje H433_Recica Paka.
+
+22.3.17 
+Postaja ni delovala zaradi GSM komunikacije.
+Poskusili smo resetirati postajo, oèistiti sim kartico, zamenjati podnožje sim kartice, zamenjati Mbiota, zamenjati  Nanos. 
+Sim kartico iz postaje smo vstavili v telefon ki je ni zaznal.
+
+23.3.17 
+Vstavili smo novo sim kartico, katero smo prevzeli na arsu v Ljubljani.
+Z novo sim je postaja zaèela normalno delovati.
+
+LP,
+Marko Prunk
