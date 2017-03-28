@@ -1,0 +1,23 @@
+debian:/home/asws/ftp/2017_03# dmesg | grep err
+mmcblk0: error -110 transferring data, sector 4444688, nr 40, card status 0x0
+end_request: I/O error, dev mmcblk0, sector 4444688
+Buffer I/O error on device mmcblk0p1, logical block 555330
+lost page write due to I/O error on mmcblk0p1
+end_request: I/O error, dev mmcblk0, sector 4444696
+Buffer I/O error on device mmcblk0p1, logical block 555331
+lost page write due to I/O error on mmcblk0p1
+end_request: I/O error, dev mmcblk0, sector 4444704
+Buffer I/O error on device mmcblk0p1, logical block 555332
+lost page write due to I/O error on mmcblk0p1
+end_request: I/O error, dev mmcblk0, sector 4444712
+Buffer I/O error on device mmcblk0p1, logical block 555333
+lost page write due to I/O error on mmcblk0p1
+end_request: I/O error, dev mmcblk0, sector 4444720
+Buffer I/O error on device mmcblk0p1, logical block 555334
+lost page write due to I/O error on mmcblk0p1
+mmcblk0: error -110 sending read/write command, response 0xd20, card status 0x900
+end_request: I/O error, dev mmcblk0, sector 7471221
+EXT3-fs (mmcblk0p1): error in ext3_reserve_inode_write: Journal has aborted
+EXT3-fs (mmcblk0p1): error in ext3_dirty_inode: Journal has aborted
+EXT3-fs (mmcblk0p1): error: ext3_journal_start_sb: Detected aborted journal
+EXT3-fs (mmcblk0p1): error: remounting filesystem read-only

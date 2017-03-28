@@ -1,0 +1,16 @@
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Monday, March 20, 2017 4:07 PM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Bojan.Cernac@gov.si; Andreja.Kolenc@gov.si; Marijo.Crkvencic@gov.si
+Subject: Izpad prenosa podatkov s postajo 04860_H456_Metlika-Kolpa
+
+Pozdravljeni!
+
+V prilogi posiljam prijavo problema/reklamacijo za izpad prenosa podatkov s postaje Metlika - Kolpa.
+
+V prilogi izpis dmesg in jmd.log. Sumimo, da gre za okvaro SD kartice.
+
+Prosimo za èimprejšnjo odpravo problema in vzpostavitev prenosa podatkov.
+(See attached file: Metlika_dmesg.txt)(See attached file: Prijava probl, reklamacija - izpad postaje 04860_H456_Metlika_Kolpa.doc)(See attached file: jmd.zip)
+ 
+Gregor Žuniè
