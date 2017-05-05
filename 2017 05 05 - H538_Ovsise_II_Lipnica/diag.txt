@@ -1,0 +1,4 @@
+var_IPradiusServer: 172.19.161.140
+!!!!! Host not found !!!!!
+4 packets transmitted, 0 received, 100% packet loss, time 3023ms
+Request timed out.
