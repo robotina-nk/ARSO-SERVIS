@@ -1,0 +1,23 @@
+From: Danilo Logar 
+Sent: Tuesday, April 11, 2017 1:21 PM
+To: Marino Montani; Nikola Kostic
+Subject: NEGIBNA_KAMERA_00432_M441_Metlika
+
+Marino & Nikola.
+
+Zadeva: Težava z negibno kamero v Metliki.
+Motorizirana kamera je bila na predlog ARSOa prikljuèena  direktno v omaro RO na stilalo EDS-P206A-4PoE-MM-ST,
+mimo doze C4M kot je obièajno pri drugih takšnih postajah.
+Pri testiranju se je ugotovilo, da rotiranje kamera zaradi PoE napajanja preko Etherneta ne deluje.
+Motorni pogon  Pt4 ima svoje napajanje 24V DC in preko tega vira napaja tudi kamero.
+Andrej Krušèiè je, ko je delal na projektu pri Robotoini našel najugodnejšo zamenjavo za
+obstojeèe stikalo z EDS-208A-M-ST-T, ki je brez PoE vrat in ima 1 optiko ki zadošèa potrebi te konfiguracije.
+Predlagam, da se niè ne zamenja ampak, da se kabel, ki je spojen na sedanje stikalo »precvika« in nanj »stisne« nov
+konektor   (RJ-45), tako, da se vanj priklopi samo žile: oranžno belo (1), oranžno (2), zeleno belo (3) in zeleno (6),
+preostale žile (PoE): modro (4), modro belo (5), rjavo belo (7) in rjavo (8) se spodvije in izolira zunaj konektorja. 
+Postaje, kjer nastopajo rotirajoèa kamere, ki so priklopljene preko C4M doz v katerih je vgrajeno stikalo MOXA
+EDS-P206A-PoE-M-ST-T imajo prestavljeno komunikacijo s kamero  iz vrat ETH-P1-PoE  na vrata ETH-P5, ki so brez napajanja
+na kontaktih 4,5 (DC+) IN 7,8 (DC-).
+ 
+Lep pozdrav,
+Danilo
