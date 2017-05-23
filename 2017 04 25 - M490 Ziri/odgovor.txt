@@ -1,0 +1,15 @@
+From: Marko Prunk 
+Sent: Wednesday, April 26, 2017 7:50 AM
+To: Gregor.Zunic@gov.si; Nikola Kostic; Andreja.Kolenc@gov.si; Marijo.crkvencic@gov.si
+Cc: Marino Montani
+Subject: Servis - M490_Ziri
+
+Vèeraj 25.4.17 smo bili na servisu postaje M490_Ziri
+
+Postaja ni delovala, ker komunikacija med IMC-21A in  EDS-P206 ni delovala.
+
+IMCju smo napajanje izklopili in ponovno vklopili. Po resetu se je komunikacija vzpostavila. 
+Vseeno smo se odloèili za zamenjavo optiènega pretvornika IMC-21A.
+Po zamenjavi se je komunikcija zopet vzpostavila. 
+
+LP
