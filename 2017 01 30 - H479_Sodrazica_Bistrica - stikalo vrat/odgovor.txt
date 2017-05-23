@@ -1,0 +1,19 @@
+From: Marko Prunk 
+Sent: Thursday, May 11, 2017 9:43 AM
+To: Nikola Kostic; Gregor.Zunic@gov.si; Marijo.crkvencic@gov.si; Andreja.Kolenc@gov.si; Marino Montani
+Subject: Servis H479_Sodrazica_Bistrica
+
+V torek 9.5.17 smo bili na servisu postaje H479_Sodrazica_Bistrica.
+
+Na postaji obèasno ni delovalo stikalo vrat.
+
+Nastavili smo stikalo vrat in zastisnili vse spoje.
+Opravili smo ohmske meriteve, ki niso pokazale nobene napake.
+
+Daljinsko smo se povezali na postajo in preverili delovanje stikala vrat. Postaja je normalno zaznavala odprta in zaprta vrata.
+
+LP,
+______________________________________________________________________________
+
+Marko Prunk
+

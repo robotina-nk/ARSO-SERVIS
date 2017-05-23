@@ -1,0 +1,14 @@
+From: Marko Prunk 
+Sent: Friday, May 19, 2017 2:38 PM
+To: Marino Montani; Nikola Kostic; Gregor.Zunic@gov.si; Andreja.Kolenc@gov.si; Marijo.crkvencic@gov.si
+Subject: Servis M412 Godnje
+
+V sredo 17.5.17 smo bili na servisu postaje M412 Godnje.
+
+Postaja ni delovala, ker napajalnik PULS ki napaja Moxo EDS-P206A ni deloval.
+
+Pulsu smo napajanje izklopili in ponovno vklopili. Po resetu je napajalnik zaèel delovati.
+Vseeno smo se odloèili za zamenjavo napajalnika.  
+Preventivno smo se odloèili še za demontažo prenapetostne zaèite, ker je bila ena od možnih vzrokov da je napajanik nehal delovati.
+
+LP

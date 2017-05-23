@@ -1,0 +1,16 @@
+From: Gregor.Zunic@gov.si [mailto:Gregor.Zunic@gov.si] 
+Sent: Monday, May 15, 2017 2:01 PM
+To: servis robotina; Marino Montani; Patricija Cuban Palcic; Nikola Kostic
+Cc: Andreja.Kolenc@gov.si; Bojan.Cernac@gov.si; Ales.Borstnik@gov.si
+Subject: Prijava problema - izpad postaje M412 Godnje 
+
+Pozdravljeni!
+
+V prilogi pošiljam prijavo problema za izpad postaje M12 Godnje.
+
+Najverjetneje je prišlo do okvare opreme nekje na povezavi omara RO - omara EO (optièni pretvornik v RO, ethernet stikalo v RO, optièni kabel v RO, ethernet stikalo v EO, ethernet povezava RO-EO).  
+
+Prosimo za odpravo napake in vzpostavitev normalnga obratovanja.
+
+Lep pozdrav,
+(See attached file: Prijava probl, reklamacija - izpad postaje 00107_M412_Godnje.doc)
