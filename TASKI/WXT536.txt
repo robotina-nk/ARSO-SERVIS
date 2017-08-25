@@ -1,0 +1,84 @@
+WXT536 P-Pressure, T-Temperature, U-Humidity, R-Rain, W-Wind
+
+Insert Vaisala USB Stick
+g:\WXT53XCONFSW-B\USB-driver\setup.exe
+Assign a new COM port number for each Vaisala USB device/cable (default)
+Install
+na unnamed file was not found. ???
+Cancel
+Check Display Vaisala USB Device Finder now
+Finish
+
+Plug in cable
+Connect other end of a cable to a sensor
+Zaznal ga kot port 17
+
+
+
+g:\WXT53XCONFSW-B\WXT_Series_Conf_Tool\WXTConf-2.41 r.4-Setup.exe
+K7G1-4A9B-J8N8-3R5A (from a memory stick)
+
+File - Connection Setup - choose port17
+
+
+
+
+19200 8 N 1
+
+0XU,M=P
+
+Povezava interna preverjeno pg64 1.slika RS232
+
+
+
+test with putty serial com17 19200
+V push mode-u. Bruha podatke
+------------------------------------------------
+
+test na 172.19.6.83/84 port 8 - 19200 8 1 none disable none rs-232
+
+
+doza A3-4 (previous for SPN1)
+1 gray
+3 white blue
+4 white green
+5 red
+8 pink
+
+PDF for spn1 - A3-4
+3 GND
+4 RxD
+5 TxD
+
+pg58 manual
+white RxD
+blue TxD
+green GND for data
+red V-12DC
+brown V+12DC
+
+
+=> white(RxD) na 4(RxD)!!!???
+=> blue (TxD) na 5(TxD)!!!???
+=> green(GND) na 3(GND)
+
+
+ssh root@172.19.6.83
+cat < /dev/tcp/172.19.6.84/64008
+KOMUNICIRA POSLUSANJE
+
+nastavi se prek Vaisala Configuration Tool - poll only
+echo -n -e "0XU\r\n" | nc -w 2 172.19.6.84 64008
+0XU,A=0,M=P,T=0,C=2,I=0,B=19200,D=8,P=N,S=1,L=25,N=WXT530,V=3.59,H=0
+
+------------------------------------------------
+
+FTDI USB-RS232-WE-1800
+FTDI>orange TxD white<VAISALA
+FTDI>yellow RxD blue<VAISALA
+FTDI>black  GND green<VAISALA
+KOMUNICIRA POSLUSANJE
+------------------------------------------------
+
+na OPEN 0 ne reagira
+------------------------------------------------

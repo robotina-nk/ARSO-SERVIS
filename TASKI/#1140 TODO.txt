@@ -1,0 +1,6 @@
+Odpreti DNX
+
+Zunic
+Od 23.8.2017 od 8:00 ni prenosa podatkov s postaje 04200_H530_Suha_I_Sora. ADSL modem je dosegljiv, kamera je dosegljiva, MFM je dosegljiv, nista pa dosegljiva Nanos in merilnik motnosti Solitax, ki sta oba prikljuèena na ethernet stikalo v omari EO. 
+
+Servis

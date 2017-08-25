@@ -1,0 +1,6 @@
+Odpreti DNX
+
+Zunic
+Postaja od 16.8.2017 od 17:30 ni dosegljiva. Izkazalo se je, da je prišlo do izpada elektrike v hiši, iz katere se napaja postaja. Na postaji trenutno naj bi bila prisotna elektrika, vendar se komunikacija z brezžiènim modemom Cisco še vedno ni vzpostavila. Možni vzroki bi lahko bili: izpad varovalk (talilne, inštalacijski odklopniki) v PMO (10A »pancer«), RO ali EO, izpad FID stikala v RO, lahko pa je prišlo tudi do okvare katerega od napajalnikov.
+
+Servis

@@ -1,0 +1,3 @@
+Nadaljevanje testiranja WTX536 
+
+Testiranje LUFFT WS
