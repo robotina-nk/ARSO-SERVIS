@@ -8,7 +8,7 @@ Senzor z letališèa se testira v LAB-u na postaji TEST8. Za enkrat komunicira.
 TODO: Koordinacija servisa (SPN1)
 Prestavitev QNAP-a
 Fiksiranje kontakta za vrata na omari.
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 SPN1 v labu (prej na Letališèu) tudi v labu pokaže težave na komunikaciji (izplen 83%)
 ssh root@172.19.7.165
 spn1d(64004)>get pa
@@ -28,8 +28,6 @@ P3304 ch02@cpu_1:64004 016@0043.11.08.05.003 100 0x0000 1111111111 10 5 5 463
 Pošljemo SPN1 na servis na VNET?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 DOKUMENTACIJA (Marino, mape)
-PID
-CF (Moxe 2port)
 hmp-p sheme Danilo
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 TZ orodja za izplen. Preveri z Jernejem. Nekateri senzorji nimajo dober izplen
