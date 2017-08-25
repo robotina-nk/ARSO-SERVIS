@@ -32,3 +32,5 @@ PID
 CF (Moxe 2port)
 hmp-p sheme Danilo
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TZ orodja za izplen. Preveri z Jernejem. Nekateri senzorji nimajo dober izplen
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
