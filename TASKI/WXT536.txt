@@ -390,7 +390,6 @@ aWU,R=[R],I=[I],A=[A],G=[G],U=[U],D=[D],N=[N],F=[F]<cr><lf>
 #| TEST
 cmd> echo -n -e "0WU\r\n" | nc -w 2 172.19.6.84 64008
 answ> 0WU,R=11111100&01001000,I=5,A=3,G=1,U=M,D=0,N=W,F=4
-
 #| 8.1.1.2  Setting Fields
 #| Parameter Description
 	|[R] Parameter selection. This field consists of 16 bits defining the wind parameters included in the data messages. The bit value 0 disables and the bit value 1 enables the parameter.
@@ -432,7 +431,6 @@ answ> 0WU,R=11111100&01001000,I=5,A=3,G=1,U=M,D=0,N=W,F=4
 	|[F] Sampling rate: 1, 2, or 4 Hz Defines how frequently the wind is measured. Lower
 	|	sampling rate reduces the power consumption, but it also weakens the measurement representativeness.
 	|<cr><lf> Response terminator
-
 #| 8.1.1.3 Changing the Settings (aWU)
 #| Command format in ASCII and NMEA 0183:
 aWU,R=x,I=x,A=x,G=x,U=x,D=x,N=x,F=x<cr><lf>
@@ -452,6 +450,137 @@ cmd> echo -n -e "0WU,I=60\r\n" | nc -w 2 172.19.6.84 64008
 answ> 0WU,I=60
 
 
+#| 8.1.2 Pressure, Temperature, and Humidity Sensors
+#| 8.1.2.1 Checking the Settings (aTU)
+#| Command format in ASCII and NMEA 0183:
+aTU<cr><lf>
+#| The response in ASCII and NMEA 0183:
+aTU,R=[R],I=[I],P=[P],T=[T]<cr><lf>
+#| 8.1.2.2 Setting Fields
+	|[R] Parameter selection: This field consists of 16 bits defining the PTU parameters included in the data messages. The bit value 0 disables and the bit value 1 enables the parameter.
+	|Bits 1-8 determine the parameters included in the message obtained with the following commands:
+	|• ASCII: aR2 and ar2
+	|	1st bit (most left) Pa Air pressure
+	|	2nd bit Ta Air temperature
+	|	3rd bit Tp Internal temperature 1)
+	|	4th bit Ua Air humidity
+	|	5th bit spare
+	|	6th bit spare
+	|	7th bit spare
+	|	8th bit spare
+	|	& delimiter
+	|Bits 9-16 determine the PTU parameters included in the composite data message obtained with the following commands:
+	|• ASCII: aR0 and ar0
+	|	9th bit Pa Air pressure
+	|	10th bit Ta Air temperature
+	|	11th bit Tp Internal temperature1
+	|	12th bit Ua Air humidity
+	|	13th bit spare
+	|	14th bit spare
+	|	15th bit spare
+	|	16th bit spare
+	|[I] Update interval: 1 … 3600 seconds
+	|[P] Pressure unit: H = hPa, P = Pascal, B = bar, M = mmHg, I = inHg
+	|[T] Temperature unit: C = Celsius, F = Fahrenheit
+	|[N] NMEA formatter:
+	|	T = XDR (transducer syntax)
+	|	D = MDA Defines whether the wind message is sent in XDR or MDA format.
+#| TEST
+cmd> echo -n -e "0TU\r\n" | nc -w 2 172.19.6.84 64008
+answ> 0TU,R=11010000&11010000,I=60,P=H,T=C,N=T
+#| 8.1.2.3 Changing the Settings (aTU)
+#| Command format in ASCII and NMEA 0183:
+aTU,R=x,I=x,P=x,T=x<cr><lf>
+	|R, I, P, T The pressure, temperature and humidity sensor setting fields.
+	|x Value for the setting
+
+#| 8.1.3 Precipitation Sensor
+#| 8.1.3.1 Checking the Settings (aRU)
+#| Command format in ASCII and NMEA 0183:
+aRU<cr><lf>
+#| The response in ASCII and NMEA 0183:
+aRU,R=[R],I=[I],U=[U],S=[S],M=[M],Z=[Z],X=[X],Y=[Y]<cr> <lf>
+#| 8.1.3.2 Setting Fields
+	|[R] Parameter selection: This field consists of 16 bits defining the precipitation parameters included in the data messages. The bit value 0 disables and the bit value 1 enables the parameter.
+	|Bits 1-8 determine the parameters included in the messages obtained with the following commands:
+	|• ASCII: aR3 and ar3 left)
+	|	1st bit (most left)Rc Rain amount
+	|	2nd bit Rd Rain duration
+	|	3rd bit Ri Rain intensity
+	|	4th bit Hc Hail amount
+	|	5th bit Hd Hail duration
+	|	6th bit Hi Hail intensity
+	|	7th bit Rp Rain peak
+	|	8th bit Hp Hail peak
+	|	& delimiter
+	|Bits 9-16 determine the precipitation parameters included in the composite data messages obtained with the following commands:
+	|• ASCII:
+	|• NMEA 0183: aR0, ar0
+	|	9th bit Rc Rain amount
+	|	10th bit Rd Rain duration
+	|	11th bit Ri Rain intensity
+	|	12th bit Hc Hail amount
+	|	13th bit Hd Hail duration
+	|	14th bit Hi Hail intensity
+	|	15th bit Rp Rain peak
+	|	16th bit (most right) Hp Hail peak
+	|[I] Update interval: 1 … 3600 seconds. This interval is valid only if the [M] field is = T
+	|[U] Precipitation units:
+	|	M= metric (accumulated rainfall in mm, Rain duration in s, Rain intensity in mm/h)
+	|	I= imperial (the corresponding parameters in units in, s, in/h)
+	|[S] Hail units:
+	|	M = metric (accumulated hailfall in hits/cm2, Hail event duration in s, Hail intensity in hits/ cm2h)
+	|	I = imperial (the corresponding parameters in units hits/in2, s, hits/in2h), H = hits (hits, s, hits/h) Changing the unit resets the precipitation counter.
+	|[M] Auto-send mode: R = precipitation on/off, C = tipping bucket, T = time based
+	|	R = precipitation on/off: The transmitter sends a precipitation message 10 seconds after the first recognition of precipitation. Rain duration Rd increases in 10 s steps. Precipitation has ended when Ri = 0. This mode is used for indication of the start and the end of the precipitation.
+	|	C= tipping bucket: The transmitter sends a precipitation message at each unit increment (0.1 mm/0.01 in). This simulates conventional tipping bucket method.
+	|	T= time based: Transmitter sends a precipitation message in the intervals defined in the [I] field. Do not use the auto-send mode tipping bucket in polled protocols as it decreases the resolution of the output (quantized to tipping bucket tips).
+	|[Z] Counter reset: M = manual, A = automatic, L= limit Y = immediate
+	|	M = manual reset mode: The counter is reset with aXZRU command. See 7.1.2 Precipitation Counter Reset (aXZRU) (page 78).
+	|	A = automatic reset mode: The counts are reset after each precipitation message whether in automatic mode or when polled.
+	|	L = overflow reset mode. The rain counter or hail counter is reset, when it reaches the predefined limit. The overflow limits (x, y) are defined with the commands aRU,X=x for rain counter and aRU,Y=y for hail counter.
+	|	Y = immediate reset: The counts are reset immediately after receiving the command.
+	|	[X] Rain accumulation limit : 100...65535. Sets the rain accumulation counter resetting limit. When the value exceeds the limit, the counter is reset to zero. If the precipitation unit aRU,U=x is metric, the limit corresponds the range between 1.00 … 655.35 mm. If the precipitation unit is imperial, the equivalent range varies between 0.100 … 65.535 in. To enable this feature, set the counter reset to aRU,Z=L (overflow reset mode).
+	|[Y] Hail accumulation limit: 100 … 65535. Sets the hail accumulation counter resetting limit. When the value exceeds the limit, the counter is reset to zero. If the hail unit aRU,S=x is metric, the limit corresponds the range between 10.0 … 6553.5 hits/ cm2. If the unit is imperial, the equivalent range varies between 100 … 65535 hits/in2. If the unit is hits, the limit matches directly to the amount of hits: 100 … 65535 hits. To enable this feature, set the counter reset to aRU,Z=L (overflow reset mode).
+#| 8.1.3.3 Changing the Settings (aRU)
+#| Command format in ASCII and NMEA 0183:
+aRU,R=x,I=x, U=x,S=x,M=x,Z=x, X=x, Y=x<cr><lf>
+
+
+#| 8.1.4 Supervisor Message
+#| 8.1.4.1 Checking the Settings (aSU)
+#| Use this command to check the current supervisor settings.
+#| Command format in ASCII and NMEA 0183:
+aSU<cr><lf>
+#| The response in ASCII and NMEA 0183:
+aSU,R=[R],I=[I],S=[S],H=[Y]<cr><lf>
+#| 8.1.4.2 Setting Fields
+	|[R] Parameter selection: This field consists of 16 bits defining the supervisor parameters included in the data messages. The bit value 0 disables and the bit value 1 enables the parameter.
+	|Bits 1-8 determine the parameters included in the message obtained with the following commands:
+	|• ASCII: aR5 and ar5
+	|	1st bit (most left) Th Heating temperature
+	|	2nd bit Vh Heating voltage
+	|	3rd bit Vs Supply voltage
+	|	4th bit Vr 3.5 V reference voltage
+	|	5th bit Id Information field
+	|	6th bit spare
+	|	7th bit spare
+	|	8th bit spare
+	|	& delimiter
+	|Bits 9-16 determine the supervisor parameters included in the composite data message obtained with the following commands:
+	|• ASCII: aR0 and ar0
+	|	9th bit Th Heating temperature
+	|	10th bit Vh Heating voltage
+	|	11th bit Vs Supply voltage
+	|	12th bit Vr 3.5 V reference voltage
+	|	13th bit Id Information field
+	|	14th bit spare
+	|	15th bit spare
+	|	16th bit (most right) spare
+	|[I] Update interval: 1 … 3600 seconds. When the heating is enabled the update interval is forced to 15 seconds.
+	|[S] Error messaging: Y = enabled, N = disabled
+	|[H] Heating control enable: Y = enabled, N = disabled Heating enabled: The control between full and half heating power is on as described in Heating on page 34. Heating disabled: Heating is off in all conditions.
+#| 8.1.4.3 Changing the Settings (aSU)
 
 
 
@@ -459,6 +588,9 @@ answ> 0WU,I=60
 
 
 
+#| TEST
+cmd> 
+answ> 
 
 
 
