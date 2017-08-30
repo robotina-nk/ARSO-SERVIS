@@ -34,3 +34,19 @@ configuration, measurement polling and the firmware update.
 See page 46 for technical details.
 
 
+https://www.youtube.com/watch?v=FVI7kPLJ_JM
+Setup_UMB_Config_V26.EXE
+
+
+SEARCH for 232 straight through cable (na obe strani matica)
+
+UMB ISO-Con
+UMB Config Tool
+Com8
+Edit | Connection settings | Use RS232(COM) , Select port 8 << težave - se ni videl
+Edit | Sensors | Autoscan | Verify | Save/Exit
+Edit | Sensors | Mark the sensor in the sensor list | Configure | Load profile from sensor
+
+
+Protocol je UMB-Binary - change to terminal mode, store profile on sensor
+
