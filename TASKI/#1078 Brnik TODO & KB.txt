@@ -29,6 +29,7 @@ Pošljemo SPN1 na servis na VNET?
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 DOKUMENTACIJA (Marino, mape)
 hmp-p sheme Danilo
+Odpade presavljenje senzorjev izven 3000 ???
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 TZ orodja za izplen. Preveri z Jernejem. Nekateri senzorji nimajo dober izplen
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

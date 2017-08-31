@@ -1,7 +1,0 @@
-Odpreti DNX
-
-Zunic
-Od 23.8.2017 od 4:00 ni prenosa podatkov s postaje 00174_M426_Kocevje. ADSL modem je dosegljiv, Moxa UC-8410 in Nport v omari EO nista vidna. Predvidevamo, da gre za napako nekje na povezavi od modema v omari RO do ethernet stikala v omari EO.
-Naroèamo pregled postaje in vzpostavitev prenosa podatkov.
-
-Servis
