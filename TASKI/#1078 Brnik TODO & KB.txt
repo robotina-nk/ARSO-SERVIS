@@ -33,3 +33,8 @@ Odpade presavljenje senzorjev izven 3000 ???
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 TZ orodja za izplen. Preveri z Jernejem. Nekateri senzorji nimajo dober izplen
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SPN1 servis VNET - je/ni? Aleš BOrštnik javi - poslje na AMES
+Cakati popravilo (da se ne menjajo podatki), cc je drugaèe v ISMM skladišèe. cc je pošel...
+
+mbio briši linke z manjkajoèimi dokumenti
