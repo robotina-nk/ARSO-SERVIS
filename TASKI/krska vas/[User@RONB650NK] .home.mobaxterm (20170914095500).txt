@@ -1,0 +1,246 @@
+     ······································································
+     ·                " MobaXterm Personal Edition v7.3 "                 ·
+     ·            (X server, SSH client and GNU/Cygwin tools)             ·
+     ·                                                                    ·
+     · ¤ Your computer drives are accessible through the /drives path     ·
+     · ¤ Your DISPLAY is set to 172.19.19.67:0.0                          ·
+     · ¤ When using SSH, your remote DISPLAY is automatically forwarded   ·
+     · ¤ Each command status is specified by a special symbol (· or ·)    ·
+     ·                                                                    ·
+     · " Important:                                                       ·
+     · This is MobaXterm Personal Edition. The Professional edition       ·
+     · allows you to customize MobaXterm for your company: you can add    ·
+     · your own logo, your parameters, your welcome message and generate  ·
+     · either an MSI installation package or a portable executable.       ·
+     · We can also modify MobaXterm or develop the plugins you need.      ·
+     · For more information: http://mobaxterm.mobatek.net/versions.php    ·
+     ······································································
+
+[2017-09-14 09:55.01]  ~
+[User.RONB650nk] ¤ ls
+2015_10                   2015_12                   Desktop                   LauncherFolder            bla.html                  marko.txt                 test
+2015_11                   :q!                       K01201512010200.G445      MyDocuments               index.html                minicom.log               workspace-pivka-senzorji
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:55.03]  ~
+[User.RONB650nk] ¤ tar xvzf Desktop/
+~$Nikola_Ure_ ARSO_2016.xlsx        desktop.ini                         IP Changer/                         Old Firefox Data/                   Snipping Tool.lnk
+Android Studio.lnk                  DRUGI PROJEKTI - NOVI/              ipkg/                               Paint.lnk                           unused shortcuts/
+Caesium.lnk                         FastIPChangerV1.7/                  Microsoft Excel 2010.lnk            PRESTA_PREGLED.xlsx                 WIKI_links.txt - Shortcut.lnk
+Calculator.lnk                      Git Shell.lnk                       Microsoft Word 2010.lnk             razno/                              XnView.lnk
+catch_22.pdf                        GitHub.appref-ms                    Nikola_Ure_ ARSO_2016.xlsx          Simply Modbus Master 7.1.2.lnk
+cpp                                 hyperterminal/                      NPort Administrator.lnk             Simply Modbus Slave 7.1.lnk
+debugLOGtemp.tar.gz                 IOServer.lnk                        OdpravaPripomb.xls                  Simply Modbus TCP Client 7.1.2.lnk
+
+[2017-09-14 09:55.03]  ~
+[User.RONB650nk] ¤ tar xvzf Desktop/debugLOGtemp.tar.gz
+log/
+log/syslog.4.gz
+log/lpr.log
+log/pppstatus/
+log/kern.log.3.gz
+log/syslog.6.gz
+log/dmesg.1.gz
+log/auth.log.2.gz
+log/auth.log
+log/messages
+log/messages.4.gz
+tar: short read
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:55.42]  ~
+[User.RONB650nk] ¤ ls
+2015_10                   2015_12                   Desktop                   LauncherFolder            bla.html                  log                       minicom.log               workspace-pivka-senzorji
+2015_11                   :q!                       K01201512010200.G445      MyDocuments               index.html                marko.txt                 test
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:55.48]  ~
+[User.RONB650nk] ¤ cd log/
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:55.55]  ~/log
+[User.RONB650nk] ¤ ls
+auth.log       auth.log.2.gz  dmesg.1.gz     kern.log.3.gz  lpr.log        messages       messages.4.gz  pppstatus      syslog.4.gz    syslog.6.gz
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:55.56]  ~/log
+[User.RONB650nk] ¤ ls -al
+total 312
+drwxr-xr-x    1 User     UsersGrp         0 Sep 14 09:55 .
+drwx------    1 User     UsersGrp         0 Sep 14 09:55 ..
+-rw-r-----    1 User     UsersGrp    137369 Sep 14 09:50 auth.log
+-rw-r-----    1 User     UsersGrp      8870 Aug 20 07:25 auth.log.2.gz
+-rw-r-----    1 User     UsersGrp      2732 Sep 22  2015 dmesg.1.gz
+-rw-r-----    1 User     UsersGrp     21288 Aug 13 07:25 kern.log.3.gz
+-rw-r-----    1 User     UsersGrp         0 Jun 10  2013 lpr.log
+-rw-r-----    1 User     UsersGrp    400820 Sep 14 09:20 messages
+-rw-r-----    1 User     UsersGrp     15360 Sep 14 09:55 messages.4.gz
+drwxr-xr-x    1 User     UsersGrp         0 Dec 15  2007 pppstatus
+-rw-r-----    1 User     UsersGrp     12029 Aug 30 07:25 syslog.4.gz
+-rw-r-----    1 User     UsersGrp     16722 Aug 28 07:25 syslog.6.gz
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:56.05]  ~/log
+[User.RONB650nk] ¤ tar /h
+busybox: unknown option -- /
+BusyBox v1.22.1 (2014-09-26 07:33:17 CEST) multi-call binary.
+
+Usage: tar -[cxtZzJjahmvO] [-X FILE] [-T FILE] [-f TARFILE] [-C DIR] [FILE]...
+
+Create, extract, or list files from a tar file
+
+Operation:
+        c       Create
+        x       Extract
+        t       List
+        f       Name of TARFILE ('-' for stdin/out)
+        C       Change to DIR before operation
+        v       Verbose
+        Z       (De)compress using compress
+        z       (De)compress using gzip
+        J       (De)compress using xz
+        j       (De)compress using bzip2
+        a       (De)compress using lzma
+        O       Extract to stdout
+        h       Follow symlinks
+        m       Don't restore mtime
+        exclude File to exclude
+        X       File with names to exclude
+        T       File with names to include
+
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:57.29]  ~/log
+[User.RONB650nk] ¤ pwd
+/home/mobaxterm/log
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:57.55]  ~/log
+[User.RONB650nk] ¤ cd ..
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:57.58]  ~
+[User.RONB650nk] ¤ ls
+2015_10                   2015_12                   Desktop                   LauncherFolder            bla.html                  log                       minicom.log               workspace-pivka-senzorji
+2015_11                   :q!                       K01201512010200.G445      MyDocuments               index.html                marko.txt                 test
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:57.59]  ~
+[User.RONB650nk] ¤
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:58.00]  ~
+[User.RONB650nk] ¤ tar l f Desktop/
+~$Nikola_Ure_ ARSO_2016.xlsx        desktop.ini                         IP Changer/                         Old Firefox Data/                   Snipping Tool.lnk
+Android Studio.lnk                  DRUGI PROJEKTI - NOVI/              ipkg/                               Paint.lnk                           unused shortcuts/
+Caesium.lnk                         FastIPChangerV1.7/                  Microsoft Excel 2010.lnk            PRESTA_PREGLED.xlsx                 WIKI_links.txt - Shortcut.lnk
+Calculator.lnk                      Git Shell.lnk                       Microsoft Word 2010.lnk             razno/                              XnView.lnk
+catch_22.pdf                        GitHub.appref-ms                    Nikola_Ure_ ARSO_2016.xlsx          Simply Modbus Master 7.1.2.lnk
+cpp                                 hyperterminal/                      NPort Administrator.lnk             Simply Modbus Slave 7.1.lnk
+debugLOGtemp.tar.gz                 IOServer.lnk                        OdpravaPripomb.xls                  Simply Modbus TCP Client 7.1.2.lnk
+
+[2017-09-14 09:58.00]  ~
+[User.RONB650nk] ¤ tar l f Desktop/de
+debugLOGtemp.tar.gz  desktop.ini
+
+[2017-09-14 09:58.00]  ~
+[User.RONB650nk] ¤ tar l f Desktop/debugLOGtemp.tar.gz
+busybox: unknown option -- l
+BusyBox v1.22.1 (2014-09-26 07:33:17 CEST) multi-call binary.
+
+Usage: tar -[cxtZzJjahmvO] [-X FILE] [-T FILE] [-f TARFILE] [-C DIR] [FILE]...
+
+Create, extract, or list files from a tar file
+
+Operation:
+        c       Create
+        x       Extract
+        t       List
+        f       Name of TARFILE ('-' for stdin/out)
+        C       Change to DIR before operation
+        v       Verbose
+        Z       (De)compress using compress
+        z       (De)compress using gzip
+        J       (De)compress using xz
+        j       (De)compress using bzip2
+        a       (De)compress using lzma
+        O       Extract to stdout
+        h       Follow symlinks
+        m       Don't restore mtime
+        exclude File to exclude
+        X       File with names to exclude
+        T       File with names to include
+
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:58.53]  ~
+[User.RONB650nk] ¤ tar -l Desktop/debugLOGtemp.tar.gz
+busybox: unknown option -- l
+BusyBox v1.22.1 (2014-09-26 07:33:17 CEST) multi-call binary.
+
+Usage: tar -[cxtZzJjahmvO] [-X FILE] [-T FILE] [-f TARFILE] [-C DIR] [FILE]...
+
+Create, extract, or list files from a tar file
+
+Operation:
+        c       Create
+        x       Extract
+        t       List
+        f       Name of TARFILE ('-' for stdin/out)
+        C       Change to DIR before operation
+        v       Verbose
+        Z       (De)compress using compress
+        z       (De)compress using gzip
+        J       (De)compress using xz
+        j       (De)compress using bzip2
+        a       (De)compress using lzma
+        O       Extract to stdout
+        h       Follow symlinks
+        m       Don't restore mtime
+        exclude File to exclude
+        X       File with names to exclude
+        T       File with names to include
+
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:59.18]  ~
+[User.RONB650nk] ¤ tar -l -f Desktop/debugLOGtemp.tar.gz
+busybox: unknown option -- l
+BusyBox v1.22.1 (2014-09-26 07:33:17 CEST) multi-call binary.
+
+Usage: tar -[cxtZzJjahmvO] [-X FILE] [-T FILE] [-f TARFILE] [-C DIR] [FILE]...
+
+Create, extract, or list files from a tar file
+
+Operation:
+        c       Create
+        x       Extract
+        t       List
+        f       Name of TARFILE ('-' for stdin/out)
+        C       Change to DIR before operation
+        v       Verbose
+        Z       (De)compress using compress
+        z       (De)compress using gzip
+        J       (De)compress using xz
+        j       (De)compress using bzip2
+        a       (De)compress using lzma
+        O       Extract to stdout
+        h       Follow symlinks
+        m       Don't restore mtime
+        exclude File to exclude
+        X       File with names to exclude
+        T       File with names to include
+
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:59.39]  ~
+[User.RONB650nk] ¤
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:59.40]  ~
+[User.RONB650nk] ¤ ls log/
+auth.log       auth.log.2.gz  dmesg.1.gz     kern.log.3.gz  lpr.log        messages       messages.4.gz  pppstatus      syslog.4.gz    syslog.6.gz
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 10:00.01]  ~
+[User.RONB650nk] ¤

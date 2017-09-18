@@ -1,0 +1,1998 @@
+     ······································································
+     ·                " MobaXterm Personal Edition v7.3 "                 ·
+     ·            (X server, SSH client and GNU/Cygwin tools)             ·
+     ·                                                                    ·
+     · ¤ Your computer drives are accessible through the /drives path     ·
+     · ¤ Your DISPLAY is set to 172.19.19.67:0.0                          ·
+     · ¤ When using SSH, your remote DISPLAY is automatically forwarded   ·
+     · ¤ Each command status is specified by a special symbol (· or ·)    ·
+     ·                                                                    ·
+     · " Important:                                                       ·
+     · This is MobaXterm Personal Edition. The Professional edition       ·
+     · allows you to customize MobaXterm for your company: you can add    ·
+     · your own logo, your parameters, your welcome message and generate  ·
+     · either an MSI installation package or a portable executable.       ·
+     · We can also modify MobaXterm or develop the plugins you need.      ·
+     · For more information: http://mobaxterm.mobatek.net/versions.php    ·
+     ······································································
+
+[2017-09-14 09:24.21]  ~
+[User.RONB650nk] ¤ ssh root@172/
+_ssh: Could not resolve hostname 172/: Name or service not known
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 09:26.27]  ~
+[User.RONB650nk] ¤ ssh root@172.19.161.156
+root@172.19.161.156's password:
+X11 forwarding request failed on channel 0
+Linux debian 2.6.35.7-nanosg20 #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013 armv5tejl
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Thu Sep 14 08:23:04 2017
+debian:~# telnet localhost 60000
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Welcome to the CLI terminal. Type 'help' for help on commands.
+
+jmd(60000)>get ta
+14/09/2017      08:27:30.0      cpu_0:60001:mbio120d
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   0x8000  493     cm      level_diffPressure
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   0x8000  13.3    st.C    water_temperature
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   0x8000  729     uS/cm   water_conductivity
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   0x8000  13.8    V       dc_voltage
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   0x8000  24.3    st.C    ams_temperature
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   0x8000  62      %rH     ams_rel_humidity
+S5001   ch07@cpu_0:60001        004@0001.12.99.30.004   0x8000  1       Din     door_status
+jmd(60000)>Connection closed by foreign host.
+debian:~# cd /var/lo
+local/ lock/  log/
+debian:~# cd /var/lo
+local/ lock/  log/
+debian:~# cd /var/log/
+debian:/var/log# ls
+apt            auth.log.4.gz  daemon.log       debug.2.gz  dmesg.1.gz  dpkg.log.1  kern.log.2.gz  mail.err   messages.1        network_sync.log.1  rc.local.log  syslog.4.gz  user.log.1
+auth.log       boot           daemon.log.1     debug.3.gz  dmesg.2.gz  faillog     kern.log.3.gz  mail.info  messages.2.gz     news                syslog        syslog.5.gz  user.log.2.gz
+auth.log.1     bootstrap.log  daemon.log.2.gz  debug.4.gz  dmesg.3.gz  fsck        kern.log.4.gz  mail.log   messages.3.gz     ppp-connect-errors  syslog.1      syslog.6.gz  wtmp
+auth.log.2.gz  btmp           debug            dmesg       dmesg.4.gz  kern.log    lastlog        mail.warn  messages.4.gz     ppp_install.log     syslog.2.gz   syslog.7.gz  wtmp.1
+auth.log.3.gz  btmp.1         debug.1          dmesg.0     dpkg.log    kern.log.1  lpr.log        messages   network_sync.log  pppstatus           syslog.3.gz   user.log
+debian:/var/log# tail -n 100 dmesg
+      .data : 0xc03ee000 - 0xc0415f00   ( 160 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptable hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:192
+AT91: 96 gpio irqs in 3 banks
+Console: colour dummy device 80x30
+Calibrating delay loop... 197.83 BogoMIPS (lpj=989184)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+devtmpfs: initialized
+NET: Registered protocol family 16
+AT91: Power Management (with slow clock mode)
+AT91: Starting after power-restored wakeup
+tcb_clksrc: tc0 at 16.012 MHz
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource tcb_clksrc
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+audit: initializing netlink socket (disabled)
+type=2000 audit(0.300:1): initialized
+msgmni has been set to 245
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler cfq registered (default)
+atmel_usart.0: ttyS0 at MMIO 0xfefff200 (irq = 1) is a ATMEL_SERIAL
+atmel_usart.1: ttyS1 at MMIO 0xfffb0000 (irq = 6) is a ATMEL_SERIAL
+console [ttyS1] enabled
+atmel_usart.2: ttyS2 at MMIO 0xfffb4000 (irq = 7) is a ATMEL_SERIAL
+atmel_usart.3: ttyS3 at MMIO 0xfffb8000 (irq = 8) is a ATMEL_SERIAL
+loop: module loaded
+NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit)
+Scanning device for bad blocks
+3 cmdlinepart partitions found on MTD device atmel_nand
+Creating 3 MTD partitions on "atmel_nand":
+0x000000000000-0x000000020000 : "bootstrap"
+0x000000020000-0x000000300000 : "boot"
+0x000000300000-0x000020000000 : "ubi"
+MACB_mii_bus: probed
+eth0: Atmel MACB at 0xfffc4000 irq 21 (00:60:35:19:2c:3b)
+eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=ffffffff:01, irq=-1)
+usbmon: debugfs is not available
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+at91_ohci at91_ohci: AT91 OHCI
+at91_ohci at91_ohci: new USB bus registered, assigned bus number 1
+at91_ohci at91_ohci: irq 20, io mem 0x00500000
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mice: PS/2 mouse device common for all mice
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+rtc-at91sam9 at91_rtt.0: rtc core: registered at91_rtt as rtc0
+i2c /dev entries driver
+Driver for 1-wire Dallas network protocol.
+AT91SAM9 Watchdog enabled (heartbeat=15 sec, nowayout=0)
+Linux telephony interface: v1.00
+cpuidle: using governor ladder
+cpuidle: using governor menu
+Registered led device: LED1
+Registered led device: LED2
+Registered led device: LED3
+Registered led device: LED4
+TCP cubic registered
+NET: Registered protocol family 17
+rtc-at91sam9 at91_rtt.0: setting system clock to 2017-09-14 07:19:32 UTC (1505373572)
+Waiting for root device /dev/mmcblk0p1...
+mmc0: host does not support reading read-only switch. assuming write-enable.
+mmc0: new SDHC card at address b368
+mmcblk0: mmc0:b368 USD   7.45 GiB
+ mmcblk0: p1
+w1_master_driver w1 bus master: Family 89 for 89.5e700dda93c9.d3 is not registered.
+EXT3-fs: barriers not enabled
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs (mmcblk0p1): using internal journal
+EXT3-fs (mmcblk0p1): mounted filesystem with writeback data mode
+VFS: Mounted root (ext3 filesystem) on device 179:1.
+devtmpfs: mounted
+Freeing init memory: 124K
+udc: at91_udc version 3 May 2006
+atmel_spi atmel_spi.0: Atmel SPI Controller at 0xfffc8000 (irq 12)
+i2c-gpio i2c-gpio: using pins 55 (SDA) and 56 (SCL)
+atmel_spi atmel_spi.1: Atmel SPI Controller at 0xfffcc000 (irq 13)
+debian:/var/log# head -n 100 dmesg.0
+Linux version 2.6.35.7-nanosg20 (cglind@gieselher) (gcc version 4.3.5 (Debian 4.3.5-4) ) #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: NanosG20
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 32768
+free_area_init_node: node 0, pgdat c04157b8, node_mem_map c042f000
+  Normal zone: 256 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 32512 pages, LIFO batch:7
+Clocks: CPU 396 MHz, master 132 MHz, main 18.432 MHz
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Kernel command line: mtdparts=atmel_nand:128k(bootstrap),2944k(boot),-(ubi) console=ttyS1,115200 mmc_core.removable=0 root=/dev/mmcblk0p1 rootwait
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 128MB = 128MB total
+Memory: 125660k/125660k available, 5412k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+    vmalloc : 0xc8800000 - 0xfee00000   ( 870 MB)
+    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc0027000   ( 124 kB)
+      .text : 0xc0027000 - 0xc03ee000   (3868 kB)
+      .data : 0xc03ee000 - 0xc0415f00   ( 160 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptable hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:192
+AT91: 96 gpio irqs in 3 banks
+Console: colour dummy device 80x30
+Calibrating delay loop... 197.83 BogoMIPS (lpj=989184)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+devtmpfs: initialized
+NET: Registered protocol family 16
+AT91: Power Management (with slow clock mode)
+AT91: Starting after watchdog reset
+tcb_clksrc: tc0 at 16.012 MHz
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource tcb_clksrc
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+audit: initializing netlink socket (disabled)
+type=2000 audit(0.300:1): initialized
+msgmni has been set to 245
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler cfq registered (default)
+atmel_usart.0: ttyS0 at MMIO 0xfefff200 (irq = 1) is a ATMEL_SERIAL
+atmel_usart.1: ttyS1 at MMIO 0xfffb0000 (irq = 6) is a ATMEL_SERIAL
+console [ttyS1] enabled
+atmel_usart.2: ttyS2 at MMIO 0xfffb4000 (irq = 7) is a ATMEL_SERIAL
+atmel_usart.3: ttyS3 at MMIO 0xfffb8000 (irq = 8) is a ATMEL_SERIAL
+loop: module loaded
+NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit)
+Scanning device for bad blocks
+3 cmdlinepart partitions found on MTD device atmel_nand
+Creating 3 MTD partitions on "atmel_nand":
+0x000000000000-0x000000020000 : "bootstrap"
+0x000000020000-0x000000300000 : "boot"
+0x000000300000-0x000020000000 : "ubi"
+MACB_mii_bus: probed
+eth0: Atmel MACB at 0xfffc4000 irq 21 (00:60:35:19:2c:3b)
+eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=ffffffff:01, irq=-1)
+usbmon: debugfs is not available
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+at91_ohci at91_ohci: AT91 OHCI
+at91_ohci at91_ohci: new USB bus registered, assigned bus number 1
+at91_ohci at91_ohci: irq 20, io mem 0x00500000
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mice: PS/2 mouse device common for all mice
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+rtc-at91sam9 at91_rtt.0: rtc core: registered at91_rtt as rtc0
+i2c /dev entries driver
+Driver for 1-wire Dallas network protocol.
+AT91SAM9 Watchdog enabled (heartbeat=15 sec, nowayout=0)
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log# head -n 100 dmesg.0
+Linux version 2.6.35.7-nanosg20 (cglind@gieselher) (gcc version 4.3.5 (Debian 4.3.5-4) ) #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: NanosG20
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 32768
+free_area_init_node: node 0, pgdat c04157b8, node_mem_map c042f000
+  Normal zone: 256 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 32512 pages, LIFO batch:7
+Clocks: CPU 396 MHz, master 132 MHz, main 18.432 MHz
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Kernel command line: mtdparts=atmel_nand:128k(bootstrap),2944k(boot),-(ubi) console=ttyS1,115200 mmc_core.removable=0 root=/dev/mmcblk0p1 rootwait
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 128MB = 128MB total
+Memory: 125660k/125660k available, 5412k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+    vmalloc : 0xc8800000 - 0xfee00000   ( 870 MB)
+    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc0027000   ( 124 kB)
+      .text : 0xc0027000 - 0xc03ee000   (3868 kB)
+      .data : 0xc03ee000 - 0xc0415f00   ( 160 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Preemptable hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:192
+AT91: 96 gpio irqs in 3 banks
+Console: colour dummy device 80x30
+Calibrating delay loop... 197.83 BogoMIPS (lpj=989184)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+devtmpfs: initialized
+NET: Registered protocol family 16
+AT91: Power Management (with slow clock mode)
+AT91: Starting after watchdog reset
+tcb_clksrc: tc0 at 16.012 MHz
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Switching to clocksource tcb_clksrc
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+audit: initializing netlink socket (disabled)
+type=2000 audit(0.300:1): initialized
+msgmni has been set to 245
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler cfq registered (default)
+atmel_usart.0: ttyS0 at MMIO 0xfefff200 (irq = 1) is a ATMEL_SERIAL
+atmel_usart.1: ttyS1 at MMIO 0xfffb0000 (irq = 6) is a ATMEL_SERIAL
+console [ttyS1] enabled
+atmel_usart.2: ttyS2 at MMIO 0xfffb4000 (irq = 7) is a ATMEL_SERIAL
+atmel_usart.3: ttyS3 at MMIO 0xfffb8000 (irq = 8) is a ATMEL_SERIAL
+loop: module loaded
+NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit)
+Scanning device for bad blocks
+3 cmdlinepart partitions found on MTD device atmel_nand
+Creating 3 MTD partitions on "atmel_nand":
+0x000000000000-0x000000020000 : "bootstrap"
+0x000000020000-0x000000300000 : "boot"
+0x000000300000-0x000020000000 : "ubi"
+MACB_mii_bus: probed
+eth0: Atmel MACB at 0xfffc4000 irq 21 (00:60:35:19:2c:3b)
+eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=ffffffff:01, irq=-1)
+usbmon: debugfs is not available
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+at91_ohci at91_ohci: AT91 OHCI
+at91_ohci at91_ohci: new USB bus registered, assigned bus number 1
+at91_ohci at91_ohci: irq 20, io mem 0x00500000
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mice: PS/2 mouse device common for all mice
+input: gpio-keys as /devices/platform/gpio-keys/input/input0
+rtc-at91sam9 at91_rtt.0: rtc core: registered at91_rtt as rtc0
+i2c /dev entries driver
+Driver for 1-wire Dallas network protocol.
+AT91SAM9 Watchdog enabled (heartbeat=15 sec, nowayout=0)
+debian:/var/log#
+debian:/var/log#
+debian:/var/log# ls -l dmesg*
+-rw-r----- 1 root adm 5831 sep 14 08:19 dmesg
+-rw-r----- 1 root adm 6904 jul 24 20:25 dmesg.0
+-rw-r----- 1 root adm 2732 sep 22  2015 dmesg.1.gz
+-rw-r----- 1 root adm 2731 sep 22  2015 dmesg.2.gz
+-rw-r----- 1 root adm 2731 jul  3  2015 dmesg.3.gz
+-rw-r----- 1 root adm 2731 jul  3  2015 dmesg.4.gz
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log# ld /l
+-bash: ld: command not found
+debian:/var/log# ld -l
+-bash: ld: command not found
+debian:/var/log# ls -l
+skupno 18956
+drwxr-xr-x 2 root root     4096 maj 13  2010 apt
+-rw-r----- 1 root adm    137165 sep 14 08:31 auth.log
+-rw-r----- 1 root adm    137745 avg 27 06:25 auth.log.1
+-rw-r----- 1 root adm      8870 avg 20 06:25 auth.log.2.gz
+-rw-r----- 1 root adm      8899 avg 13 06:25 auth.log.3.gz
+-rw-r----- 1 root adm      8925 avg  6 06:25 auth.log.4.gz
+-rw-r----- 1 root adm        31 okt 11  2010 boot
+-rw-r--r-- 1 root root   195963 okt 11  2010 bootstrap.log
+-rw-rw---- 1 root utmp        0 sep  1 06:25 btmp
+-rw-rw---- 1 root utmp        0 avg  1 06:25 btmp.1
+-rw-r----- 1 root adm         0 sep 23  2015 daemon.log
+-rw-r----- 1 root adm       145 sep 22  2015 daemon.log.1
+-rw-r----- 1 root adm      4622 jun 19  2015 daemon.log.2.gz
+-rw-r----- 1 root adm    239865 sep 14 08:20 debug
+-rw-r----- 1 root adm    263861 avg 27 05:37 debug.1
+-rw-r----- 1 root adm     23178 avg 20 06:11 debug.2.gz
+-rw-r----- 1 root adm     25264 avg 13 05:02 debug.3.gz
+-rw-r----- 1 root adm     29113 avg  6 05:20 debug.4.gz
+-rw-r----- 1 root adm      5831 sep 14 08:19 dmesg
+-rw-r----- 1 root adm      6904 jul 24 20:25 dmesg.0
+-rw-r----- 1 root adm      2732 sep 22  2015 dmesg.1.gz
+-rw-r----- 1 root adm      2731 sep 22  2015 dmesg.2.gz
+-rw-r----- 1 root adm      2731 jul  3  2015 dmesg.3.gz
+-rw-r----- 1 root adm      2731 jul  3  2015 dmesg.4.gz
+-rw-r----- 1 root adm         0 jul  1  2015 dpkg.log
+-rw-r----- 1 root adm     95413 sep  7  1929 dpkg.log.1
+-rw-r--r-- 1 root root    24024 sep 14 08:31 faillog
+drwxr-xr-x 2 root root     4096 okt 11  2010 fsck
+-rw-r----- 1 root adm    237879 sep 14 08:20 kern.log
+-rw-r----- 1 root adm    209964 avg 27 06:25 kern.log.1
+-rw-r----- 1 root adm     19477 avg 20 06:25 kern.log.2.gz
+-rw-r----- 1 root adm     21288 avg 13 06:25 kern.log.3.gz
+-rw-r----- 1 root adm     25201 avg  6 06:25 kern.log.4.gz
+-rw-rw-r-- 1 root utmp   292292 sep 14 08:31 lastlog
+-rw-r----- 1 root adm         0 jun 10  2013 lpr.log
+-rw-r----- 1 root adm         0 jun 10  2013 mail.err
+-rw-r----- 1 root adm         0 jun 10  2013 mail.info
+-rw-r----- 1 root adm         0 jun 10  2013 mail.log
+-rw-r----- 1 root adm         0 jun 10  2013 mail.warn
+-rw-r----- 1 root adm    400820 sep 14 08:20 messages
+-rw-r----- 1 root adm    388939 avg 27 06:25 messages.1
+-rw-r----- 1 root adm     38654 avg 20 06:25 messages.2.gz
+-rw-r----- 1 root adm     41847 avg 13 06:25 messages.3.gz
+-rw-r----- 1 root adm     48277 avg  6 06:25 messages.4.gz
+-rw-r--r-- 1 root root  5671319 sep 14 08:30 network_sync.log
+-rw-r--r-- 1 root root 10486074 maj 20 12:20 network_sync.log.1
+drwxr-xr-x 2 root root     4096 jun 10  2013 news
+-rw-r--r-- 1 root root        0 jan 10  1912 ppp-connect-errors
+-rw-r--r-- 1 root root      522 sep 22  2015 ppp_install.log
+drwxr-xr-x 2 root root     4096 dec 15  2007 pppstatus
+-rw-r--r-- 1 root root     2678 sep 14 08:21 rc.local.log
+-rw-r----- 1 root adm     81245 sep 14 08:30 syslog
+-rw-r----- 1 root adm    178038 sep  2 06:25 syslog.1
+-rw-r----- 1 root adm     14208 sep  1 06:25 syslog.2.gz
+-rw-r----- 1 root adm     13285 avg 31 06:25 syslog.3.gz
+-rw-r----- 1 root adm     12029 avg 30 06:25 syslog.4.gz
+-rw-r----- 1 root adm     11254 avg 29 06:25 syslog.5.gz
+-rw-r----- 1 root adm     16722 avg 28 06:25 syslog.6.gz
+-rw-r----- 1 root adm     15843 avg 27 06:25 syslog.7.gz
+-rw-r----- 1 root adm         0 sep 23  2015 user.log
+-rw-r----- 1 root adm        74 sep 22  2015 user.log.1
+-rw-r----- 1 root adm       259 jun 19  2015 user.log.2.gz
+-rw-rw-r-- 1 root utmp    21888 sep 14 08:31 wtmp
+-rw-rw-r-- 1 root utmp        0 avg  1 06:25 wtmp.1
+debian:/var/log#
+debian:/var/log#
+debian:/var/log# tail kernel.log.1
+tail: datotek »kernel.log.1« ni mogo·e odpreti za branje: No such file or directory
+debian:/var/log# tail kern.log.1
+Aug 27 03:10:06 localhost kernel: Swap cache stats: add 0, delete 0, find 0/0
+Aug 27 03:10:06 localhost kernel: Free swap  = 0kB
+Aug 27 03:10:06 localhost kernel: Total swap = 0kB
+Aug 27 03:10:06 localhost kernel: 32768 pages of RAM
+Aug 27 03:10:06 localhost kernel: 947 free pages
+Aug 27 03:10:06 localhost kernel: 1322 reserved pages
+Aug 27 03:10:06 localhost kernel: 1113 slab pages
+Aug 27 03:10:06 localhost kernel: 25917 pages shared
+Aug 27 03:10:06 localhost kernel: 0 pages swap cached
+Aug 27 06:25:03 localhost kernel: imklog 3.18.6, log source = /proc/kmsg started.
+debian:/var/log#
+debian:/var/log# head /n 200 messages
+head: datotek »/n« ni mogo·e odpreti za branje: No such file or directory
+head: datotek »200« ni mogo·e odpreti za branje: No such file or directory
+==> messages <==
+Aug 27 06:25:04 localhost kernel: imklog 3.18.6, log source = /proc/kmsg started.
+Aug 27 06:25:04 localhost rsyslogd: [origin software="rsyslogd" swVersion="3.18.6" x-pid="1027" x-info="http://www.rsyslog.com"] restart
+Aug 27 08:01:50 localhost pppd[4696]: No response to 4 echo-requests
+Aug 27 08:01:50 localhost pppd[4696]: Serial link appears to be disconnected.
+Aug 27 08:01:50 localhost pppd[4696]: Connect time 291.7 minutes.
+Aug 27 08:01:50 localhost pppd[4696]: Sent 557310 bytes, received 252885 bytes.
+Aug 27 08:01:53 localhost pppd[4696]: Connection terminated.
+Aug 27 08:01:54 localhost pppd[4696]: Exit.
+Aug 27 08:10:03 localhost pppd[6540]: pppd 2.4.4 started by root, uid 0
+Aug 27 08:10:04 localhost chat[6547]: timeout set to 3 seconds
+debian:/var/log#
+debian:/var/log# tail -n 300 messages
+Sep  2 00:50:06 localhost kernel: Mem-info:
+Sep  2 00:50:06 localhost kernel: Normal per-cpu:
+Sep  2 00:50:06 localhost kernel: CPU    0: hi:   42, btch:   7 usd:   0
+Sep  2 00:50:06 localhost kernel: active_anon:1815 inactive_anon:2319 isolated_anon:0
+Sep  2 00:50:06 localhost kernel: active_file:12276 inactive_file:12294 isolated_file:0
+Sep  2 00:50:06 localhost kernel: unevictable:0 dirty:34 writeback:0 unstable:0
+Sep  2 00:50:06 localhost kernel: free:738 slab_reclaimable:829 slab_unreclaimable:533
+Sep  2 00:50:06 localhost kernel: mapped:817 shmem:127 pagetables:107 bounce:0
+Sep  2 00:50:06 localhost kernel: Normal free:2952kB min:1440kB low:1800kB high:2160kB active_anon:7260kB inactive_anon:9276kB active_file:49104kB inactive_file:49176kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:130048kB mlocked:0kB dirty:136kB writeback:0kB mapped:3268kB shmem:508kB slab_reclaimable:3316kB slab_unreclaimable:2132kB kernel_stack:504kB pagetables:428kB unstable:0kB bounce:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? no
+Sep  2 00:50:06 localhost kernel: lowmem_reserve[]: 0 0
+Sep  2 00:50:06 localhost kernel: Normal: 108*4kB 155*8kB 70*16kB 1*32kB 2*64kB 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 2952kB
+Sep  2 00:50:06 localhost kernel: 24697 total pagecache pages
+Sep  2 00:50:06 localhost kernel: 0 pages in swap cache
+Sep  2 00:50:06 localhost kernel: Swap cache stats: add 0, delete 0, find 0/0
+Sep  2 00:50:06 localhost kernel: Free swap  = 0kB
+Sep  2 00:50:06 localhost kernel: Total swap = 0kB
+Sep  2 00:50:06 localhost kernel: 32768 pages of RAM
+Sep  2 00:50:06 localhost kernel: 882 free pages
+Sep  2 00:50:06 localhost kernel: 1322 reserved pages
+Sep  2 00:50:06 localhost kernel: 1114 slab pages
+Sep  2 00:50:06 localhost kernel: 25443 pages shared
+Sep  2 00:50:06 localhost kernel: 0 pages swap cached
+Sep  2 00:50:06 localhost pppd[25067]: PAP authentication succeeded
+Sep  2 00:50:13 localhost pppd[25067]: Could not determine remote IP address: defaulting to 10.64.64.64
+Sep  2 00:50:13 localhost pppd[25067]: local  IP address 172.19.161.156
+Sep  2 00:50:13 localhost pppd[25067]: remote IP address 10.64.64.64
+Sep  2 00:53:42 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 01:21:33 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 01:27:07 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 01:46:08 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 02:26:57 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 02:30:10 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 03:26:20 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 04:39:17 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 06:25:03 localhost kernel: imklog 3.18.6, log source = /proc/kmsg started.
+Sep  2 06:25:03 localhost rsyslogd: [origin software="rsyslogd" swVersion="3.18.6" x-pid="1027" x-info="http://www.rsyslog.com"] restart
+Sep  2 07:09:53 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 07:15:23 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 07:42:45 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 08:07:01 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 08:35:27 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 10:00:13 localhost kernel: Modules linked in: ppp_deflate bsd_comp ppp_async crc_ccitt ppp_generic slhc ipv6 spidev i2c_gpio i2c_algo_bit at91_udc atmel_spi
+Sep  2 10:00:13 localhost kernel: CPU: 0    Not tainted  (2.6.35.7-nanosg20 #1)
+Sep  2 10:00:13 localhost kernel: PC is at journal_grab_journal_head+0x28/0x70
+Sep  2 10:00:13 localhost kernel: LR is at journal_try_to_free_buffers+0x58/0x17c
+Sep  2 10:00:13 localhost kernel: pc : [<c0147bd8>]    lr : [<c01425c8>]    psr: 00000013
+Sep  2 10:00:13 localhost kernel: sp : c2775b60  ip : c2775b78  fp : c2775b74
+Sep  2 10:00:13 localhost kernel: r10: 00000000  r9 : c2775d68  r8 : 00000000
+Sep  2 10:00:13 localhost kernel: r7 : c7940508  r6 : c0467d80  r5 : c2774000  r4 : 00000508
+Sep  2 10:00:13 localhost kernel: r3 : 00000001  r2 : c2774000  r1 : 00000508  r0 : 00000508
+Sep  2 10:00:13 localhost kernel: Flags: nzcv  IRQs on  FIQs on  Mode SVC_32  ISA ARM  Segment user
+Sep  2 10:00:13 localhost kernel: Control: 0005317f  Table: 22a20000  DAC: 00000015
+Sep  2 10:00:13 localhost kernel: Backtrace:
+Sep  2 10:00:13 localhost kernel: [<c0147bb0>] (journal_grab_journal_head+0x0/0x70) from [<c01425c8>] (journal_try_to_free_buffers+0x58/0x17c)
+Sep  2 10:00:13 localhost kernel: r4:00000508
+Sep  2 10:00:13 localhost kernel: [<c0142570>] (journal_try_to_free_buffers+0x0/0x17c) from [<c010511c>] (bdev_try_to_free_page+0x5c/0x74)
+Sep  2 10:00:13 localhost kernel: r8:c2775dbc r7:c0467d80 r6:000000d0 r5:c7c6c600 r4:c0467d80
+Sep  2 10:00:13 localhost kernel: [<c01050c0>] (bdev_try_to_free_page+0x0/0x74) from [<c00d4e4c>] (blkdev_releasepage+0x40/0x50)
+Sep  2 10:00:13 localhost kernel: r6:c78022cc r5:00000001 r4:c0467d98
+Sep  2 10:00:13 localhost kernel: [<c00d4e0c>] (blkdev_releasepage+0x0/0x50) from [<c0077e3c>] (try_to_release_page+0x58/0x70)
+Sep  2 10:00:13 localhost kernel: [<c0077de4>] (try_to_release_page+0x0/0x70) from [<c0085214>] (shrink_page_list+0x5f8/0x820)
+Sep  2 10:00:13 localhost kernel: [<c0084c1c>] (shrink_page_list+0x0/0x820) from [<c0085bf4>] (shrink_zone+0x7b8/0xcec)
+Sep  2 10:00:13 localhost kernel: [<c008543c>] (shrink_zone+0x0/0xcec) from [<c0086c64>] (try_to_free_pages+0x1c0/0x3a8)
+Sep  2 10:00:13 localhost kernel: [<c0086aa4>] (try_to_free_pages+0x0/0x3a8) from [<c007f5a8>] (__alloc_pages_nodemask+0x33c/0x540)
+Sep  2 10:00:13 localhost kernel: [<c007f26c>] (__alloc_pages_nodemask+0x0/0x540) from [<c007f7c4>] (__get_free_pages+0x18/0x44)
+Sep  2 10:00:13 localhost kernel: [<c007f7ac>] (__get_free_pages+0x0/0x44) from [<c002e3d0>] (get_pgd_slow+0x1c/0xe8)
+Sep  2 10:00:13 localhost kernel: [<c002e3b4>] (get_pgd_slow+0x0/0xe8) from [<c00364e0>] (mm_init+0x9c/0xdc)
+Sep  2 10:00:13 localhost kernel: r7:c2775fb0 r6:00000000 r5:c607a000 r4:c601e180
+Sep  2 10:00:13 localhost kernel: [<c0036444>] (mm_init+0x0/0xdc) from [<c0036564>] (mm_alloc+0x44/0x54)
+Sep  2 10:00:13 localhost kernel: r6:c16d0100 r5:c607a000 r4:c601e180
+Sep  2 10:00:13 localhost kernel: [<c0036520>] (mm_alloc+0x0/0x54) from [<c00ae614>] (bprm_mm_init+0x14/0x144)
+Sep  2 10:00:13 localhost kernel: r4:00000000
+Sep  2 10:00:13 localhost kernel: [<c00ae600>] (bprm_mm_init+0x0/0x144) from [<c00ae7e8>] (do_execve+0xa4/0x2dc)
+Sep  2 10:00:13 localhost kernel: [<c00ae744>] (do_execve+0x0/0x2dc) from [<c002ae4c>] (sys_execve+0x3c/0x5c)
+Sep  2 10:00:13 localhost kernel: [<c002ae10>] (sys_execve+0x0/0x5c) from [<c0027f40>] (ret_fast_syscall+0x0/0x2c)
+Sep  2 10:00:13 localhost kernel: r7:0000000b r6:000c9dc8 r5:000befe8 r4:000baa38
+Sep  2 10:00:13 localhost kernel: ---[ end trace fc98626678c1ed12 ]---
+Sep  2 10:00:13 localhost kernel: note: cron[28300] exited with preempt_count 1
+Sep  2 10:00:13 localhost kernel: Modules linked in: ppp_deflate bsd_comp ppp_async crc_ccitt ppp_generic slhc ipv6 spidev i2c_gpio i2c_algo_bit at91_udc atmel_spi
+Sep  2 10:00:13 localhost kernel: Backtrace:
+Sep  2 10:00:13 localhost kernel: [<c002b3f0>] (dump_backtrace+0x0/0x10c) from [<c0314874>] (dump_stack+0x18/0x1c)
+Sep  2 10:00:13 localhost kernel: r7:c2774000 r6:c7c24fd8 r5:c7c24e60 r4:00000000
+Sep  2 10:00:13 localhost kernel: [<c031485c>] (dump_stack+0x0/0x1c) from [<c0032fa8>] (__schedule_bug+0x54/0x60)
+Sep  2 10:00:13 localhost kernel: [<c0032f54>] (__schedule_bug+0x0/0x60) from [<c0314b1c>] (schedule+0x70/0x360)
+Sep  2 10:00:13 localhost kernel: r4:c2774000
+Sep  2 10:00:13 localhost kernel: [<c0314aac>] (schedule+0x0/0x360) from [<c0314f44>] (_cond_resched+0x3c/0x58)
+Sep  2 10:00:13 localhost kernel: [<c0314f08>] (_cond_resched+0x0/0x58) from [<c0090f04>] (unmap_vmas+0x5c8/0x69c)
+Sep  2 10:00:13 localhost kernel: r4:c043dd60
+Sep  2 10:00:13 localhost kernel: [<c009093c>] (unmap_vmas+0x0/0x69c) from [<c0093d00>] (exit_mmap+0xc0/0x1e8)
+Sep  2 10:00:13 localhost kernel: [<c0093c40>] (exit_mmap+0x0/0x1e8) from [<c00366c8>] (mmput+0x40/0x114)
+Sep  2 10:00:13 localhost kernel: r7:c601e634 r6:c601e600 r5:00000000 r4:c601e600
+Sep  2 10:00:13 localhost kernel: [<c0036688>] (mmput+0x0/0x114) from [<c003ac44>] (exit_mm+0x14c/0x158)
+Sep  2 10:00:13 localhost kernel: r5:c7c24e60 r4:c2774000
+Sep  2 10:00:13 localhost kernel: [<c003aaf8>] (exit_mm+0x0/0x158) from [<c003c734>] (do_exit+0x1b4/0x6b0)
+Sep  2 10:00:13 localhost kernel: r7:c0147bdc r6:c7c24e60 r5:c277594f r4:0000000b
+Sep  2 10:00:13 localhost kernel: [<c003c580>] (do_exit+0x0/0x6b0) from [<c002b7ec>] (die+0x2f0/0x330)
+Sep  2 10:00:13 localhost kernel: [<c002b4fc>] (die+0x0/0x330) from [<c002ced0>] (__do_kernel_fault+0x70/0x90)
+Sep  2 10:00:13 localhost kernel: [<c002ce60>] (__do_kernel_fault+0x0/0x90) from [<c002d0d4>] (do_page_fault+0x1e4/0x1fc)
+Sep  2 10:00:13 localhost kernel: r8:00000017 r7:c601e600 r6:00000508 r5:c7c24e60 r4:c03f26b0
+Sep  2 10:00:13 localhost kernel: [<c002cef0>] (do_page_fault+0x0/0x1fc) from [<c00272e4>] (do_DataAbort+0x3c/0x9c)
+Sep  2 10:00:13 localhost kernel: [<c00272a8>] (do_DataAbort+0x0/0x9c) from [<c0027aec>] (__dabt_svc+0x4c/0x60)
+Sep  2 10:00:13 localhost kernel: Exception stack(0xc2775b18 to 0xc2775b60)
+Sep  2 10:00:13 localhost kernel: 5b00:                                                       00000508 00000508
+Sep  2 10:00:13 localhost kernel: 5b20: c2774000 00000001 00000508 c2774000 c0467d80 c7940508 00000000 c2775d68
+Sep  2 10:00:13 localhost kernel: 5b40: 00000000 c2775b74 c2775b78 c2775b60 c01425c8 c0147bd8 00000013 ffffffff
+Sep  2 10:00:13 localhost kernel: r8:00000000 r7:c7940508 r6:c0467d80 r5:c2775b4c r4:ffffffff
+Sep  2 10:00:13 localhost kernel: [<c0147bb0>] (journal_grab_journal_head+0x0/0x70) from [<c01425c8>] (journal_try_to_free_buffers+0x58/0x17c)
+Sep  2 10:00:13 localhost kernel: r4:00000508
+Sep  2 10:00:13 localhost kernel: [<c0142570>] (journal_try_to_free_buffers+0x0/0x17c) from [<c010511c>] (bdev_try_to_free_page+0x5c/0x74)
+Sep  2 10:00:13 localhost kernel: r8:c2775dbc r7:c0467d80 r6:000000d0 r5:c7c6c600 r4:c0467d80
+Sep  2 10:00:13 localhost kernel: [<c01050c0>] (bdev_try_to_free_page+0x0/0x74) from [<c00d4e4c>] (blkdev_releasepage+0x40/0x50)
+Sep  2 10:00:13 localhost kernel: r6:c78022cc r5:00000001 r4:c0467d98
+Sep  2 10:00:13 localhost kernel: [<c00d4e0c>] (blkdev_releasepage+0x0/0x50) from [<c0077e3c>] (try_to_release_page+0x58/0x70)
+Sep  2 10:00:13 localhost kernel: [<c0077de4>] (try_to_release_page+0x0/0x70) from [<c0085214>] (shrink_page_list+0x5f8/0x820)
+Sep  2 10:00:13 localhost kernel: [<c0084c1c>] (shrink_page_list+0x0/0x820) from [<c0085bf4>] (shrink_zone+0x7b8/0xcec)
+Sep  2 10:00:13 localhost kernel: [<c008543c>] (shrink_zone+0x0/0xcec) from [<c0086c64>] (try_to_free_pages+0x1c0/0x3a8)
+Sep  2 10:00:13 localhost kernel: [<c0086aa4>] (try_to_free_pages+0x0/0x3a8) from [<c007f5a8>] (__alloc_pages_nodemask+0x33c/0x540)
+Sep  2 10:00:13 localhost kernel: [<c007f26c>] (__alloc_pages_nodemask+0x0/0x540) from [<c007f7c4>] (__get_free_pages+0x18/0x44)
+Sep  2 10:00:13 localhost kernel: [<c007f7ac>] (__get_free_pages+0x0/0x44) from [<c002e3d0>] (get_pgd_slow+0x1c/0xe8)
+Sep  2 10:00:13 localhost kernel: [<c002e3b4>] (get_pgd_slow+0x0/0xe8) from [<c00364e0>] (mm_init+0x9c/0xdc)
+Sep  2 10:00:13 localhost kernel: r7:c2775fb0 r6:00000000 r5:c607a000 r4:c601e180
+Sep  2 10:00:13 localhost kernel: [<c0036444>] (mm_init+0x0/0xdc) from [<c0036564>] (mm_alloc+0x44/0x54)
+Sep  2 10:00:13 localhost kernel: r6:c16d0100 r5:c607a000 r4:c601e180
+Sep  2 10:00:13 localhost kernel: [<c0036520>] (mm_alloc+0x0/0x54) from [<c00ae614>] (bprm_mm_init+0x14/0x144)
+Sep  2 10:00:13 localhost kernel: r4:00000000
+Sep  2 10:00:13 localhost kernel: [<c00ae600>] (bprm_mm_init+0x0/0x144) from [<c00ae7e8>] (do_execve+0xa4/0x2dc)
+Sep  2 10:00:13 localhost kernel: [<c00ae744>] (do_execve+0x0/0x2dc) from [<c002ae4c>] (sys_execve+0x3c/0x5c)
+Sep  2 10:00:13 localhost kernel: [<c002ae10>] (sys_execve+0x0/0x5c) from [<c0027f40>] (ret_fast_syscall+0x0/0x2c)
+Sep  2 10:00:13 localhost kernel: r7:0000000b r6:000c9dc8 r5:000befe8 r4:000baa38
+Sep  2 10:08:00 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 10:21:30 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 12:42:06 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 13:08:40 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 14:37:01 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 14:43:15 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 15:00:21 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xf3
+Sep  2 17:12:59 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:16:52 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:17:52 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:36:05 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:39:23 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:58:24 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep 14 08:19:49 localhost kernel: imklog 3.18.6, log source = /proc/kmsg started.
+Sep 14 08:19:49 localhost rsyslogd: [origin software="rsyslogd" swVersion="3.18.6" x-pid="1022" x-info="http://www.rsyslog.com"] restart
+Sep 14 08:19:49 localhost kernel: Linux version 2.6.35.7-nanosg20 (cglind@gieselher) (gcc version 4.3.5 (Debian 4.3.5-4) ) #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013
+Sep 14 08:19:49 localhost kernel: CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+Sep 14 08:19:49 localhost kernel: CPU: VIVT data cache, VIVT instruction cache
+Sep 14 08:19:49 localhost kernel: Machine: NanosG20
+Sep 14 08:19:49 localhost kernel: Memory policy: ECC disabled, Data cache writeback
+Sep 14 08:19:49 localhost kernel: Clocks: CPU 396 MHz, master 132 MHz, main 18.432 MHz
+Sep 14 08:19:49 localhost kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Sep 14 08:19:49 localhost kernel: Kernel command line: mtdparts=atmel_nand:128k(bootstrap),2944k(boot),-(ubi) console=ttyS1,115200 mmc_core.removable=0 root=/dev/mmcblk0p1 rootwait
+Sep 14 08:19:49 localhost kernel: PID hash table entries: 512 (order: -1, 2048 bytes)
+Sep 14 08:19:49 localhost kernel: Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Sep 14 08:19:49 localhost kernel: Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Sep 14 08:19:49 localhost kernel: Memory: 128MB = 128MB total
+Sep 14 08:19:49 localhost kernel: Memory: 125660k/125660k available, 5412k reserved, 0K highmem
+Sep 14 08:19:49 localhost kernel: Virtual kernel memory layout:
+Sep 14 08:19:49 localhost kernel:    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Sep 14 08:19:49 localhost kernel:    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Sep 14 08:19:49 localhost kernel:    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+Sep 14 08:19:49 localhost kernel:    vmalloc : 0xc8800000 - 0xfee00000   ( 870 MB)
+Sep 14 08:19:49 localhost kernel:    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+Sep 14 08:19:49 localhost kernel:    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+Sep 14 08:19:49 localhost kernel:      .init : 0xc0008000 - 0xc0027000   ( 124 kB)
+Sep 14 08:19:49 localhost kernel:      .text : 0xc0027000 - 0xc03ee000   (3868 kB)
+Sep 14 08:19:49 localhost kernel:      .data : 0xc03ee000 - 0xc0415f00   ( 160 kB)
+Sep 14 08:19:49 localhost kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Sep 14 08:19:49 localhost kernel: Preemptable hierarchical RCU implementation.
+Sep 14 08:19:49 localhost kernel:       RCU-based detection of stalled CPUs is disabled.
+Sep 14 08:19:49 localhost kernel:       Verbose stalled-CPUs detection is disabled.
+Sep 14 08:19:49 localhost kernel: NR_IRQS:192
+Sep 14 08:19:49 localhost kernel: AT91: 96 gpio irqs in 3 banks
+Sep 14 08:19:49 localhost kernel: Console: colour dummy device 80x30
+Sep 14 08:19:49 localhost kernel: Calibrating delay loop... 197.83 BogoMIPS (lpj=989184)
+Sep 14 08:19:49 localhost kernel: pid_max: default: 32768 minimum: 301
+Sep 14 08:19:49 localhost kernel: Mount-cache hash table entries: 512
+Sep 14 08:19:49 localhost kernel: CPU: Testing write buffer coherency: ok
+Sep 14 08:19:49 localhost kernel: devtmpfs: initialized
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 16
+Sep 14 08:19:49 localhost kernel: AT91: Power Management (with slow clock mode)
+Sep 14 08:19:49 localhost kernel: AT91: Starting after power-restored wakeup
+Sep 14 08:19:49 localhost kernel: bio: create slab <bio-0> at 0
+Sep 14 08:19:49 localhost kernel: SCSI subsystem initialized
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver usbfs
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver hub
+Sep 14 08:19:49 localhost kernel: usbcore: registered new device driver usb
+Sep 14 08:19:49 localhost kernel: Switching to clocksource tcb_clksrc
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 2
+Sep 14 08:19:49 localhost kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+Sep 14 08:19:49 localhost kernel: TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+Sep 14 08:19:49 localhost kernel: TCP: Hash tables configured (established 4096 bind 4096)
+Sep 14 08:19:49 localhost kernel: TCP reno registered
+Sep 14 08:19:49 localhost kernel: UDP hash table entries: 256 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 1
+Sep 14 08:19:49 localhost kernel: RPC: Registered udp transport module.
+Sep 14 08:19:49 localhost kernel: RPC: Registered tcp transport module.
+Sep 14 08:19:49 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Sep 14 08:19:49 localhost kernel: audit: initializing netlink socket (disabled)
+Sep 14 08:19:49 localhost kernel: type=2000 audit(0.300:1): initialized
+Sep 14 08:19:49 localhost kernel: msgmni has been set to 245
+Sep 14 08:19:49 localhost kernel: alg: No test for stdrng (krng)
+Sep 14 08:19:49 localhost kernel: io scheduler noop registered
+Sep 14 08:19:49 localhost kernel: io scheduler cfq registered (default)
+Sep 14 08:19:49 localhost kernel: atmel_usart.0: ttyS0 at MMIO 0xfefff200 (irq = 1) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: atmel_usart.1: ttyS1 at MMIO 0xfffb0000 (irq = 6) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: console [ttyS1] enabled
+Sep 14 08:19:49 localhost kernel: atmel_usart.2: ttyS2 at MMIO 0xfffb4000 (irq = 7) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: atmel_usart.3: ttyS3 at MMIO 0xfffb8000 (irq = 8) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: loop: module loaded
+Sep 14 08:19:49 localhost kernel: NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit)
+Sep 14 08:19:49 localhost kernel: Scanning device for bad blocks
+Sep 14 08:19:49 localhost kernel: 3 cmdlinepart partitions found on MTD device atmel_nand
+Sep 14 08:19:49 localhost kernel: Creating 3 MTD partitions on "atmel_nand":
+Sep 14 08:19:49 localhost kernel: 0x000000000000-0x000000020000 : "bootstrap"
+Sep 14 08:19:49 localhost kernel: 0x000000020000-0x000000300000 : "boot"
+Sep 14 08:19:49 localhost kernel: 0x000000300000-0x000020000000 : "ubi"
+Sep 14 08:19:49 localhost kernel: MACB_mii_bus: probed
+Sep 14 08:19:49 localhost kernel: eth0: Atmel MACB at 0xfffc4000 irq 21 (00:60:35:19:2c:3b)
+Sep 14 08:19:49 localhost kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=ffffffff:01, irq=-1)
+Sep 14 08:19:49 localhost kernel: usbmon: debugfs is not available
+Sep 14 08:19:49 localhost kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: AT91 OHCI
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: new USB bus registered, assigned bus number 1
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: irq 20, io mem 0x00500000
+Sep 14 08:19:49 localhost kernel: hub 1-0:1.0: USB hub found
+Sep 14 08:19:49 localhost kernel: hub 1-0:1.0: 2 ports detected
+Sep 14 08:19:49 localhost kernel: Initializing USB Mass Storage driver...
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver usb-storage
+Sep 14 08:19:49 localhost kernel: USB Mass Storage support registered.
+Sep 14 08:19:49 localhost kernel: mice: PS/2 mouse device common for all mice
+Sep 14 08:19:49 localhost kernel: input: gpio-keys as /devices/platform/gpio-keys/input/input0
+Sep 14 08:19:49 localhost kernel: rtc-at91sam9 at91_rtt.0: rtc core: registered at91_rtt as rtc0
+Sep 14 08:19:49 localhost kernel: i2c /dev entries driver
+Sep 14 08:19:49 localhost kernel: Driver for 1-wire Dallas network protocol.
+Sep 14 08:19:49 localhost kernel: AT91SAM9 Watchdog enabled (heartbeat=15 sec, nowayout=0)
+Sep 14 08:19:49 localhost kernel: Linux telephony interface: v1.00
+Sep 14 08:19:49 localhost kernel: cpuidle: using governor ladder
+Sep 14 08:19:49 localhost kernel: cpuidle: using governor menu
+Sep 14 08:19:49 localhost kernel: TCP cubic registered
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 17
+Sep 14 08:19:49 localhost kernel: rtc-at91sam9 at91_rtt.0: setting system clock to 2017-09-14 07:19:32 UTC (1505373572)
+Sep 14 08:19:49 localhost kernel: Waiting for root device /dev/mmcblk0p1...
+Sep 14 08:19:49 localhost kernel: mmc0: host does not support reading read-only switch. assuming write-enable.
+Sep 14 08:19:49 localhost kernel: mmc0: new SDHC card at address b368
+Sep 14 08:19:49 localhost kernel: mmcblk0: mmc0:b368 USD   7.45 GiB
+Sep 14 08:19:49 localhost kernel: mmcblk0: p1
+Sep 14 08:19:49 localhost kernel: w1_master_driver w1 bus master: Family 89 for 89.5e700dda93c9.d3 is not registered.
+Sep 14 08:19:49 localhost kernel: EXT3-fs: barriers not enabled
+Sep 14 08:19:49 localhost kernel: kjournald starting.  Commit interval 5 seconds
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): using internal journal
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): mounted filesystem with writeback data mode
+Sep 14 08:19:49 localhost kernel: VFS: Mounted root (ext3 filesystem) on device 179:1.
+Sep 14 08:19:49 localhost kernel: devtmpfs: mounted
+Sep 14 08:19:49 localhost kernel: Freeing init memory: 124K
+Sep 14 08:19:49 localhost kernel: udc: at91_udc version 3 May 2006
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xfffc8000 (irq 12)
+Sep 14 08:19:49 localhost kernel: i2c-gpio i2c-gpio: using pins 55 (SDA) and 56 (SCL)
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.1: Atmel SPI Controller at 0xfffcc000 (irq 13)
+Sep 14 08:19:50 localhost kernel: NET: Registered protocol family 10
+Sep 14 08:19:50 localhost kernel: lo: Disabled Privacy Extensions
+Sep 14 08:19:50 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep 14 08:20:34 localhost kernel: PPP generic driver version 2.4.2
+Sep 14 08:20:34 localhost pppd[1185]: pppd 2.4.4 started by root, uid 0
+Sep 14 08:20:35 localhost chat[1195]: timeout set to 3 seconds
+Sep 14 08:20:35 localhost chat[1195]: abort on (BUSY)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO CARRIER)
+Sep 14 08:20:35 localhost chat[1195]: abort on (VOICE)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO DIALTONE)
+Sep 14 08:20:35 localhost chat[1195]: send (AT+cgdcont=1,"IP","arso.si"^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATZ^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATD*99***1#^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (CONNECT)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: CONNECT
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (^M)
+Sep 14 08:20:36 localhost pppd[1185]: Serial connection established.
+Sep 14 08:20:36 localhost pppd[1185]: Using interface ppp0
+Sep 14 08:20:36 localhost pppd[1185]: Connect: ppp0 <--> /dev/ttyS3
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: PAP authentication succeeded
+Sep 14 08:20:38 localhost kernel: PPP BSD Compression module registered
+Sep 14 08:20:38 localhost kernel: PPP Deflate Compression module registered
+Sep 14 08:20:41 localhost pppd[1185]: Could not determine remote IP address: defaulting to 10.64.64.64
+Sep 14 08:20:41 localhost pppd[1185]: local  IP address 172.19.161.156
+Sep 14 08:20:41 localhost pppd[1185]: remote IP address 10.64.64.64
+debian:/var/log#
+debian:/var/log#
+debian:/var/log#
+debian:/var/log# cd /home/agws/
+debian:/home/agws#
+debian:/home/agws# ls -l
+skupno 5080
+-rw-rw-r-- 1 root root     123 avg 24  2015 CET_noDST.tz
+drwxrwxr-- 5 root root    4096 sep  1 00:00 ftp
+-rwxr-xr-x 1 root root    2917 avg 24  2015 interfaces.sh
+-rw-rw-rw- 1 root root     900 sep  3 04:00 ipcvalidation.xml
+-rwxrwxr-x 1 root root  295269 sep 29  2015 jmd
+-rw-r--r-- 1 root root    3710 sep 14 08:21 jmd.daemon.log
+-rwxrwxr-x 1 root root  449183 sep 29  2015 jmd-debug
+-rw-rw-r-- 1 root root    2427 sep 29  2015 jmd.info
+-rw-r--r-- 1 root root     866 sep 14 08:21 jmd.init.log
+-rw-r--r-- 1 root root     865 jul 24 20:28 jmd.init.log.bak
+-rw-rw-rw- 1 root root  138772 sep 14 08:40 jmd.log
+-rw-rw-rw- 1 root root 4194569 sep  3 04:15 jmd.log.bak
+-rw-r--r-- 1 root root    1171 sep 14 08:21 jmd.start.log
+-rw-rw-r-- 1 root root    1586 sep 29  2015 jmd.xml
+-rw-rw-rw- 1 root root    1579 jun 18  2015 jmd.xml.bak
+drwxrwxr-x 3 root root    4096 sep 14 08:21 mbio120d
+-rwxr-xr-x 1 root root   16522 avg 24  2015 network_sync.sh
+-rwxr-xr-x 1 root root    1488 avg 24  2015 ppp_install.sh
+-rw-rw-r-- 1 root root    1270 avg 24  2015 ppp_remove.sh
+-rw-rw-r-- 1 root root     780 avg 24  2015 ppp_settings.sh
+-rwxr-xr-x 1 root root    2504 avg 24  2015 rc.local
+-rw-rw-r-- 1 root root    2273 sep 29  2015 system.h.xml
+-rw-rw-r-- 1 root root     296 sep 29  2015 terminal_users.h.xml
+-rw-rw-r-- 1 root root     717 avg 24  2015 xober-cpu-0.info
+debian:/home/agws#
+debian:/home/agws# cd /var/tmp/
+debian:/var/tmp# ls
+ipcvalidation.xml  ntp.log  ntp.log.bak
+debian:/var/tmp# cd /var/log
+debian:/var/log# ls
+apt            auth.log.4.gz  daemon.log       debug.2.gz  dmesg.1.gz  dpkg.log.1  kern.log.2.gz  mail.err   messages.1        network_sync.log.1  rc.local.log  syslog.4.gz  user.log.1
+auth.log       boot           daemon.log.1     debug.3.gz  dmesg.2.gz  faillog     kern.log.3.gz  mail.info  messages.2.gz     news                syslog        syslog.5.gz  user.log.2.gz
+auth.log.1     bootstrap.log  daemon.log.2.gz  debug.4.gz  dmesg.3.gz  fsck        kern.log.4.gz  mail.log   messages.3.gz     ppp-connect-errors  syslog.1      syslog.6.gz  wtmp
+auth.log.2.gz  btmp           debug            dmesg       dmesg.4.gz  kern.log    lastlog        mail.warn  messages.4.gz     ppp_install.log     syslog.2.gz   syslog.7.gz  wtmp.1
+auth.log.3.gz  btmp.1         debug.1          dmesg.0     dpkg.log    kern.log.1  lpr.log        messages   network_sync.log  pppstatus           syslog.3.gz   user.log
+debian:/var/log# tail -n 100 network_sync.log
+NTP Sync done on retry count=0
+ 3:30:12        03/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 3:30:12        03/09/2017
+Sanity check SLEEP started
+ 3:40:02        03/09/2017
+1877 Starting check - retry count=0
+ 3:40:02        03/09/2017 network ping test 172.19.0.1
+ 3:40:04        03/09/2017
+1877 Network ping available
+ 3:40:12        03/09/2017
+NTP Sync done on retry count=0
+ 3:40:12        03/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 3:40:12        03/09/2017
+Sanity check SLEEP started
+ 3:50:02        03/09/2017
+1930 Starting check - retry count=0
+ 3:50:02        03/09/2017 network ping test 172.19.0.1
+ 3:50:04        03/09/2017
+1930 Network ping available
+ 3:50:11        03/09/2017
+NTP Sync done on retry count=0
+ 3:50:11        03/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 3:50:11        03/09/2017
+Sanity check SLEEP started
+ 4:00:02        03/09/2017
+1989 Starting check - retry count=0
+ 4:00:02        03/09/2017 network ping test 172.19.0.1
+ 4:00:04        03/09/2017
+1989 Network ping available
+ 4:00:12        03/09/2017
+NTP Sync done on retry count=0
+ 4:00:12        03/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 4:00:12        03/09/2017
+Sanity check SLEEP started
+ 4:10:02        03/09/2017
+2053 Starting check - retry count=0
+ 4:10:02        03/09/2017 network ping test 172.19.0.1
+ 4:10:04        03/09/2017
+2053 Network ping available
+ 4:10:12        03/09/2017
+NTP Sync done on retry count=0
+ 4:10:12        03/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 4:10:12        03/09/2017
+Sanity check SLEEP started
+ 8:19:52        14/09/2017
+1141 Starting check - retry count=0
+ 8:19:52        14/09/2017 network ping test 172.19.0.1
+ 8:19:52        14/09/2017
+1141 Network ping failed
+ 8:19:53        14/09/2017
+Try 0 - Killing pppd
+ 8:19:54        14/09/2017
+Try 0 - Reseting modem - signal RESET via mbIO120
+ 8:20:34        14/09/2017
+Try 0 - PPP Reconnect
+ 8:20:34        14/09/2017 network ping test 172.19.0.1
+ 8:20:34        14/09/2017
+Try 0 - 0 s - Network establishing
+ 8:20:39        14/09/2017 network ping test 172.19.0.1
+ 8:20:39        14/09/2017
+Try 0 - 5 s - Network establishing
+ 8:20:44        14/09/2017 network ping test 172.19.0.1
+ 8:20:47        14/09/2017
+Try 0 - 10 s - Network connected
+ 8:20:52        14/09/2017
+1141 Starting check - retry count=1
+ 8:20:52        14/09/2017 network ping test 172.19.0.1
+ 8:20:54        14/09/2017
+1141 Network ping available
+ 8:21:05        14/09/2017
+NTP Sync done on retry count=1
+ 8:21:05        14/09/2017
+Breaking script on succesfull NTP Sync and retry count=1
+ 8:30:02        14/09/2017
+1402 Starting check - retry count=0
+ 8:30:02        14/09/2017 network ping test 172.19.0.1
+ 8:30:04        14/09/2017
+1402 Network ping available
+ 8:30:14        14/09/2017
+NTP Sync done on retry count=0
+ 8:30:14        14/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 8:30:14        14/09/2017
+Sanity check SLEEP started
+ 8:40:02        14/09/2017
+1480 Starting check - retry count=0
+ 8:40:02        14/09/2017 network ping test 172.19.0.1
+ 8:40:04        14/09/2017
+1480 Network ping available
+ 8:40:14        14/09/2017
+NTP Sync done on retry count=0
+ 8:40:14        14/09/2017
+Breaking script on succesfull NTP Sync and retry count=0
+ 8:40:14        14/09/2017
+Sanity check SLEEP started
+debian:/var/log# ls
+apt            auth.log.4.gz  daemon.log       debug.2.gz  dmesg.1.gz  dpkg.log.1  kern.log.2.gz  mail.err   messages.1        network_sync.log.1  rc.local.log  syslog.4.gz  user.log.1
+auth.log       boot           daemon.log.1     debug.3.gz  dmesg.2.gz  faillog     kern.log.3.gz  mail.info  messages.2.gz     news                syslog        syslog.5.gz  user.log.2.gz
+auth.log.1     bootstrap.log  daemon.log.2.gz  debug.4.gz  dmesg.3.gz  fsck        kern.log.4.gz  mail.log   messages.3.gz     ppp-connect-errors  syslog.1      syslog.6.gz  wtmp
+auth.log.2.gz  btmp           debug            dmesg       dmesg.4.gz  kern.log    lastlog        mail.warn  messages.4.gz     ppp_install.log     syslog.2.gz   syslog.7.gz  wtmp.1
+auth.log.3.gz  btmp.1         debug.1          dmesg.0     dpkg.log    kern.log.1  lpr.log        messages   network_sync.log  pppstatus           syslog.3.gz   user.log
+debian:/var/log# tail -n 100 syslog
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 17
+Sep 14 08:19:49 localhost kernel: rtc-at91sam9 at91_rtt.0: setting system clock to 2017-09-14 07:19:32 UTC (1505373572)
+Sep 14 08:19:49 localhost kernel: Waiting for root device /dev/mmcblk0p1...
+Sep 14 08:19:49 localhost kernel: mmc0: host does not support reading read-only switch. assuming write-enable.
+Sep 14 08:19:49 localhost kernel: mmc0: new SDHC card at address b368
+Sep 14 08:19:49 localhost kernel: mmcblk0: mmc0:b368 USD   7.45 GiB
+Sep 14 08:19:49 localhost kernel: mmcblk0: p1
+Sep 14 08:19:49 localhost kernel: w1_master_driver w1 bus master: Family 89 for 89.5e700dda93c9.d3 is not registered.
+Sep 14 08:19:49 localhost kernel: EXT3-fs: barriers not enabled
+Sep 14 08:19:49 localhost kernel: kjournald starting.  Commit interval 5 seconds
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): using internal journal
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): mounted filesystem with writeback data mode
+Sep 14 08:19:49 localhost kernel: VFS: Mounted root (ext3 filesystem) on device 179:1.
+Sep 14 08:19:49 localhost kernel: devtmpfs: mounted
+Sep 14 08:19:49 localhost kernel: Freeing init memory: 124K
+Sep 14 08:19:49 localhost kernel: udc: at91_udc version 3 May 2006
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xfffc8000 (irq 12)
+Sep 14 08:19:49 localhost kernel: i2c-gpio i2c-gpio: using pins 55 (SDA) and 56 (SCL)
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.1: Atmel SPI Controller at 0xfffcc000 (irq 13)
+Sep 14 08:19:50 localhost kernel: NET: Registered protocol family 10
+Sep 14 08:19:50 localhost kernel: lo: Disabled Privacy Extensions
+Sep 14 08:19:50 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep 14 08:20:34 localhost kernel: PPP generic driver version 2.4.2
+Sep 14 08:20:34 localhost pppd[1185]: pppd 2.4.4 started by root, uid 0
+Sep 14 08:20:35 localhost chat[1195]: timeout set to 3 seconds
+Sep 14 08:20:35 localhost chat[1195]: abort on (BUSY)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO CARRIER)
+Sep 14 08:20:35 localhost chat[1195]: abort on (VOICE)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO DIALTONE)
+Sep 14 08:20:35 localhost chat[1195]: send (AT+cgdcont=1,"IP","arso.si"^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATZ^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATD*99***1#^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (CONNECT)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: CONNECT
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (^M)
+Sep 14 08:20:36 localhost pppd[1185]: Serial connection established.
+Sep 14 08:20:36 localhost pppd[1185]: using channel 1
+Sep 14 08:20:36 localhost pppd[1185]: Using interface ppp0
+Sep 14 08:20:36 localhost pppd[1185]: Connect: ppp0 <--> /dev/ttyS3
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0x92ba85fe> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfReq id=0x0 <asyncmap 0x0> <auth chap MD5> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfNak id=0x0 <auth pap>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0x92ba85fe> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfReq id=0x1 <asyncmap 0x0> <auth pap> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfAck id=0x1 <asyncmap 0x0> <auth pap> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP EchoReq id=0x0 magic=0x92ba85fe]
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: sent [PAP AuthReq id=0x1 user="agws" password=<hidden>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP DiscReq id=0x2 magic=0xdab0ae2a]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [PAP AuthAck id=0x1 ""]
+Sep 14 08:20:37 localhost pppd[1185]: PAP authentication succeeded
+Sep 14 08:20:38 localhost kernel: PPP BSD Compression module registered
+Sep 14 08:20:38 localhost pppd[1185]: sent [CCP ConfReq id=0x1 <deflate 15> <deflate(old#) 15> <bsd v1 15>]
+Sep 14 08:20:38 localhost pppd[1185]: sent [IPCP ConfReq id=0x1 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:38 localhost kernel: PPP Deflate Compression module registered
+Sep 14 08:20:38 localhost pppd[1185]: rcvd [LCP ProtRej id=0x3 80 fd 01 01 00 0f 1a 04 78 00 18 04 78 00 15 03 2f]
+Sep 14 08:20:38 localhost pppd[1185]: Protocol-Reject for 'Compression Control Protocol' (0x80fd) received
+Sep 14 08:20:39 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x1 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+Sep 14 08:20:39 localhost pppd[1185]: sent [IPCP ConfReq id=0x2 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x2 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x3 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfReq id=0x0]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfNak id=0x0 <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfRej id=0x3 <compress VJ 0f 01>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x4 <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x4 <addr 172.19.161.156>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x5 <addr 172.19.161.156>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfAck id=0x5 <addr 172.19.161.156>]
+Sep 14 08:20:41 localhost pppd[1185]: rcvd [IPCP ConfReq id=0x1]
+Sep 14 08:20:41 localhost pppd[1185]: sent [IPCP ConfAck id=0x1]
+Sep 14 08:20:41 localhost pppd[1185]: Could not determine remote IP address: defaulting to 10.64.64.64
+Sep 14 08:20:41 localhost pppd[1185]: Cannot determine ethernet address for proxy ARP
+Sep 14 08:20:41 localhost pppd[1185]: local  IP address 172.19.161.156
+Sep 14 08:20:41 localhost pppd[1185]: remote IP address 10.64.64.64
+Sep 14 08:20:41 localhost pppd[1185]: Script /etc/ppp/ip-up started (pid 1215)
+Sep 14 08:20:41 localhost pppd[1185]: Script /etc/ppp/ip-up finished (pid 1215), status = 0x0
+Sep 14 08:21:05 localhost /usr/sbin/cron[1254]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:21:05 localhost /usr/sbin/cron[1255]: (CRON) STARTUP (fork ok)
+Sep 14 08:21:05 localhost /usr/sbin/cron[1255]: (CRON) INFO (Running @reboot jobs)
+Sep 14 08:30:01 localhost /USR/SBIN/CRON[1402]: (root) CMD (   /home/agws/network_sync.sh)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1453]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1454]: (CRON) STARTUP (fork ok)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1454]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep 14 08:40:01 localhost /USR/SBIN/CRON[1480]: (root) CMD (   /home/agws/network_sync.sh)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1523]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1524]: (CRON) STARTUP (fork ok)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1524]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+debian:/var/log# tail -n 500 syslog
+Sep  2 17:10:12 localhost /usr/sbin/cron[30780]: (CRON) INFO (pidfile fd = 3)
+Sep  2 17:10:12 localhost /usr/sbin/cron[30781]: (CRON) STARTUP (fork ok)
+Sep  2 17:10:12 localhost /usr/sbin/cron[30781]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 17:12:59 localhost pppd[25067]: rcvd [LCP ProtRej id=0x28 00 ff ff]
+Sep  2 17:12:59 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:16:52 localhost pppd[25067]: rcvd [LCP ProtRej id=0x29 00 ff ff]
+Sep  2 17:16:52 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:17:01 localhost /USR/SBIN/CRON[30790]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 17:17:52 localhost pppd[25067]: rcvd [LCP ProtRej id=0x2a 00 ff ff]
+Sep  2 17:17:52 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:20:01 localhost /USR/SBIN/CRON[30795]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 17:20:12 localhost /usr/sbin/cron[30838]: (CRON) INFO (pidfile fd = 3)
+Sep  2 17:20:12 localhost /usr/sbin/cron[30839]: (CRON) STARTUP (fork ok)
+Sep  2 17:20:12 localhost /usr/sbin/cron[30839]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 17:30:01 localhost /USR/SBIN/CRON[30850]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 17:30:14 localhost /usr/sbin/cron[30893]: (CRON) INFO (pidfile fd = 3)
+Sep  2 17:30:14 localhost /usr/sbin/cron[30894]: (CRON) STARTUP (fork ok)
+Sep  2 17:30:14 localhost /usr/sbin/cron[30894]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 17:36:05 localhost pppd[25067]: rcvd [LCP ProtRej id=0x2b 00 ff ff]
+Sep  2 17:36:05 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:39:23 localhost pppd[25067]: rcvd [LCP ProtRej id=0x2c 00 ff ff]
+Sep  2 17:39:23 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 17:40:01 localhost /USR/SBIN/CRON[30909]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 17:40:12 localhost /usr/sbin/cron[30952]: (CRON) INFO (pidfile fd = 3)
+Sep  2 17:40:12 localhost /usr/sbin/cron[30953]: (CRON) STARTUP (fork ok)
+Sep  2 17:40:12 localhost /usr/sbin/cron[30953]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 17:50:01 localhost /USR/SBIN/CRON[30965]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 17:50:11 localhost /usr/sbin/cron[31008]: (CRON) INFO (pidfile fd = 3)
+Sep  2 17:50:11 localhost /usr/sbin/cron[31009]: (CRON) STARTUP (fork ok)
+Sep  2 17:50:11 localhost /usr/sbin/cron[31009]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 17:58:24 localhost pppd[25067]: rcvd [LCP ProtRej id=0x2d 00 ff ff]
+Sep  2 17:58:24 localhost pppd[25067]: Protocol-Reject for unsupported protocol 0xff
+Sep  2 18:00:01 localhost /USR/SBIN/CRON[31022]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:00:12 localhost /usr/sbin/cron[31069]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:00:12 localhost /usr/sbin/cron[31070]: (CRON) STARTUP (fork ok)
+Sep  2 18:00:12 localhost /usr/sbin/cron[31070]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 18:10:01 localhost /USR/SBIN/CRON[31084]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:10:12 localhost /usr/sbin/cron[31127]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:10:12 localhost /usr/sbin/cron[31128]: (CRON) STARTUP (fork ok)
+Sep  2 18:10:12 localhost /usr/sbin/cron[31128]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 18:17:01 localhost /USR/SBIN/CRON[31136]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 18:20:01 localhost /USR/SBIN/CRON[31142]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:20:12 localhost /usr/sbin/cron[31185]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:20:12 localhost /usr/sbin/cron[31186]: (CRON) STARTUP (fork ok)
+Sep  2 18:20:12 localhost /usr/sbin/cron[31186]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 18:30:01 localhost /USR/SBIN/CRON[31195]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:30:12 localhost /usr/sbin/cron[31238]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:30:12 localhost /usr/sbin/cron[31239]: (CRON) STARTUP (fork ok)
+Sep  2 18:30:12 localhost /usr/sbin/cron[31239]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 18:40:01 localhost /USR/SBIN/CRON[31252]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:40:12 localhost /usr/sbin/cron[31295]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:40:12 localhost /usr/sbin/cron[31296]: (CRON) STARTUP (fork ok)
+Sep  2 18:40:12 localhost /usr/sbin/cron[31296]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 18:50:01 localhost /USR/SBIN/CRON[31305]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 18:50:12 localhost /usr/sbin/cron[31348]: (CRON) INFO (pidfile fd = 3)
+Sep  2 18:50:12 localhost /usr/sbin/cron[31349]: (CRON) STARTUP (fork ok)
+Sep  2 18:50:12 localhost /usr/sbin/cron[31349]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:00:01 localhost /USR/SBIN/CRON[31362]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:00:12 localhost /usr/sbin/cron[31408]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:00:12 localhost /usr/sbin/cron[31409]: (CRON) STARTUP (fork ok)
+Sep  2 19:00:12 localhost /usr/sbin/cron[31409]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:10:01 localhost /USR/SBIN/CRON[31425]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:10:12 localhost /usr/sbin/cron[31468]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:10:12 localhost /usr/sbin/cron[31469]: (CRON) STARTUP (fork ok)
+Sep  2 19:10:12 localhost /usr/sbin/cron[31469]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:17:01 localhost /USR/SBIN/CRON[31477]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 19:20:01 localhost /USR/SBIN/CRON[31483]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:20:12 localhost /usr/sbin/cron[31526]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:20:12 localhost /usr/sbin/cron[31527]: (CRON) STARTUP (fork ok)
+Sep  2 19:20:12 localhost /usr/sbin/cron[31527]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:30:01 localhost /USR/SBIN/CRON[31538]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:30:12 localhost /usr/sbin/cron[31581]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:30:12 localhost /usr/sbin/cron[31582]: (CRON) STARTUP (fork ok)
+Sep  2 19:30:12 localhost /usr/sbin/cron[31582]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:40:01 localhost /USR/SBIN/CRON[31595]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:40:12 localhost /usr/sbin/cron[31638]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:40:12 localhost /usr/sbin/cron[31639]: (CRON) STARTUP (fork ok)
+Sep  2 19:40:12 localhost /usr/sbin/cron[31639]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 19:50:01 localhost /USR/SBIN/CRON[31650]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 19:50:12 localhost /usr/sbin/cron[31694]: (CRON) INFO (pidfile fd = 3)
+Sep  2 19:50:12 localhost /usr/sbin/cron[31695]: (CRON) STARTUP (fork ok)
+Sep  2 19:50:12 localhost /usr/sbin/cron[31695]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:00:01 localhost /USR/SBIN/CRON[31708]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:00:12 localhost /usr/sbin/cron[31754]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:00:12 localhost /usr/sbin/cron[31755]: (CRON) STARTUP (fork ok)
+Sep  2 20:00:12 localhost /usr/sbin/cron[31755]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:10:01 localhost /USR/SBIN/CRON[31771]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:10:12 localhost /usr/sbin/cron[31814]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:10:12 localhost /usr/sbin/cron[31815]: (CRON) STARTUP (fork ok)
+Sep  2 20:10:12 localhost /usr/sbin/cron[31815]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:17:01 localhost /USR/SBIN/CRON[31823]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 20:20:01 localhost /USR/SBIN/CRON[31829]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:20:12 localhost /usr/sbin/cron[31872]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:20:12 localhost /usr/sbin/cron[31873]: (CRON) STARTUP (fork ok)
+Sep  2 20:20:12 localhost /usr/sbin/cron[31873]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:30:01 localhost /USR/SBIN/CRON[31885]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:30:12 localhost /usr/sbin/cron[31928]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:30:12 localhost /usr/sbin/cron[31929]: (CRON) STARTUP (fork ok)
+Sep  2 20:30:12 localhost /usr/sbin/cron[31929]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:40:01 localhost /USR/SBIN/CRON[31943]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:40:12 localhost /usr/sbin/cron[31986]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:40:12 localhost /usr/sbin/cron[31987]: (CRON) STARTUP (fork ok)
+Sep  2 20:40:12 localhost /usr/sbin/cron[31987]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 20:50:01 localhost /USR/SBIN/CRON[31997]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 20:50:11 localhost /usr/sbin/cron[32040]: (CRON) INFO (pidfile fd = 3)
+Sep  2 20:50:11 localhost /usr/sbin/cron[32041]: (CRON) STARTUP (fork ok)
+Sep  2 20:50:11 localhost /usr/sbin/cron[32041]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:00:01 localhost /USR/SBIN/CRON[32052]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:00:12 localhost /usr/sbin/cron[32098]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:00:12 localhost /usr/sbin/cron[32099]: (CRON) STARTUP (fork ok)
+Sep  2 21:00:12 localhost /usr/sbin/cron[32099]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:10:01 localhost /USR/SBIN/CRON[32113]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:10:12 localhost /usr/sbin/cron[32156]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:10:12 localhost /usr/sbin/cron[32157]: (CRON) STARTUP (fork ok)
+Sep  2 21:10:12 localhost /usr/sbin/cron[32157]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:17:01 localhost /USR/SBIN/CRON[32165]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 21:20:01 localhost /USR/SBIN/CRON[32170]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:20:11 localhost /usr/sbin/cron[32213]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:20:11 localhost /usr/sbin/cron[32214]: (CRON) STARTUP (fork ok)
+Sep  2 21:20:11 localhost /usr/sbin/cron[32214]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:30:01 localhost /USR/SBIN/CRON[32223]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:30:12 localhost /usr/sbin/cron[32266]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:30:12 localhost /usr/sbin/cron[32267]: (CRON) STARTUP (fork ok)
+Sep  2 21:30:12 localhost /usr/sbin/cron[32267]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:40:01 localhost /USR/SBIN/CRON[32281]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:40:12 localhost /usr/sbin/cron[32324]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:40:12 localhost /usr/sbin/cron[32325]: (CRON) STARTUP (fork ok)
+Sep  2 21:40:12 localhost /usr/sbin/cron[32325]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 21:50:01 localhost /USR/SBIN/CRON[32333]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 21:50:12 localhost /usr/sbin/cron[32376]: (CRON) INFO (pidfile fd = 3)
+Sep  2 21:50:12 localhost /usr/sbin/cron[32377]: (CRON) STARTUP (fork ok)
+Sep  2 21:50:12 localhost /usr/sbin/cron[32377]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:00:01 localhost /USR/SBIN/CRON[32393]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:00:12 localhost /usr/sbin/cron[32439]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:00:12 localhost /usr/sbin/cron[32440]: (CRON) STARTUP (fork ok)
+Sep  2 22:00:12 localhost /usr/sbin/cron[32440]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:10:01 localhost /USR/SBIN/CRON[32452]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:10:12 localhost /usr/sbin/cron[32495]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:10:12 localhost /usr/sbin/cron[32496]: (CRON) STARTUP (fork ok)
+Sep  2 22:10:12 localhost /usr/sbin/cron[32496]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:17:01 localhost /USR/SBIN/CRON[32504]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 22:20:01 localhost /USR/SBIN/CRON[32508]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:20:12 localhost /usr/sbin/cron[32551]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:20:12 localhost /usr/sbin/cron[32552]: (CRON) STARTUP (fork ok)
+Sep  2 22:20:12 localhost /usr/sbin/cron[32552]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:30:01 localhost /USR/SBIN/CRON[32567]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:30:12 localhost /usr/sbin/cron[32610]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:30:12 localhost /usr/sbin/cron[32611]: (CRON) STARTUP (fork ok)
+Sep  2 22:30:12 localhost /usr/sbin/cron[32611]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:40:01 localhost /USR/SBIN/CRON[32621]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:40:12 localhost /usr/sbin/cron[32664]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:40:12 localhost /usr/sbin/cron[32665]: (CRON) STARTUP (fork ok)
+Sep  2 22:40:12 localhost /usr/sbin/cron[32665]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 22:50:01 localhost /USR/SBIN/CRON[32673]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 22:50:12 localhost /usr/sbin/cron[32716]: (CRON) INFO (pidfile fd = 3)
+Sep  2 22:50:12 localhost /usr/sbin/cron[32717]: (CRON) STARTUP (fork ok)
+Sep  2 22:50:12 localhost /usr/sbin/cron[32717]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:00:01 localhost /USR/SBIN/CRON[32732]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:00:12 localhost /usr/sbin/cron[310]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:00:12 localhost /usr/sbin/cron[311]: (CRON) STARTUP (fork ok)
+Sep  2 23:00:12 localhost /usr/sbin/cron[311]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:10:01 localhost /USR/SBIN/CRON[327]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:10:12 localhost /usr/sbin/cron[372]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:10:12 localhost /usr/sbin/cron[373]: (CRON) STARTUP (fork ok)
+Sep  2 23:10:12 localhost /usr/sbin/cron[373]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:17:01 localhost /USR/SBIN/CRON[382]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  2 23:20:01 localhost /USR/SBIN/CRON[387]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:20:12 localhost /usr/sbin/cron[430]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:20:12 localhost /usr/sbin/cron[431]: (CRON) STARTUP (fork ok)
+Sep  2 23:20:12 localhost /usr/sbin/cron[431]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:30:01 localhost /USR/SBIN/CRON[442]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:30:12 localhost /usr/sbin/cron[486]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:30:12 localhost /usr/sbin/cron[487]: (CRON) STARTUP (fork ok)
+Sep  2 23:30:12 localhost /usr/sbin/cron[487]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:40:01 localhost /USR/SBIN/CRON[502]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:40:12 localhost /usr/sbin/cron[545]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:40:12 localhost /usr/sbin/cron[546]: (CRON) STARTUP (fork ok)
+Sep  2 23:40:12 localhost /usr/sbin/cron[546]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  2 23:50:01 localhost /USR/SBIN/CRON[554]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  2 23:50:12 localhost /usr/sbin/cron[598]: (CRON) INFO (pidfile fd = 3)
+Sep  2 23:50:12 localhost /usr/sbin/cron[599]: (CRON) STARTUP (fork ok)
+Sep  2 23:50:12 localhost /usr/sbin/cron[599]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:00:01 localhost /USR/SBIN/CRON[609]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:00:13 localhost /usr/sbin/cron[655]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:00:13 localhost /usr/sbin/cron[656]: (CRON) STARTUP (fork ok)
+Sep  3 00:00:13 localhost /usr/sbin/cron[656]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:10:01 localhost /USR/SBIN/CRON[671]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:10:12 localhost /usr/sbin/cron[714]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:10:12 localhost /usr/sbin/cron[715]: (CRON) STARTUP (fork ok)
+Sep  3 00:10:12 localhost /usr/sbin/cron[715]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:17:01 localhost /USR/SBIN/CRON[723]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 00:20:01 localhost /USR/SBIN/CRON[727]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:20:12 localhost /usr/sbin/cron[770]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:20:12 localhost /usr/sbin/cron[771]: (CRON) STARTUP (fork ok)
+Sep  3 00:20:12 localhost /usr/sbin/cron[771]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:30:01 localhost /USR/SBIN/CRON[784]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:30:12 localhost /usr/sbin/cron[827]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:30:12 localhost /usr/sbin/cron[828]: (CRON) STARTUP (fork ok)
+Sep  3 00:30:12 localhost /usr/sbin/cron[828]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:40:01 localhost /USR/SBIN/CRON[839]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:40:12 localhost /usr/sbin/cron[882]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:40:12 localhost /usr/sbin/cron[883]: (CRON) STARTUP (fork ok)
+Sep  3 00:40:12 localhost /usr/sbin/cron[883]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 00:50:02 localhost /USR/SBIN/CRON[891]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 00:50:12 localhost /usr/sbin/cron[934]: (CRON) INFO (pidfile fd = 3)
+Sep  3 00:50:12 localhost /usr/sbin/cron[935]: (CRON) STARTUP (fork ok)
+Sep  3 00:50:12 localhost /usr/sbin/cron[935]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:00:01 localhost /USR/SBIN/CRON[949]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:00:12 localhost /usr/sbin/cron[996]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:00:12 localhost /usr/sbin/cron[997]: (CRON) STARTUP (fork ok)
+Sep  3 01:00:12 localhost /usr/sbin/cron[997]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:10:01 localhost /USR/SBIN/CRON[1008]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:10:12 localhost /usr/sbin/cron[1054]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:10:12 localhost /usr/sbin/cron[1055]: (CRON) STARTUP (fork ok)
+Sep  3 01:10:12 localhost /usr/sbin/cron[1055]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:17:01 localhost /USR/SBIN/CRON[1063]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 01:20:01 localhost /USR/SBIN/CRON[1067]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:20:12 localhost /usr/sbin/cron[1110]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:20:12 localhost /usr/sbin/cron[1111]: (CRON) STARTUP (fork ok)
+Sep  3 01:20:12 localhost /usr/sbin/cron[1111]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:30:01 localhost /USR/SBIN/CRON[1122]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:30:12 localhost /usr/sbin/cron[1165]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:30:12 localhost /usr/sbin/cron[1166]: (CRON) STARTUP (fork ok)
+Sep  3 01:30:12 localhost /usr/sbin/cron[1166]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:40:01 localhost /USR/SBIN/CRON[1177]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:40:12 localhost /usr/sbin/cron[1220]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:40:12 localhost /usr/sbin/cron[1221]: (CRON) STARTUP (fork ok)
+Sep  3 01:40:12 localhost /usr/sbin/cron[1221]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 01:50:01 localhost /USR/SBIN/CRON[1229]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 01:50:12 localhost /usr/sbin/cron[1272]: (CRON) INFO (pidfile fd = 3)
+Sep  3 01:50:12 localhost /usr/sbin/cron[1273]: (CRON) STARTUP (fork ok)
+Sep  3 01:50:12 localhost /usr/sbin/cron[1273]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:00:01 localhost /USR/SBIN/CRON[1285]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:00:12 localhost /usr/sbin/cron[1331]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:00:12 localhost /usr/sbin/cron[1332]: (CRON) STARTUP (fork ok)
+Sep  3 02:00:12 localhost /usr/sbin/cron[1332]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:10:01 localhost /USR/SBIN/CRON[1347]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:10:12 localhost /usr/sbin/cron[1405]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:10:12 localhost /usr/sbin/cron[1406]: (CRON) STARTUP (fork ok)
+Sep  3 02:10:12 localhost /usr/sbin/cron[1406]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:17:01 localhost /USR/SBIN/CRON[1414]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 02:20:01 localhost /USR/SBIN/CRON[1418]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:20:12 localhost /usr/sbin/cron[1461]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:20:12 localhost /usr/sbin/cron[1462]: (CRON) STARTUP (fork ok)
+Sep  3 02:20:12 localhost /usr/sbin/cron[1462]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:30:01 localhost /USR/SBIN/CRON[1474]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:30:12 localhost /usr/sbin/cron[1517]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:30:12 localhost /usr/sbin/cron[1518]: (CRON) STARTUP (fork ok)
+Sep  3 02:30:12 localhost /usr/sbin/cron[1518]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:40:01 localhost /USR/SBIN/CRON[1532]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:40:12 localhost /usr/sbin/cron[1575]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:40:12 localhost /usr/sbin/cron[1576]: (CRON) STARTUP (fork ok)
+Sep  3 02:40:12 localhost /usr/sbin/cron[1576]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 02:50:01 localhost /USR/SBIN/CRON[1584]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 02:50:12 localhost /usr/sbin/cron[1627]: (CRON) INFO (pidfile fd = 3)
+Sep  3 02:50:12 localhost /usr/sbin/cron[1628]: (CRON) STARTUP (fork ok)
+Sep  3 02:50:12 localhost /usr/sbin/cron[1628]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:00:01 localhost /USR/SBIN/CRON[1643]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:00:12 localhost /usr/sbin/cron[1689]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:00:12 localhost /usr/sbin/cron[1690]: (CRON) STARTUP (fork ok)
+Sep  3 03:00:12 localhost /usr/sbin/cron[1690]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:10:01 localhost /USR/SBIN/CRON[1706]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:10:12 localhost /usr/sbin/cron[1749]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:10:12 localhost /usr/sbin/cron[1750]: (CRON) STARTUP (fork ok)
+Sep  3 03:10:12 localhost /usr/sbin/cron[1750]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:17:01 localhost /USR/SBIN/CRON[1758]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 03:20:01 localhost /USR/SBIN/CRON[1765]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:20:12 localhost /usr/sbin/cron[1808]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:20:12 localhost /usr/sbin/cron[1809]: (CRON) STARTUP (fork ok)
+Sep  3 03:20:12 localhost /usr/sbin/cron[1809]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:30:01 localhost /USR/SBIN/CRON[1820]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:30:12 localhost /usr/sbin/cron[1863]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:30:12 localhost /usr/sbin/cron[1864]: (CRON) STARTUP (fork ok)
+Sep  3 03:30:12 localhost /usr/sbin/cron[1864]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:40:01 localhost /USR/SBIN/CRON[1877]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:40:12 localhost /usr/sbin/cron[1920]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:40:12 localhost /usr/sbin/cron[1921]: (CRON) STARTUP (fork ok)
+Sep  3 03:40:12 localhost /usr/sbin/cron[1921]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 03:50:01 localhost /USR/SBIN/CRON[1930]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 03:50:11 localhost /usr/sbin/cron[1973]: (CRON) INFO (pidfile fd = 3)
+Sep  3 03:50:11 localhost /usr/sbin/cron[1974]: (CRON) STARTUP (fork ok)
+Sep  3 03:50:11 localhost /usr/sbin/cron[1974]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 04:00:01 localhost /USR/SBIN/CRON[1989]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 04:00:12 localhost /usr/sbin/cron[2035]: (CRON) INFO (pidfile fd = 3)
+Sep  3 04:00:12 localhost /usr/sbin/cron[2036]: (CRON) STARTUP (fork ok)
+Sep  3 04:00:12 localhost /usr/sbin/cron[2036]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep  3 04:10:01 localhost /USR/SBIN/CRON[2053]: (root) CMD (   /home/agws/network_sync.sh)
+Sep  3 04:10:12 localhost /usr/sbin/cron[2096]: (CRON) INFO (pidfile fd = 3)
+Sep  3 04:10:12 localhost /usr/sbin/cron[2097]: (CRON) STARTUP (fork ok)
+Sep  3 04:10:12 localhost /usr/sbin/cron[2097]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep 14 08:19:49 localhost kernel: imklog 3.18.6, log source = /proc/kmsg started.
+Sep 14 08:19:49 localhost rsyslogd: [origin software="rsyslogd" swVersion="3.18.6" x-pid="1022" x-info="http://www.rsyslog.com"] restart
+Sep 14 08:19:49 localhost kernel: Linux version 2.6.35.7-nanosg20 (cglind@gieselher) (gcc version 4.3.5 (Debian 4.3.5-4) ) #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013
+Sep 14 08:19:49 localhost kernel: CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+Sep 14 08:19:49 localhost kernel: CPU: VIVT data cache, VIVT instruction cache
+Sep 14 08:19:49 localhost kernel: Machine: NanosG20
+Sep 14 08:19:49 localhost kernel: Memory policy: ECC disabled, Data cache writeback
+Sep 14 08:19:49 localhost kernel: On node 0 totalpages: 32768
+Sep 14 08:19:49 localhost kernel: free_area_init_node: node 0, pgdat c04157b8, node_mem_map c042f000
+Sep 14 08:19:49 localhost kernel:  Normal zone: 256 pages used for memmap
+Sep 14 08:19:49 localhost kernel:  Normal zone: 0 pages reserved
+Sep 14 08:19:49 localhost kernel:  Normal zone: 32512 pages, LIFO batch:7
+Sep 14 08:19:49 localhost kernel: Clocks: CPU 396 MHz, master 132 MHz, main 18.432 MHz
+Sep 14 08:19:49 localhost kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Sep 14 08:19:49 localhost kernel: Kernel command line: mtdparts=atmel_nand:128k(bootstrap),2944k(boot),-(ubi) console=ttyS1,115200 mmc_core.removable=0 root=/dev/mmcblk0p1 rootwait
+Sep 14 08:19:49 localhost kernel: PID hash table entries: 512 (order: -1, 2048 bytes)
+Sep 14 08:19:49 localhost kernel: Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Sep 14 08:19:49 localhost kernel: Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Sep 14 08:19:49 localhost kernel: Memory: 128MB = 128MB total
+Sep 14 08:19:49 localhost kernel: Memory: 125660k/125660k available, 5412k reserved, 0K highmem
+Sep 14 08:19:49 localhost kernel: Virtual kernel memory layout:
+Sep 14 08:19:49 localhost kernel:    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Sep 14 08:19:49 localhost kernel:    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Sep 14 08:19:49 localhost kernel:    DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+Sep 14 08:19:49 localhost kernel:    vmalloc : 0xc8800000 - 0xfee00000   ( 870 MB)
+Sep 14 08:19:49 localhost kernel:    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+Sep 14 08:19:49 localhost kernel:    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+Sep 14 08:19:49 localhost kernel:      .init : 0xc0008000 - 0xc0027000   ( 124 kB)
+Sep 14 08:19:49 localhost kernel:      .text : 0xc0027000 - 0xc03ee000   (3868 kB)
+Sep 14 08:19:49 localhost kernel:      .data : 0xc03ee000 - 0xc0415f00   ( 160 kB)
+Sep 14 08:19:49 localhost kernel: SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Sep 14 08:19:49 localhost kernel: Preemptable hierarchical RCU implementation.
+Sep 14 08:19:49 localhost kernel:       RCU-based detection of stalled CPUs is disabled.
+Sep 14 08:19:49 localhost kernel:       Verbose stalled-CPUs detection is disabled.
+Sep 14 08:19:49 localhost kernel: NR_IRQS:192
+Sep 14 08:19:49 localhost kernel: AT91: 96 gpio irqs in 3 banks
+Sep 14 08:19:49 localhost kernel: Console: colour dummy device 80x30
+Sep 14 08:19:49 localhost kernel: Calibrating delay loop... 197.83 BogoMIPS (lpj=989184)
+Sep 14 08:19:49 localhost kernel: pid_max: default: 32768 minimum: 301
+Sep 14 08:19:49 localhost kernel: Mount-cache hash table entries: 512
+Sep 14 08:19:49 localhost kernel: CPU: Testing write buffer coherency: ok
+Sep 14 08:19:49 localhost kernel: devtmpfs: initialized
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 16
+Sep 14 08:19:49 localhost kernel: AT91: Power Management (with slow clock mode)
+Sep 14 08:19:49 localhost kernel: AT91: Starting after power-restored wakeup
+Sep 14 08:19:49 localhost kernel: tcb_clksrc: tc0 at 16.012 MHz
+Sep 14 08:19:49 localhost kernel: bio: create slab <bio-0> at 0
+Sep 14 08:19:49 localhost kernel: SCSI subsystem initialized
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver usbfs
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver hub
+Sep 14 08:19:49 localhost kernel: usbcore: registered new device driver usb
+Sep 14 08:19:49 localhost kernel: Switching to clocksource tcb_clksrc
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 2
+Sep 14 08:19:49 localhost kernel: IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+Sep 14 08:19:49 localhost kernel: TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+Sep 14 08:19:49 localhost kernel: TCP: Hash tables configured (established 4096 bind 4096)
+Sep 14 08:19:49 localhost kernel: TCP reno registered
+Sep 14 08:19:49 localhost kernel: UDP hash table entries: 256 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 1
+Sep 14 08:19:49 localhost kernel: RPC: Registered udp transport module.
+Sep 14 08:19:49 localhost kernel: RPC: Registered tcp transport module.
+Sep 14 08:19:49 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Sep 14 08:19:49 localhost kernel: audit: initializing netlink socket (disabled)
+Sep 14 08:19:49 localhost kernel: type=2000 audit(0.300:1): initialized
+Sep 14 08:19:49 localhost kernel: msgmni has been set to 245
+Sep 14 08:19:49 localhost kernel: alg: No test for stdrng (krng)
+Sep 14 08:19:49 localhost kernel: io scheduler noop registered
+Sep 14 08:19:49 localhost kernel: io scheduler cfq registered (default)
+Sep 14 08:19:49 localhost kernel: atmel_usart.0: ttyS0 at MMIO 0xfefff200 (irq = 1) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: atmel_usart.1: ttyS1 at MMIO 0xfffb0000 (irq = 6) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: console [ttyS1] enabled
+Sep 14 08:19:49 localhost kernel: atmel_usart.2: ttyS2 at MMIO 0xfffb4000 (irq = 7) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: atmel_usart.3: ttyS3 at MMIO 0xfffb8000 (irq = 8) is a ATMEL_SERIAL
+Sep 14 08:19:49 localhost kernel: loop: module loaded
+Sep 14 08:19:49 localhost kernel: NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit)
+Sep 14 08:19:49 localhost kernel: Scanning device for bad blocks
+Sep 14 08:19:49 localhost kernel: 3 cmdlinepart partitions found on MTD device atmel_nand
+Sep 14 08:19:49 localhost kernel: Creating 3 MTD partitions on "atmel_nand":
+Sep 14 08:19:49 localhost kernel: 0x000000000000-0x000000020000 : "bootstrap"
+Sep 14 08:19:49 localhost kernel: 0x000000020000-0x000000300000 : "boot"
+Sep 14 08:19:49 localhost kernel: 0x000000300000-0x000020000000 : "ubi"
+Sep 14 08:19:49 localhost kernel: MACB_mii_bus: probed
+Sep 14 08:19:49 localhost kernel: eth0: Atmel MACB at 0xfffc4000 irq 21 (00:60:35:19:2c:3b)
+Sep 14 08:19:49 localhost kernel: eth0: attached PHY driver [Generic PHY] (mii_bus:phy_addr=ffffffff:01, irq=-1)
+Sep 14 08:19:49 localhost kernel: usbmon: debugfs is not available
+Sep 14 08:19:49 localhost kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: AT91 OHCI
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: new USB bus registered, assigned bus number 1
+Sep 14 08:19:49 localhost kernel: at91_ohci at91_ohci: irq 20, io mem 0x00500000
+Sep 14 08:19:49 localhost kernel: hub 1-0:1.0: USB hub found
+Sep 14 08:19:49 localhost kernel: hub 1-0:1.0: 2 ports detected
+Sep 14 08:19:49 localhost kernel: Initializing USB Mass Storage driver...
+Sep 14 08:19:49 localhost kernel: usbcore: registered new interface driver usb-storage
+Sep 14 08:19:49 localhost kernel: USB Mass Storage support registered.
+Sep 14 08:19:49 localhost kernel: mice: PS/2 mouse device common for all mice
+Sep 14 08:19:49 localhost kernel: input: gpio-keys as /devices/platform/gpio-keys/input/input0
+Sep 14 08:19:49 localhost kernel: rtc-at91sam9 at91_rtt.0: rtc core: registered at91_rtt as rtc0
+Sep 14 08:19:49 localhost kernel: i2c /dev entries driver
+Sep 14 08:19:49 localhost kernel: Driver for 1-wire Dallas network protocol.
+Sep 14 08:19:49 localhost kernel: AT91SAM9 Watchdog enabled (heartbeat=15 sec, nowayout=0)
+Sep 14 08:19:49 localhost kernel: Linux telephony interface: v1.00
+Sep 14 08:19:49 localhost kernel: cpuidle: using governor ladder
+Sep 14 08:19:49 localhost kernel: cpuidle: using governor menu
+Sep 14 08:19:49 localhost kernel: Registered led device: LED1
+Sep 14 08:19:49 localhost kernel: Registered led device: LED2
+Sep 14 08:19:49 localhost kernel: Registered led device: LED3
+Sep 14 08:19:49 localhost kernel: Registered led device: LED4
+Sep 14 08:19:49 localhost kernel: TCP cubic registered
+Sep 14 08:19:49 localhost kernel: NET: Registered protocol family 17
+Sep 14 08:19:49 localhost kernel: rtc-at91sam9 at91_rtt.0: setting system clock to 2017-09-14 07:19:32 UTC (1505373572)
+Sep 14 08:19:49 localhost kernel: Waiting for root device /dev/mmcblk0p1...
+Sep 14 08:19:49 localhost kernel: mmc0: host does not support reading read-only switch. assuming write-enable.
+Sep 14 08:19:49 localhost kernel: mmc0: new SDHC card at address b368
+Sep 14 08:19:49 localhost kernel: mmcblk0: mmc0:b368 USD   7.45 GiB
+Sep 14 08:19:49 localhost kernel: mmcblk0: p1
+Sep 14 08:19:49 localhost kernel: w1_master_driver w1 bus master: Family 89 for 89.5e700dda93c9.d3 is not registered.
+Sep 14 08:19:49 localhost kernel: EXT3-fs: barriers not enabled
+Sep 14 08:19:49 localhost kernel: kjournald starting.  Commit interval 5 seconds
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): using internal journal
+Sep 14 08:19:49 localhost kernel: EXT3-fs (mmcblk0p1): mounted filesystem with writeback data mode
+Sep 14 08:19:49 localhost kernel: VFS: Mounted root (ext3 filesystem) on device 179:1.
+Sep 14 08:19:49 localhost kernel: devtmpfs: mounted
+Sep 14 08:19:49 localhost kernel: Freeing init memory: 124K
+Sep 14 08:19:49 localhost kernel: udc: at91_udc version 3 May 2006
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.0: Atmel SPI Controller at 0xfffc8000 (irq 12)
+Sep 14 08:19:49 localhost kernel: i2c-gpio i2c-gpio: using pins 55 (SDA) and 56 (SCL)
+Sep 14 08:19:49 localhost kernel: atmel_spi atmel_spi.1: Atmel SPI Controller at 0xfffcc000 (irq 13)
+Sep 14 08:19:50 localhost kernel: NET: Registered protocol family 10
+Sep 14 08:19:50 localhost kernel: lo: Disabled Privacy Extensions
+Sep 14 08:19:50 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Sep 14 08:20:34 localhost kernel: PPP generic driver version 2.4.2
+Sep 14 08:20:34 localhost pppd[1185]: pppd 2.4.4 started by root, uid 0
+Sep 14 08:20:35 localhost chat[1195]: timeout set to 3 seconds
+Sep 14 08:20:35 localhost chat[1195]: abort on (BUSY)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO CARRIER)
+Sep 14 08:20:35 localhost chat[1195]: abort on (VOICE)
+Sep 14 08:20:35 localhost chat[1195]: abort on (NO DIALTONE)
+Sep 14 08:20:35 localhost chat[1195]: send (AT+cgdcont=1,"IP","arso.si"^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATZ^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (OK)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: OK
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (ATD*99***1#^M)
+Sep 14 08:20:36 localhost chat[1195]: expect (CONNECT)
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: ^M
+Sep 14 08:20:36 localhost chat[1195]: CONNECT
+Sep 14 08:20:36 localhost chat[1195]:  -- got it
+Sep 14 08:20:36 localhost chat[1195]: send (^M)
+Sep 14 08:20:36 localhost pppd[1185]: Serial connection established.
+Sep 14 08:20:36 localhost pppd[1185]: using channel 1
+Sep 14 08:20:36 localhost pppd[1185]: Using interface ppp0
+Sep 14 08:20:36 localhost pppd[1185]: Connect: ppp0 <--> /dev/ttyS3
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0x92ba85fe> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfReq id=0x0 <asyncmap 0x0> <auth chap MD5> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfNak id=0x0 <auth pap>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0x92ba85fe> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP ConfReq id=0x1 <asyncmap 0x0> <auth pap> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP ConfAck id=0x1 <asyncmap 0x0> <auth pap> <magic 0xdab0ae2a> <pcomp> <accomp>]
+Sep 14 08:20:37 localhost pppd[1185]: sent [LCP EchoReq id=0x0 magic=0x92ba85fe]
+Sep 14 08:20:37 localhost pppd[1185]: Warning - secret file /etc/ppp/pap-secrets has world and/or group access
+Sep 14 08:20:37 localhost pppd[1185]: sent [PAP AuthReq id=0x1 user="agws" password=<hidden>]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [LCP DiscReq id=0x2 magic=0xdab0ae2a]
+Sep 14 08:20:37 localhost pppd[1185]: rcvd [PAP AuthAck id=0x1 ""]
+Sep 14 08:20:37 localhost pppd[1185]: PAP authentication succeeded
+Sep 14 08:20:38 localhost kernel: PPP BSD Compression module registered
+Sep 14 08:20:38 localhost pppd[1185]: sent [CCP ConfReq id=0x1 <deflate 15> <deflate(old#) 15> <bsd v1 15>]
+Sep 14 08:20:38 localhost pppd[1185]: sent [IPCP ConfReq id=0x1 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:38 localhost kernel: PPP Deflate Compression module registered
+Sep 14 08:20:38 localhost pppd[1185]: rcvd [LCP ProtRej id=0x3 80 fd 01 01 00 0f 1a 04 78 00 18 04 78 00 15 03 2f]
+Sep 14 08:20:38 localhost pppd[1185]: Protocol-Reject for 'Compression Control Protocol' (0x80fd) received
+Sep 14 08:20:39 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x1 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+Sep 14 08:20:39 localhost pppd[1185]: sent [IPCP ConfReq id=0x2 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x2 <ms-dns1 10.11.12.13> <ms-dns3 10.11.12.14> <ms-wins 10.11.12.13> <ms-wins 10.11.12.14>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x3 <compress VJ 0f 01> <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfReq id=0x0]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfNak id=0x0 <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfRej id=0x3 <compress VJ 0f 01>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x4 <addr 0.0.0.0>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfNak id=0x4 <addr 172.19.161.156>]
+Sep 14 08:20:40 localhost pppd[1185]: sent [IPCP ConfReq id=0x5 <addr 172.19.161.156>]
+Sep 14 08:20:40 localhost pppd[1185]: rcvd [IPCP ConfAck id=0x5 <addr 172.19.161.156>]
+Sep 14 08:20:41 localhost pppd[1185]: rcvd [IPCP ConfReq id=0x1]
+Sep 14 08:20:41 localhost pppd[1185]: sent [IPCP ConfAck id=0x1]
+Sep 14 08:20:41 localhost pppd[1185]: Could not determine remote IP address: defaulting to 10.64.64.64
+Sep 14 08:20:41 localhost pppd[1185]: Cannot determine ethernet address for proxy ARP
+Sep 14 08:20:41 localhost pppd[1185]: local  IP address 172.19.161.156
+Sep 14 08:20:41 localhost pppd[1185]: remote IP address 10.64.64.64
+Sep 14 08:20:41 localhost pppd[1185]: Script /etc/ppp/ip-up started (pid 1215)
+Sep 14 08:20:41 localhost pppd[1185]: Script /etc/ppp/ip-up finished (pid 1215), status = 0x0
+Sep 14 08:21:05 localhost /usr/sbin/cron[1254]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:21:05 localhost /usr/sbin/cron[1255]: (CRON) STARTUP (fork ok)
+Sep 14 08:21:05 localhost /usr/sbin/cron[1255]: (CRON) INFO (Running @reboot jobs)
+Sep 14 08:30:01 localhost /USR/SBIN/CRON[1402]: (root) CMD (   /home/agws/network_sync.sh)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1453]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1454]: (CRON) STARTUP (fork ok)
+Sep 14 08:30:14 localhost /usr/sbin/cron[1454]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+Sep 14 08:40:01 localhost /USR/SBIN/CRON[1480]: (root) CMD (   /home/agws/network_sync.sh)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1523]: (CRON) INFO (pidfile fd = 3)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1524]: (CRON) STARTUP (fork ok)
+Sep 14 08:40:14 localhost /usr/sbin/cron[1524]: (CRON) INFO (Skipping @reboot jobs -- not system startup)
+debian:/var/log# telnet localhost 60000
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Welcome to the CLI terminal. Type 'help' for help on commands.
+
+jmd(60000)>get aftp
+Idx  Type Host                            Port  User           Path                 Tp [min]  Enabled  Status    Last Update / Transfer                     Hostname
+00   ftp  gober.arso.sigov.si              21   G415           ---                     10       true   disabled  01/01/1970 01:00:00 / 01/01/1970 01:00:00  ARSO
+jmd(60000)>date
+14/09/2017 08:51:19
+jmd(60000)>exit
+Connection closed by foreign host.
+debian:/var/log# cd ,,
+-bash: cd: ,,: No such file or directory
+debian:/var/log# cd ..
+debian:/var# ls
+backups  cache  lib  local  lock  log  mail  opt  run  spool  tmp
+debian:/var# tar cvzf debugLOGtemp.tar.gz log
+log/
+log/syslog.4.gz
+log/lpr.log
+log/pppstatus/
+log/kern.log.3.gz
+log/syslog.6.gz
+log/dmesg.1.gz
+log/auth.log.2.gz
+log/auth.log
+log/messages
+log/messages.4.gz
+log/user.log.2.gz
+log/dmesg.4.gz
+log/apt/
+log/auth.log.1
+log/debug.4.gz
+log/user.log
+log/btmp.1
+log/debug
+log/messages.1
+log/auth.log.3.gz
+log/dpkg.log
+log/lastlog
+log/kern.log.4.gz
+log/messages.2.gz
+log/dmesg
+log/mail.info
+log/wtmp.1
+log/messages.3.gz
+log/faillog
+log/network_sync.log
+log/dmesg.2.gz
+log/syslog.7.gz
+log/dpkg.log.1
+log/syslog.2.gz
+log/kern.log.1
+log/news/
+log/news/news.notice
+log/news/news.crit
+log/news/news.err
+log/dmesg.0
+log/mail.log
+log/mail.err
+log/debug.1
+log/wtmp
+log/bootstrap.log
+log/debug.3.gz
+log/rc.local.log
+log/daemon.log.1
+log/user.log.1
+log/debug.2.gz
+log/mail.warn
+log/ppp_install.log
+log/daemon.log.2.gz
+log/syslog.5.gz
+log/btmp
+log/syslog.1
+log/daemon.log
+log/syslog
+log/network_sync.log.1
+log/ppp-connect-errors
+log/auth.log.4.gz
+log/dmesg.3.gz
+log/kern.log
+log/syslog.3.gz
+log/boot
+log/kern.log.2.gz
+log/fsck/
+log/fsck/checkroot
+log/fsck/checkfs
+debian:/var# Write failed: Connection reset by peer
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 10:03.14]  ~
+[User.RONB650nk] ¤ ssh root@172.19.161.156
+ssh: connect to host 172.19.161.156 port 22: Connection timed out
+                                                                                                                                                                                                          ·
+···········································································································································································································
+[2017-09-14 10:15.57]  ~
+[User.RONB650nk] ¤ ssh root@172.19.161.156
+root@172.19.161.156's password:
+X11 forwarding request failed on channel 0
+Linux debian 2.6.35.7-nanosg20 #1 PREEMPT Wed Jun 5 15:07:37 CEST 2013 armv5tejl
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Thu Sep 14 09:49:36 2017
+debian:~# cd /var/
+debian:/var# tar cvzf debugLOGtemp2.tar.gz log
+log/
+log/syslog.4.gz
+log/lpr.log
+log/pppstatus/
+log/kern.log.3.gz
+log/syslog.6.gz
+log/dmesg.1.gz
+log/auth.log.2.gz
+log/auth.log
+log/messages
+log/messages.4.gz
+log/user.log.2.gz
+log/dmesg.4.gz
+log/apt/
+log/auth.log.1
+log/debug.4.gz
+log/user.log
+log/btmp.1
+log/debug
+log/messages.1
+log/auth.log.3.gz
+log/dpkg.log
+log/lastlog
+log/kern.log.4.gz
+log/messages.2.gz
+log/dmesg
+log/mail.info
+log/wtmp.1
+log/messages.3.gz
+log/faillog
+log/network_sync.log
+log/dmesg.2.gz
+log/syslog.7.gz
+log/dpkg.log.1
+log/syslog.2.gz
+log/kern.log.1
+log/news/
+log/news/news.notice
+log/news/news.crit
+log/news/news.err
+log/dmesg.0
+log/mail.log
+log/mail.err
+log/debug.1
+log/wtmp
+log/bootstrap.log
+log/debug.3.gz
+log/rc.local.log
+log/daemon.log.1
+log/user.log.1
+log/debug.2.gz
+log/mail.warn
+log/ppp_install.log
+log/daemon.log.2.gz
+log/syslog.5.gz
+log/btmp
+log/syslog.1
+log/daemon.log
+log/syslog
+log/network_sync.log.1
+log/ppp-connect-errors
+log/auth.log.4.gz
+log/dmesg.3.gz
+log/kern.log
+log/syslog.3.gz
+log/boot
+log/kern.log.2.gz
+log/fsck/
+log/fsck/checkroot
+log/fsck/checkfs
+debian:/var#
+debian:/var#
+debian:/var# telnet localhost 60000
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Welcome to the CLI terminal. Type 'help' for help on commands.
+
+jmd(60000)>get pa 50
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      09:01   14/09/2017      10:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      09:01   14/09/2017      10:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   22      0x8800  493     493     09:44   493     09:44   493     0.0
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   22      0x8800  13.3    13.3    09:44   13.3    09:44   13.3    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   22      0x8800  729     731     09:45   725     09:45   729     1.3
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   22      0x8800  13.7    14.2    09:54   13.6    09:59   13.8    0.1
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   22      0x8800  10.8    26.0    10:00   -40.0   09:45   26.0    27.6
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   22      0x8800  34      50      09:50   0       09:45   41      18.8
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      08:01   14/09/2017      09:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      08:01   14/09/2017      09:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   64      0x8800  493     494     08:22   493     08:22   493     0.5
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   64      0x8800  13.3    13.3    08:22   13.3    08:22   13.3    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   64      0x8800  729     733     08:31   723     08:23   729     1.8
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   64      0x8800  13.9    14.1    08:22   13.8    08:56   13.9    0.1
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   59      0x8800  -12.7   24.8    08:35   -40.0   08:23   -40.0   32.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   64      0x8800  29      65      08:27   0       08:30   0       31.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      07:01   14/09/2017      08:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      07:01   14/09/2017      08:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      06:01   14/09/2017      07:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      06:01   14/09/2017      07:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      05:01   14/09/2017      06:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      05:01   14/09/2017      06:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      04:01   14/09/2017      05:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      04:01   14/09/2017      05:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      03:01   14/09/2017      04:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      03:01   03/09/2017      04:00   03/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   100     0x0004  512     513     03:01   512     03:01   512     0.3
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   100     0x0004  13.4    13.4    03:01   13.4    03:01   13.4    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   100     0x0004  728     731     03:01   723     03:52   729     1.9
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   100     0x0004  12.7    12.7    03:35   12.6    03:44   12.7    0.0
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   100     0x0005  -40.0   -40.0   03:01   -40.0   03:01   -40.0   0.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   100     0x0004  0       0       03:01   0       03:01   0       0.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      02:01   14/09/2017      03:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      02:01   03/09/2017      03:00   03/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   100     0x0004  512     513     02:01   512     02:01   512     0.4
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   100     0x0004  13.4    13.4    02:01   13.4    02:01   13.4    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   100     0x0004  728     731     02:01   725     02:03   728     1.9
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   100     0x0004  12.7    12.8    02:01   12.7    02:44   12.7    0.0
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   100     0x0005  -40.0   -40.0   02:01   -40.0   02:01   -40.0   0.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   100     0x0004  0       0       02:01   0       02:01   0       0.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      01:01   14/09/2017      02:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      01:01   03/09/2017      02:00   03/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   100     0x0004  512     513     01:01   512     01:01   512     0.5
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   100     0x0004  13.4    13.4    01:01   13.4    01:01   13.4    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   100     0x0004  728     731     01:01   725     01:05   728     1.9
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   100     0x0004  12.8    12.8    01:07   12.7    01:58   12.8    0.0
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   100     0x0005  -40.0   -40.0   01:01   -40.0   01:01   -40.0   0.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   100     0x0004  0       0       01:01   0       01:01   0       0.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      00:01   14/09/2017      01:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      00:01   03/09/2017      01:00   03/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   100     0x0004  513     513     00:01   512     00:14   513     0.4
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   100     0x0004  13.4    13.4    00:01   13.4    00:01   13.4    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   100     0x0004  728     731     00:01   723     00:44   729     1.9
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   100     0x0004  12.8    12.8    00:05   12.7    00:58   12.8    0.0
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   100     0x0005  -40.0   -40.0   00:01   -40.0   00:01   -40.0   0.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   100     0x0004  0       0       00:01   0       00:01   0       0.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      23:01   13/09/2017      00:00   14/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      23:01   02/09/2017      00:00   03/09/2017      09:50   14/09/2017      50088   G415    004
+P5060   ch00@cpu_0:60001        004@0360.12.01.10.002   100     0x0004  513     513     23:01   512     23:24   513     0.1
+P5030   ch01@cpu_0:60001        004@0360.12.02.10.002   100     0x0004  13.4    13.4    23:01   13.4    23:01   13.4    0.0
+P5143   ch02@cpu_0:60001        004@0360.12.03.10.002   100     0x0004  728     731     23:01   725     23:01   728     1.9
+P5070   ch04@cpu_0:60001        004@0001.12.01.30.004   100     0x0004  12.8    12.9    23:06   12.8    23:58   12.8    0.0
+P5014   ch05@cpu_0:60001        004@0001.12.02.30.004   100     0x0005  -40.0   -40.0   23:01   -40.0   23:01   -40.0   0.0
+P5035   ch06@cpu_0:60001        004@0001.12.03.30.004   100     0x0004  0       0       23:01   0       23:01   0       0.0
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      22:01   13/09/2017      23:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      22:01   13/09/2017      23:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      21:01   13/09/2017      22:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      21:01   13/09/2017      22:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      20:01   13/09/2017      21:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      20:01   13/09/2017      21:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      19:01   13/09/2017      20:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      19:01   13/09/2017      20:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      18:01   13/09/2017      19:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      18:01   13/09/2017      19:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      17:01   13/09/2017      18:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      17:01   13/09/2017      18:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      16:01   13/09/2017      17:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      16:01   13/09/2017      17:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      15:01   13/09/2017      16:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      15:01   13/09/2017      16:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      14:01   13/09/2017      15:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      14:01   13/09/2017      15:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      13:01   13/09/2017      14:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      13:01   13/09/2017      14:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      12:01   13/09/2017      13:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      12:01   13/09/2017      13:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      11:01   13/09/2017      12:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      11:01   13/09/2017      12:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      10:01   13/09/2017      11:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      10:01   13/09/2017      11:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      09:01   13/09/2017      10:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      09:01   13/09/2017      10:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      08:01   13/09/2017      09:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      08:01   13/09/2017      09:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      07:01   13/09/2017      08:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      07:01   13/09/2017      08:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      06:01   13/09/2017      07:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      06:01   13/09/2017      07:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      05:01   13/09/2017      06:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      05:01   13/09/2017      06:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      04:01   13/09/2017      05:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      04:01   13/09/2017      05:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      03:01   13/09/2017      04:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      03:01   13/09/2017      04:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      02:01   13/09/2017      03:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      02:01   13/09/2017      03:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      01:01   13/09/2017      02:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      01:01   13/09/2017      02:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      00:01   13/09/2017      01:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      00:01   13/09/2017      01:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      23:01   12/09/2017      00:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      23:01   12/09/2017      00:00   13/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      22:01   12/09/2017      23:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      22:01   12/09/2017      23:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      21:01   12/09/2017      22:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      21:01   12/09/2017      22:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      20:01   12/09/2017      21:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      20:01   12/09/2017      21:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      19:01   12/09/2017      20:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      19:01   12/09/2017      20:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      18:01   12/09/2017      19:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      18:01   12/09/2017      19:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      17:01   12/09/2017      18:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      17:01   12/09/2017      18:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      16:01   12/09/2017      17:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      16:01   12/09/2017      17:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      15:01   12/09/2017      16:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      15:01   12/09/2017      16:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      14:01   12/09/2017      15:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      14:01   12/09/2017      15:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      13:01   12/09/2017      14:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      13:01   12/09/2017      14:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      12:01   12/09/2017      13:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      12:01   12/09/2017      13:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      11:01   12/09/2017      12:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      11:01   12/09/2017      12:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      10:01   12/09/2017      11:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      10:01   12/09/2017      11:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      09:01   12/09/2017      10:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      09:01   12/09/2017      10:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60000  10:24   14/09/2017      10:21   14/09/2017      08:01   12/09/2017      09:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+P0@cpu_0:60001  10:24   14/09/2017      10:21   14/09/2017      08:01   12/09/2017      09:00   12/09/2017      09:50   14/09/2017      50088   G415    004
+jmd(60000)>Connection closed by foreign host.
+debian:/var# telnet localhost 60000
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Welcome to the CLI terminal. Type 'help' for help on commands.
+
+jmd(60000)>get
+Terminal Help - command 'get':
+
+### help
+    get [smXX] ta [chxx][-f][-r|rf][d1][d2] - get sampling data on all or selected Sensor Module
+    get [smXX] ta [chxx][-f][-r|rf][-t YYYYMMDDhhmm] - get sampling data for selected interval on all or selected Sensor Module
+    get [smXX] pa [chxx][d1][d2][-a] - get interval data on all or selected Sensor Module
+    get [smXX] pa [chxx][-t YYYYMMDDhhmm][-a] - get interval data for selected interval on all or selected Sensor Module
+    get [smXX] FYYYYMMDDhhmm.M [-a]  - get interval data for selected interval on all or selected Sensor Module
+                                       Substitute 'F' for station file string
+                                       Find file 'F' and station code in 'M' using 'get ctree'
+                                     - optional '-a' forces report on all channels - channels with disabled report
+    get [jmd|smXX] mem [-a]       - get memory usage reports for all, jmd or single Sensor Module, '-a' provides detailed memory usage
+    get jmd                       - get sensor modules table from job manager
+    get aftp                      - get aftp sites table from job manager (passwd only printed in config mode!)
+    get [smXX] ctree              - get communication tree for all or selected Sensor Module
+    get [smXX] ctree description  - get communication tree with Description
+    get [smXX] status             - get communication tree with Status
+    get [smXX] location           - get communication tree with locations table
+    get [smXX] info               - get communication tree with info table
+    get [smXX] meta               - get communication tree with meta data table
+
+### examples:
+    get ta                 - get last stored records from all channels on all Sensor Modules
+    get sm01 ta 2          - get last two records of last stored value LIFO on Sensor Module Idx=01
+    get sm06 ta 2 34       - skip two records and get records from 2 .. 34 on Sensor Module Idx=06
+    get sm03 ta ch00       - get last stored records from channel ch00 on Sensor Module Idx=03
+    get ta ch00            - get last records from channel ch00 on all Sensor Modules
+    get ta ch00 2 35       - get records from 2 to 35 on ch00
+    get sm01 ta -t 201310241800 - get records from specified interval on Sensor Module Idx=01
+
+    get pa                 - get last stored records on all Sensor Modules
+    get pa 2               - get last two stored records on all Sensor Modules
+    get sm00 pa 2 34       - skip two records and get records from 2 .. 34 on Sensor Module Idx=00
+    get pa ch00            - get last stored records from channel ch00 on all Sensor Modules
+    get pa ch00 2          - get two records from channel ch00
+    get pa ch00 2 35       - get records from 2 to 35 on ch00
+
+    get ctree              - prints station's full configuration tree
+    get location           - prints ctree with location table
+    get meta               - prints ctree with meta data table
+
+jmd(60000)>exot
+ERROR: Syntax Error in command. Please, try again.
+jmd(60000)>exit
+Connection closed by foreign host.
+debian:/var# telnet localhost 60001
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Welcome to the CLI terminal. Type 'help' for help on commands.
+
+mbio120d(60001)>get
+Terminal Help - command 'get':
+
+### help
+    get ta [chxx][-f][-r|rf][d1][d2] - get sampling data with optional '-f' default format or '-r|rf' rval report
+    get ta [chxx][-f][-r|rf][-t YYYYMMDDhhmm] - get sampling data for selected interval with optional '-f' default format or '-r|rf' rval report
+    get pa [chxx][d1][d2][-a] - get interval data with optional '-a' forced report all
+    get pa [chxx][-t YYYYMMDDhhmm][-a] - get interval data at selected interval with optional '-a' forced report all
+    get FYYYYMMDDhhmm.M [-a]  - get report data for selected interval with optional '-a' forced report all. Substitute 'F' with file type and M with station code
+    get ctree [-t][-c]        - get communication tree
+    get ctree description [-t][-c] - get communication tree with Description
+    get status [-t][-c]       - get communication tree with Status
+    get status help           - prints Status values descriptions in 'get status' report
+    get jmd                   - get sensor modules table from station xml
+    get location [-t][-c]     - get communication tree with locations table
+    get info [-t][-c]         - get communication tree with info table
+    get meta [-t][-c]         - get communication tree with meta data table
+    get mem [-a]              - get current memory resources, '-a' provides detailed memory usage
+    Config tree commands allow custom formating using options -t and -c
+        -t                    - or '-t 0' forces no-tree driver only print
+        -t t1 ... t10         - driver only tree print with up to ten levels of pre-tree structure
+                                t1 ... t10 define tree level Node type:
+                                  1  -  empty node           '    '
+                                  2  -  running tree node    '|-- '
+                                  3  -  ending tree node     '`-- '
+                                  4  -  running circle node  '|--o '
+                                  5  -  ending circle node   '`--o '
+                                  6  -  running include node '|--< '
+                                  7  -  ending include node  '`--< '
+        -c c1 ... c10         - custom column width formating with width arguments per column
+                                 -1 -  no change keeps original column width
+                                  0  -  no alignment print - non-fixed width
+                                  N  -  positive number for fixed width
+                         if number of arguments is less then number of columns then original widths are used
+                         if number of arguments is greater then number of columns they are not used
+    REMARK: print is not aligned if width argument is too small as some information is not allowed to truncate
+
+### examples:
+    get ta                 - get last stored record
+    get ta -r 2            - get last two records of last stored value LIFO pval and rval
+    get ta -rf 2           - get last two records with rval in default format
+    get ta 2 34            - skip two records and get records from 2 .. 34
+    get ta ch00            - get last stored records from channel ch00
+    get ta ch00 2          - get two records from channel ch00
+    get ta ch00 -f 2 35    - get records from 2 to 35 on ch00 printed in default format
+    get ta -t 201310241800 - get records from specified interval
+
+    get pa                 - get last stored record
+    get pa -a              - get last stored record of all available channels
+    get pa 2               - get last two stored records LIFO
+    get pa 2 34            - skip two records and get records from 2 .. 34
+    get pa ch00            - get last stored records from channel ch00
+    get pa ch00 2          - get two records from channel ch00
+    get pa ch00 2 35       - get records from 2 to 35 on ch00
+
+    get ctree              - prints driver's full configuration tree with station and jmd info
+    get ctree -t 2 4       - prints only driver's configuration tree with 2 running pre-tree nodes
+                             usable in scripts generating larger tree print from several sensor modules drivers
+    get location -c 75     - prints ctree with custom fixed width and default location table formating
+    get meta -c -1 0 0 0 0 - prints ctree with condensed (e.g. single column, space separated cells) meta data table
+
+    get mem                - prints information about memory resources for last interval
+    get mem -a             - prints detailed information about memory resources (also memory resources per channel)
+
+mbio120d(60001)>get pa -t 201709070000
+P0@cpu_0:60001  10:32   14/09/2017      10:31   14/09/2017      23:01   06/09/2017      00:00   07/09/2017      09:50   14/09/2017      50088   G415    004
+mbio120d(60001)>Connection closed by foreign host.
+debian:/var#
