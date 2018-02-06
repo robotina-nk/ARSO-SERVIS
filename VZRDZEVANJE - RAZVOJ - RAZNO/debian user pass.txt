@@ -1,2 +1,0 @@
-debian/reverse
-root/toor 
