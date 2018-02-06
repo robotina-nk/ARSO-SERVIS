@@ -1,0 +1,11 @@
+http://gis.arso.gov.si/gis/profile.aspx?id=SSSV_AXL@Arso
+user: robotina 
+pass: arso!bober
+
+strežnik: ftp.arso.gvo.si 
+user: BoberMMoprema 
+pass: Merilna13AMP 
+
+teamviewer11
+nikola.kostic@robotina.com
+Kosnik00

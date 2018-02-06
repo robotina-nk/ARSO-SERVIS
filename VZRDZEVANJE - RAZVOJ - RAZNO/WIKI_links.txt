@@ -1,0 +1,40 @@
+MASTER BOBER CF
+	http://pivka.arso.sigov.si/redmine/projects/amws_senzorji_xober_dv_master/wiki
+		svn co http://pivka.arso.sigov.si/svn/xober_dv_master/3000_amws/4000_senzorji/tags/release-3000.0.3.1
+	http://pivka.arso.sigov.si/redmine/projects/agws_senzorji_xober_dv_master/wiki
+	http://pivka.arso.sigov.si/redmine/projects/asws_senzorji_xober_dv_master/wiki
+
+SINICA
+	http://pivka.arso.sigov.si/redmine/projects/e4000_test_wiki-testna-postaja/wiki
+		svn co http://pivka.arso.sigov.si/svn/xober_dv_location/4000_aaqs/4000_E4000_Test_0/4000_senzorji/branches/releases/release-4000.0.3.1
+MASTER **************************** NOVI !!!!
+	svn co http://pivka.arso.sigov.si/svn/xober_dv_master/4000_aaqs/4000_senzorji/branches/release-4000.0.4.1
+
+
+BRNIK
+	http://pivka.arso.sigov.si/redmine/projects/m493_letalisce_jp_ljubljana/wiki
+	 	svn co http://pivka.arso.sigov.si/svn/xober_op_location/3000_amws/00008_M493_Letalisce_JP_Ljubljana/4000_senzorji/branches/releases/release-00008.0.3.1
+
+
+NAVODILA ZA SKRIPTE
+http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki
+	http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki/Navodilo_za_avtomati%C4%8Dno_generiranje_WIKI_dokumentacije
+	http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki/Navodilo_za_avtomati%C4%8Dno_generiranje_CF_dokumentacije
+	http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki/Navodilo_uporabo_diagnosti%C4%8Dnega_orodja_za_pregled_sistema_presta
+	http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki/Navodilo_uporabo_diagnosti%C4%8Dnega_orodja_za_pregled_omre%C5%BEja_operativnih_postaj
+		http://pivka.arso.sigov.si/redmine/projects/produkcijsko-okolje-xober/wiki/Primer_novega_redmine_projekta_merilne_postaje_xober
+
+NAVODILA ZA ZAGON MOCA UC-8410
+http://pivka.arso.sigov.si/redmine/projects/sistemska-programska-oprema-moxa-uc8410-lx/wiki
+
+UKAZ ZA ODLAGANJE Z MOOBATERMA
+sshpass -p "Kosnik00" rsync -avz /home/User/Desktop/PRESTA_PREGLED.xlsx  nkostic@pivka.arso.sigov.si:/opt1/arso/docs/xober_op_location/0000_xoberl/000_korespondenca
+
+
+
+
+FIZ
+d:\ARSO_NEW_ROOT\SINICA\SMP3\N_smp3_teh_sp.doc
+d:\ARSO_NEW_ROOT\SINICA\SMP3\N_ts-smp3.doc
+vidi za 2 testirana senzora
+Slike ubaciti u report

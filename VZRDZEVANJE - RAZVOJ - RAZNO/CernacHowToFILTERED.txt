@@ -1,0 +1,225 @@
+Lokacija image-a:
+	/opt/arso/docs/xober_op_location/0000_xoberl/000_korespondenca/VMdeb-nKost/xober_d6-i386_release-3000.0.3_nkost
+	user:xober, pass:rebox
+================================================================================================================
+VM VirtualBox:
+	Importiranje: File -> Import Appliance
+		(vpisati tip datotek *, izbrati najveèji file
+	Settings: 
+		System->procesor: 4->1
+		Shared Folders: C:\ARSO_VBASCR_ROOT\CF_MAKE (sa PC vidljivo na Linux-u)
+			Check Auto-mount, Make Permanent
+	(V BIOS-u je treba vklopiti -vt-x (virtualizacija)	
+
+
+================================================================================================================
+Mount shared folderja:
+	sudo mount -t vboxsf CF_MAKE /mnt/disk_lx/
+UnMount shared folderja:
+	sudo umount CF_MAKE
+================================================================================================================
+Postopek za CF checkout/commit:
+
+	remove recursively (brisanje prejšnje verzije v lokalu)
+		xober@deb60x:~/workspace-pivka-senzorji/3000.0.3$ rm -rf  release-3000.0.3.1/
+
+	Ustvarjanje drevesne strukture:        |
+		mkdir workspace-pivka-senzorji |
+		cd workspace-pivka-senzorji/   |  <- samo prviè
+  		mkdir 3000.0.3                 |
+		cd 3000.0.3                    |
+		mkdir release-3000.0.3.1        
+
+
+	CHECKOUT  server -> local (pozicija mora biti ~/workspace-pivka-senzorji/3000.0.3/)
+		svn co http://pivka.arso.sigov.si/svn/xober_dv_master/3000_amws/4000_senzorji/tags/release-3000.0.3.1
+		(za postaje checkoutirati dokumentacijo za urejanje, npr:
+			svn co  http://pivka.arso.sigov.si/svn/xober_op_location/1000_asws/03060_H439_Jesenice_Sava_Dolinka/4000_senzorji/branches/releases/release-03060.0.3.1
+		)
+	
+	[WINDOWS] Generirati MASTER (VBA script)	
+	[LINUX] Prekopirati checkout-iran folder na share-an folder na WINDOWS-u
+	[WINDOWS] Primerjati (total commander) generiran in checkout-iran folder
+			Izkljuèiti folderje .svn & A1_master_processing (####za enkrat####)###!!!!!!!!!
+			SInhronizirati ustrezno lokalni folder
+	[LINUX] Move sa PC (sinhroniziran) na lokalni (~/workspace-pivka-senzorji/3000.0.3/release-3000.0.3.1)
+		AMPAK VSEBINO FOLDERJA, NE SAM FOLDER !!!!!!!!!
+	
+	Tell SVN server about new file
+		xober@deb60x:~/workspace-pivka-senzorji/3000.0.3/release-3000.0.3.1$ svn add * --force
+
+	BRISANJE FOLDERJA (primer)
+		xober@deb60x:~/workspace-pivka-senzorji/3000.0.3/release-3000.0.3.1$ svn rm N3-8_SGRd
+	
+	Sends your changes to the SVN server
+		xober@deb60x:~/workspace-pivka-senzorji/3000.0.3/release-3000.0.3.1$ svn commit -m "added sensors"
+
+	svn update or svn up. This command syncs your local sand box with the server. If you have made local changes, it will try and merge any changes on the server with your changes on your machine. 
+		??? TEST IT
+
+	svn --help
+
+
+
+MIME propset - HOBER
+svn propset svn:mime-type text/html *.htm
+svn propset svn:mime-type text/html N2_nanosG20/*.htm
+svn propset svn:mime-type text/html N2-X13_10_gsr120ntd/*.htm
+svn propset svn:mime-type text/html N2-X13_11_mbIO120d/*.htm
+svn propset svn:mime-type text/html N2-X13_11_mbIO120d/CBS/*.htm
+svn propset svn:mime-type text/html N2-X13_11_mbIO120d/SHT71/*.htm
+svn propset svn:mime-type text/html N2-X13_11_mbIO120d/VegaPuls67/*.htm
+svn propset svn:mime-type text/html N2-X13_11_mbIO120d/XCPK/*.htm
+svn propset svn:mime-type text/html N2-X9_USB_reley/*.htm
+svn propset svn:mime-type text/html N2-X9_USB_RS232/*.htm
+svn propset svn:mime-type text/html N2-X9_USB_RS232/H-ADCP/*.htm
+svn propset svn:mime-type text/html N2-X9_USB_RS485/*.htm
+svn propset svn:mime-type text/html N2-X9_USB_RS485/Pluvio2/*.htm
+svn propset svn:mime-type text/html N3_sc1000d/*.htm
+svn propset svn:mime-type text/html N4_camera/*.htm
+svn propset svn:mime-type application/pdf *.pdf
+svn propset svn:mime-type application/pdf A1_master_config/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-X13_10_gsr120ntd/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-X13_11_mbIO120d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-X9_H-ADCP/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-X9_pluvio2d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-X9_relay/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N3_sc1000d/*.pdf
+svn propset svn:mime-type application/pdf N2_nanosG20/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_10_gsr120ntd/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/CBS/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/DS18B20/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/KATflow100/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/SHT71/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/VegaPuls67/*.pdf
+svn propset svn:mime-type application/pdf N2-X13_11_mbIO120d/XCPK/*.pdf
+svn propset svn:mime-type application/pdf N2-X9_USB_reley/*.pdf
+svn propset svn:mime-type application/pdf N2-X9_USB_RS232/*.pdf
+svn propset svn:mime-type application/pdf N2-X9_USB_RS232/H-ADCP/*.pdf
+svn propset svn:mime-type application/pdf N2-X9_USB_RS485/*.pdf
+svn propset svn:mime-type application/pdf N2-X9_USB_RS485/Pluvio2/*.pdf
+svn propset svn:mime-type application/pdf N3_sc1000d/*.pdf
+svn propset svn:mime-type application/pdf N4_camera/*.pdf
+
+
+MIME propset - GOBER
+svn propset svn:mime-type text/html *.htm
+svn propset svn:mime-type text/html N2_nanosG20/*.htm
+svn propset svn:mime-type text/html N2-3-10_gsr120ntd/*.htm
+svn propset svn:mime-type text/html N2-3-11_mbIO120d/*.htm
+svn propset svn:mime-type text/html N2-3-11_mbIO120d/SHT71/*.htm
+svn propset svn:mime-type text/html N2-3-11_mbIO120d/XCPK/*.htm
+svn propset svn:mime-type application/pdf *.pdf
+svn propset svn:mime-type application/pdf A1_master_config/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/*.pdf
+svn propset svn:mime-type application/pdf N2_nanosG20/*.pdf
+svn propset svn:mime-type application/pdf N2-3-10_gsr120ntd/*.pdf
+svn propset svn:mime-type application/pdf N2-3-11_mbIO120d/*.pdf
+svn propset svn:mime-type application/pdf N2-3-11_mbIO120d/SHT71/*.pdf
+svn propset svn:mime-type application/pdf N2-3-11_mbIO120d/XCPK/*.pdf
+svn commit -m "mime propset for htm,pdf"
+
+
+
+MIME propset - MOBER
+svn propset svn:mime-type text/html *.htm
+svn propset svn:mime-type text/html N2-1_wmt702d/*.htm
+svn propset svn:mime-type text/html N2-2_hmp155d/*.htm
+svn propset svn:mime-type text/html N2-3_ptb330d/*.htm
+svn propset svn:mime-type text/html N2-4_pluvio2d/*.htm
+svn propset svn:mime-type text/html N2-5_cl31d/*.htm
+svn propset svn:mime-type text/html N2-6_lpmd/*.htm
+svn propset svn:mime-type text/html N2-7_shm30d/*.htm
+svn propset svn:mime-type text/html N2-8_iod/N2-8-A0/pm/*.htm
+svn propset svn:mime-type text/html N2-8_iod/N2-8-A1/*.htm
+svn propset svn:mime-type text/html N2-8_iod/N2-8-A2/lws/*.htm
+svn propset svn:mime-type text/html N2-8_iod/N2-8-Cx/*.htm
+svn propset svn:mime-type text/html N2-8_iod/*.htm
+svn propset svn:mime-type text/html N2_uc8410d/*.htm
+svn propset svn:mime-type text/html N2_uc8410d/uc8410iod/*.htm
+svn propset svn:mime-type text/html N2_uc8410d/*.htm
+svn propset svn:mime-type text/html N3-1_pico64d/*.htm
+svn propset svn:mime-type text/html N3-4_spn1d/*.htm
+svn propset svn:mime-type text/html N3-5_smp11d/*.htm
+svn propset svn:mime-type text/html N3-6_iod/N3-6-C0/uvs/*.htm
+svn propset svn:mime-type text/html N3-6_iod/*.htm
+svn propset svn:mime-type text/html N3-7_vpf710d/*.htm
+svn propset svn:mime-type text/html N3-8_sgr3d/*.htm
+svn propset svn:mime-type text/html N3-8_uSonic3d/*.htm
+svn propset svn:mime-type text/html N4_camera/*.htm
+svn propset svn:mime-type text/html N5-1_dgnd/*.htm
+svn propset svn:mime-type application/pdf *.pdf
+svn propset svn:mime-type application/pdf N2_uc8410d/*.pdf
+svn propset svn:mime-type application/pdf N2-1_wmt702d/*.pdf
+svn propset svn:mime-type application/pdf N2-2_hmp155d/*.pdf
+svn propset svn:mime-type application/pdf N2-3_ptb330d/*.pdf
+svn propset svn:mime-type application/pdf N2-4_pluvio2d/*.pdf
+svn propset svn:mime-type application/pdf N2-5_cl31d/*.pdf
+svn propset svn:mime-type application/pdf N2-6_lpmd/*.pdf
+svn propset svn:mime-type application/pdf N2-7_shm30d/*.pdf
+svn propset svn:mime-type application/pdf N2-8_iod/N2-8-A0/pm/*.pdf
+svn propset svn:mime-type application/pdf N2-8_iod/N2-8-A1/*.pdf
+svn propset svn:mime-type application/pdf N2-8_iod/N2-8-A2/lws/*.pdf
+svn propset svn:mime-type application/pdf N2-8_iod/N2-8-Cx/*.pdf
+svn propset svn:mime-type application/pdf N2-8_iod/*.pdf
+svn propset svn:mime-type application/pdf N2_uc8410d/*.pdf
+svn propset svn:mime-type application/pdf N2_uc8410d/uc8410iod/*.pdf
+svn propset svn:mime-type application/pdf N2_uc8410d/*.pdf
+svn propset svn:mime-type application/pdf N3-1_pico64d/*.pdf
+svn propset svn:mime-type application/pdf N3-4_spn1d/*.pdf
+svn propset svn:mime-type application/pdf N3-5_smp11d/*.pdf
+svn propset svn:mime-type application/pdf N3-6_iod/N3-6-C0/uvs/*.pdf
+svn propset svn:mime-type application/pdf N3-6_iod/*.pdf
+svn propset svn:mime-type application/pdf N3-7_vpf710d/*.pdf
+svn propset svn:mime-type application/pdf N3-8_sgr3d/*.pdf
+svn propset svn:mime-type application/pdf N3-8_uSonic3d/*.pdf
+svn propset svn:mime-type application/pdf N5-1_dgnd/*.pdf
+svn propset svn:mime-type application/pdf N4_camera/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2_uc8410d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-1_wmt702d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-2_hmp155d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-3_ptb330d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-4_pluvio2d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-5_cl31d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-6_lpmd/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-7_shm30d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N2-8_iod/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N3-1_pico64d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N3-4_spn1d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N3-5_smp11d/*.pdf
+svn propset svn:mime-type application/pdf A1_master_processing/N3-7_vpf710d/*.pdf
+svn commit -m "mime propset for htm,pdf"
+
+CHECK THIS
+https://webapps.math.uiuc.edu/mathdocs/svn/webpages.html
+
+================================================================================================================
+MobaXTerm lokacija lokalno
+c:\Users\User\Documents\MobaXterm\home\workspace-pivka-senzorji\3000.0.3\release-3000.0.3.1\
+================================================================================================================
+LINKS
+	Basic SVN Commands 
+		http://www.linuxfromscratch.org/blfs/edguide/chapter03.html
+	MIME types
+		https://www.sitepoint.com/web-foundations/mime-types-summary-list/
+================================================================================================================
+Geany - editor
+================================================================================================================
+\sbin\ifconfig - po defaultu ni u PATH-u i mora se eksplicitno zagnati
+================================================================================================================
+sftp://root@172.19.7.65 - pristup fajlom
+================================================================================================================
+
+================================================================================================================
+
+________________________________________________________________________________________________
+http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.propset.html
+http://stefaanlippens.net/subversion-set-pdf-as-binary
+
+________________________________________________________________________________________________
+
+#DARKO: svn commit z prijavo
+$ svn commit -m "mime propset for htm,pdf" --username nkostic
+
+SE SE BO ODLOÈILO ÈE SE ZBRIŠE TAGIRANA VERZIJA
