@@ -1,0 +1,7 @@
+TIME
+SEARCH for 232 straight through cable (na obe strani matica)
+call Kruscic
+Setup_UMB_Config_V26.EXE
+			Com8
+			Edit -> Connection settings -> Use RS232(COM) , Select port 8 << težave - se ni videl
+		

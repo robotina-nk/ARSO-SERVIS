@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smp11d.h>
+<File>
+	<Description>XOBER Sensor Module Application - smp11 Module Daemon - DRIVER config file</Description>
+	<Comment>File is loaded at startup. Changes require the restart of the Application.</Comment>
+</File>
+<Driver Enable="true" ipcValidationEnable="RW">
+	<Description>smp11 devices on RS485 bus</Description>
+	<Communication Type="TCP" opt_Type="Serial,TCP" Description="smp11 on NPORT #NPORT_IP#:64005" Protocol="smp11_modbus_rtu" Addr="0x01">
+		<SerialConnection Description="Serial port settings" Port="4" useSystemSettings="true" Baudrate="19200" DataBits="8" Parity="even" StopBits="1" RTSMode="0" Mode="RS485-2W" opt_Mode="RS232,RS485-2W,RS485-4W,RS422"/>
+		<TCPConnection Description="Connection to Nport5000" IP="#NPORT_IP#" Port="64005">
+			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>
+				<info>
+					<project_version>Nport5000.#PROJECT_VERSION#</project_version>
+					<data_link>LAN</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.moxa.com</manufacturer>
+					<device_type>Nport5000</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</TCPConnection> 
+		<ConnectionTiming Description="Advanced options" Timeout_ms="500" NumOfTries="3" RetryDelay_ms="500" FrameTimeout_ms="200"/>
+	</Communication>
+	<Devices>
+		<Device Idx="00" Type="smp11" DeviceProtocol="smp11_modbus_rtu" CRC="1" LF="0" IOType="Analog" FuncType="Sensor" Addr="1" opt_Addr="1, 128" snReadEnable="false" autoinitEnable="false" Enable="true">
+			<Description>Device Description</Description>
+			<Links>
+				<Link Type="f32" DataID="00" ChannelIdx="00" Description="global_solar_radiation"/>
+				<Link Type="f32" DataID="01" ChannelIdx="01" Description="smp11_body_temperature"/>
+				<Link Type="f32" DataID="02" ChannelIdx="02" Description="smp11_supply_voltage"/>
+				<Link Type="u16" DataID="03" ChannelIdx="03" Description="smp11_status"/>
+			</Links>
+			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>			
+				<info>
+					<project_version>smp11d.#VERSION#</project_version>
+					<data_link>RS485_2W</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.kippzonen.com</manufacturer>
+					<device_type>smp11</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</Device>
+	</Devices>
+</Driver>
+<Data>
+	<Sampling Ts="10000" opt_Ts="100, ..., 60000" Ts_Unit="ms">
+	</Sampling>
+	<Processing Tp="10" opt_Tp="1,5,10,15,30,60,120" Tp_Unit="min">
+	</Processing>
+	<Reports>
+		<sensor_value_ReportFormat>
+			<header/>
+			<dataHeader chIdx="ch%02d@" cpuIdx="cpu_%d:" port="%04d\t" date="%d/%m/%Y%t" time="%H:%M:%S.%1%t" validity="%#04x" delimiter="\t"/>
+			<dataDelimiter delimiter="\t"/>
+			<dataTail/>
+		</sensor_value_ReportFormat>
+		<get_ta_ReportFormat>
+			<header date="%d/%m/%Y%t" time="%H:%M:%S.%1%t" cpuIdx="cpu_%d:" port="%04d:" sensorModule="%s"/>
+			<dataHeader pcode="%s\t" chIdx="ch%02d@" cpuIdx="cpu_%d:" port="%04d\t" stationType="%s@" cpcode="%s\t" validity="%#04x" delimiter="\t"/>
+			<dataDelimiter delimiter="\t"/>
+			<dataTail mpp="%s"/>
+		</get_ta_ReportFormat>
+		<get_ta_ch_ReportFormat>
+			<header pcode="%s\t" chIdx="ch%02d@" cpuIdx="cpu_%d:" port="%04d\t" stationType="%s@" cpcode="%s\t" mpp="%s"/>
+			<dataHeader idx="%d\t" date="%d/%m/%Y%t" time="%H:%M:%S.%1%t" validity="%#04x" delimiter="\t"/>
+			<dataDelimiter delimiter="\t"/>
+		</get_ta_ch_ReportFormat>
+		<get_pa_ReportFormat>
+			<header pcode="P0@" cpuIdx="cpu_%d:" port="%04d\t" sendTime="%H:%M%t" sendDate="%d/%m/%Y%t" setClockTime="%H:%M%t" setClockDate="%d/%m/%Y%t" intervalStartTime="%H:%M%t" intervalStartDate="%d/%m/%Y%t" intervalTime="%H:%M%t" intervalDate="%d/%m/%Y%t" startTime="%H:%M%t" startDate="%d/%m/%Y%t" XamsTemp="%.1f\t" XamsTempErr="-999\t" locationCode="%s\t" stationCode="%s\t" stationType="%s"/>
+			<dataHeader pcode="%s\t" chIdx="ch%02d@" cpuIdx="cpu_%d:" port="%04d\t" stationType="%s@" cpcode="%s\t" aqRatio="%.0f\t" validity="%#04x" delimiter="\t"/>
+			<dataDelimiter delimiter="\t"/>
+		</get_pa_ReportFormat>
+		<get_pa_ch_ReportFormat>
+			<header pcode="%s\t" chIdx="ch%02d@" cpuIdx="cpu_%d:" port="%04d\t" stationType="%s@" cpcode="%s\t" mpp="%s"/>
+			<dataHeader idx="%d\t" date="%d/%m/%Y%t" time="%H:%M:%S.%1%t" aqRatio="%.0f\t" validity="%#04x" delimiter="\t"/>
+			<dataDelimiter delimiter="\t"/>
+		</get_pa_ch_ReportFormat>
+	</Reports>
+	<Channels>
+		<Channel Idx="00" Type="Analog" Enable="true" cpcode="0043.12.01.02.008" pcode="P3300" pp="solar_radiation_group" intf="rs485" mpp="global_solar_radiation" asmb="mast2" st="SMP11-G">
+			<Description>global_solar_radiation</Description>
+			<Sampling Period="1"/>
+			<Status delimiter="">
+				<StatusLink ChannelIdx="03" maskValidity="0xfff8" maskReport="0xffff" reportFormat="%#04x" reportFormatErr="0x////" />
+			</Status> 
+			<Reports Description="global_solar_radiation" Unit="W/m2" paReportEnable="true">
+				<get_ta_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ReportFormat>
+				<get_ta_ch_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ch_ReportFormat>
+				<get_pa_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ReportFormat>
+				<get_pa_ch_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ch_ReportFormat>
+			</Reports>			
+			<Calibration PAR_3="0.000000" PAR_2="0.000000" PAR_1="1.000000" PAR_0="0.000000"/>
+			<DataControl>
+				<X Idx="00" V="-40" Enable="true" Type="warning" Description="low_value"/>
+				<X Idx="01" V="4000" Enable="true" Type="warning" Description="high_value"/>
+				<X Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<X Idx="03" V="nc" Enable="false" Type="warning" Description="X3"/>
+				<X Idx="04" V="nc" Enable="false" Type="warning" Description="X4"/>
+				<X Idx="05" V="-40" Enable="true" Type="error" Description="sensor_range_min"/>
+				<X Idx="06" V="4000" Enable="true" Type="error" Description="sensor_range_max"/>
+				<X Idx="07" V="-40" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<X Idx="08" V="4000" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<X Idx="09" V="nc" Enable="false" Type="error" Description="X9"/>
+				<X Idx="10" V="nc" Enable="true" Type="error" Description="comm_fail"/>
+				<X Idx="11" V="nc" Enable="true" Type="error" Description="device"/>
+				<X Idx="12" V="nc" Enable="false" Type="error" Description="step_value"/>
+				<X Idx="13" V="nc" Enable="false" Type="error" Description="X13"/>
+				<X Idx="14" V="nc" Enable="false" Type="error" Description="X14"/>
+				<X Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</DataControl>
+			<IntervalDataControl>
+				<Y Idx="00" V="-40" Enable="true" Type="warning" Description="low_value"/>
+				<Y Idx="01" V="4000" Enable="true" Type="warning" Description="high_value"/>
+				<Y Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<Y Idx="03" V="nc" Enable="false" Type="warning" Description="Y3"/>
+				<Y Idx="04" V="nc" Enable="false" Type="warning" Description="Y4"/>
+				<Y Idx="05" V="-40" Enable="true" Type="error" Description="sensor_range_min"/>
+				<Y Idx="06" V="4000" Enable="true" Type="error" Description="sensor_range_max"/>
+				<Y Idx="07" V="-40" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<Y Idx="08" V="4000" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<Y Idx="09" V="nc" Enable="false" Type="error" Description="max_min_absolute_deviation"/>
+				<Y Idx="10" V="nc" Enable="true" Type="error" Description="max-avg-min"/>
+				<Y Idx="11" V="70" Enable="true" Type="error" Description="aq_ratio V[%]"/>
+				<Y Idx="12" V="nc" Enable="false" Type="error" Description="step_value"/>
+				<Y Idx="13" V="nc" Enable="false" Type="error" Description="Y13"/>
+				<Y Idx="14" V="nc" Enable="false" Type="error" Description="Y14"/>
+				<Y Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</IntervalDataControl>
+ 			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>			
+				<info>
+					<project_version>smp11d.#VERSION#</project_version>
+					<data_link>RS485_2W</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.kippzonen.com</manufacturer>
+					<device_type>smp11</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</Channel>
+		<Channel Idx="01" Type="Analog" Enable="true" cpcode="0043.12.03.02.008" pcode="I3101" pp="solar_radiation_group" intf="rs485" mpp="smp11_body_temperature" asmb="mast2" st="SMP11-G">
+			<Description>smp11_body_temperature</Description>
+			<Sampling Period="1"/>
+			<Status delimiter="">
+				<StatusLink ChannelIdx="03" maskValidity="0xfff8" maskReport="0xffff" reportFormat="%#04x" reportFormatErr="0x////" />
+			</Status> 
+			<Reports Description="smp11_body_temperature" Unit="st.C" paReportEnable="false">
+				<get_ta_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ReportFormat>
+				<get_ta_ch_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ch_ReportFormat>
+				<get_pa_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ReportFormat>
+				<get_pa_ch_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ch_ReportFormat>
+			</Reports>			
+			<Calibration PAR_3="0.000000" PAR_2="0.000000" PAR_1="1.000000" PAR_0="0.000000"/>
+			<DataControl>
+				<X Idx="00" V="-40" Enable="true" Type="warning" Description="low_value"/>
+				<X Idx="01" V="80" Enable="true" Type="warning" Description="high_value"/>
+				<X Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<X Idx="03" V="nc" Enable="false" Type="warning" Description="X3"/>
+				<X Idx="04" V="nc" Enable="false" Type="warning" Description="X4"/>
+				<X Idx="05" V="-40" Enable="true" Type="error" Description="sensor_range_min"/>
+				<X Idx="06" V="80" Enable="true" Type="error" Description="sensor_range_max"/>
+				<X Idx="07" V="-40" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<X Idx="08" V="80" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<X Idx="09" V="nc" Enable="false" Type="error" Description="X9"/>
+				<X Idx="10" V="nc" Enable="true" Type="error" Description="comm_fail"/>
+				<X Idx="11" V="nc" Enable="true" Type="error" Description="device"/>
+				<X Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<X Idx="13" V="nc" Enable="false" Type="error" Description="X13"/>
+				<X Idx="14" V="nc" Enable="false" Type="error" Description="X14"/>
+				<X Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</DataControl>
+			<IntervalDataControl>
+				<Y Idx="00" V="-40" Enable="true" Type="warning" Description="low_value"/>
+				<Y Idx="01" V="80" Enable="true" Type="warning" Description="high_value"/>
+				<Y Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<Y Idx="03" V="nc" Enable="false" Type="warning" Description="Y3"/>
+				<Y Idx="04" V="nc" Enable="false" Type="warning" Description="Y4"/>
+				<Y Idx="05" V="-40" Enable="true" Type="error" Description="sensor_range_min"/>
+				<Y Idx="06" V="80" Enable="true" Type="error" Description="sensor_range_max"/>
+				<Y Idx="07" V="-40" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<Y Idx="08" V="80" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<Y Idx="09" V="nc" Enable="true" Type="error" Description="max_min_absolute_deviation"/>
+				<Y Idx="10" V="nc" Enable="true" Type="error" Description="max-avg-min"/>
+				<Y Idx="11" V="70" Enable="true" Type="error" Description="aq_ratio V[%]"/>
+				<Y Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<Y Idx="13" V="nc" Enable="false" Type="error" Description="Y13"/>
+				<Y Idx="14" V="nc" Enable="false" Type="error" Description="Y14"/>
+				<Y Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</IntervalDataControl>
+ 			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>			
+				<info>
+					<project_version>smp11d.#VERSION#</project_version>
+					<data_link>RS485_2W</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.kippzonen.com</manufacturer>
+					<device_type>smp11</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</Channel>
+		<Channel Idx="02" Type="Analog" Enable="true" cpcode="0043.12.04.02.008" pcode="I3102" pp="solar_radiation_group" intf="rs485" mpp="smp11_supply_voltage" asmb="mast2" st="SMP11-G">
+			<Description>smp11_supply_voltage</Description>
+			<Sampling Period="1"/>
+			<Status delimiter="">
+				<StatusLink ChannelIdx="03" maskValidity="0xfff8" maskReport="0xffff" reportFormat="%#04x" reportFormatErr="0x////" />
+			</Status> 
+			<Reports Description="smp11_supply_voltage" Unit="Vdc" paReportEnable="false">
+				<get_ta_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ReportFormat>
+				<get_ta_ch_ReportFormat>
+					<dataFormat value="%.1f" valueErr="-99.9" unit="%s"/>
+				</get_ta_ch_ReportFormat>
+				<get_pa_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ReportFormat>
+				<get_pa_ch_ReportFormat>
+					<avgFormat avg="%.1f" avgErr="-99.9"/>
+					<maxDateFormat max="%.1f" maxErr="-99.9" maxTime="%H:%M" maxTimeErr="99:99"/>
+					<minDateFormat min="%.1f" minErr="-99.9" minTime="%H:%M" minTimeErr="99:99"/>
+					<termFormat term="%.1f" termErr="-99.9"/>
+					<stdevFormat stdev="%.1f" stdevErr="-99.9"/>
+				</get_pa_ch_ReportFormat>
+			</Reports>			
+			<Calibration PAR_3="0.000000" PAR_2="0.000000" PAR_1="1.000000" PAR_0="0.000000"/>
+			<DataControl>
+				<X Idx="00" V="5" Enable="true" Type="warning" Description="low_value"/>
+				<X Idx="01" V="30" Enable="true" Type="warning" Description="high_value"/>
+				<X Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<X Idx="03" V="nc" Enable="false" Type="warning" Description="X3"/>
+				<X Idx="04" V="nc" Enable="false" Type="warning" Description="X4"/>
+				<X Idx="05" V="5" Enable="true" Type="error" Description="sensor_range_min"/>
+				<X Idx="06" V="30" Enable="true" Type="error" Description="sensor_range_max"/>
+				<X Idx="07" V="5" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<X Idx="08" V="30" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<X Idx="09" V="nc" Enable="false" Type="error" Description="X9"/>
+				<X Idx="10" V="nc" Enable="true" Type="error" Description="comm_fail"/>
+				<X Idx="11" V="nc" Enable="true" Type="error" Description="device"/>
+				<X Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<X Idx="13" V="nc" Enable="false" Type="error" Description="X13"/>
+				<X Idx="14" V="nc" Enable="false" Type="error" Description="X14"/>
+				<X Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</DataControl>
+			<IntervalDataControl>
+				<Y Idx="00" V="5" Enable="true" Type="warning" Description="low_value"/>
+				<Y Idx="01" V="30" Enable="true" Type="warning" Description="high_value"/>
+				<Y Idx="02" V_min="-20" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<Y Idx="03" V="nc" Enable="false" Type="warning" Description="Y3"/>
+				<Y Idx="04" V="nc" Enable="false" Type="warning" Description="Y4"/>
+				<Y Idx="05" V="5" Enable="true" Type="error" Description="sensor_range_min"/>
+				<Y Idx="06" V="30" Enable="true" Type="error" Description="sensor_range_max"/>
+				<Y Idx="07" V="5" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<Y Idx="08" V="30" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<Y Idx="09" V="nc" Enable="true" Type="error" Description="max_min_absolute_deviation"/>
+				<Y Idx="10" V="nc" Enable="true" Type="error" Description="max-avg-min"/>
+				<Y Idx="11" V="70" Enable="true" Type="error" Description="aq_ratio V[%]"/>
+				<Y Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<Y Idx="13" V="nc" Enable="false" Type="error" Description="Y13"/>
+				<Y Idx="14" V="nc" Enable="false" Type="error" Description="Y14"/>
+				<Y Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</IntervalDataControl>
+ 			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>			
+				<info>
+					<project_version>smp11d.#VERSION#</project_version>
+					<data_link>RS485_2W</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.kippzonen.com</manufacturer>
+					<device_type>smp11</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</Channel>
+		<Channel Idx="03" Type="Status" Enable="true" cpcode="0043.12.05.02.008" pcode="S3300" pp="solar_radiation_group" intf="rs485" mpp="smp11_status" asmb="mast2" st="SMP11-G">
+			<Description>smp11_status</Description>
+			<Sampling Period="1"/> 
+			<Reports Description="smp11_status" Unit="n" paReportEnable="false">
+				<get_ta_ReportFormat>
+					<dataFormat value="%04x" valueErr="-999" unit="%s"/>
+				</get_ta_ReportFormat>
+				<get_ta_ch_ReportFormat>
+					<dataFormat value="%04x" valueErr="-999" unit="%s"/>
+				</get_ta_ch_ReportFormat>
+			</Reports>			
+			<Calibration PAR_3="0.000000" PAR_2="0.000000" PAR_1="1.000000" PAR_0="0.000000"/>
+			<DataControl>
+				<X Idx="00" V="0x0000" Enable="true" Type="warning" Description="low_value"/>
+				<X Idx="01" V="0xffff" Enable="true" Type="warning" Description="high_value"/>
+				<X Idx="02" V_min="-40" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<X Idx="03" V="nc" Enable="false" Type="warning" Description="X3"/>
+				<X Idx="04" V="nc" Enable="false" Type="warning" Description="X4"/>
+				<X Idx="05" V="0x0000" Enable="true" Type="error" Description="sensor_range_min"/>
+				<X Idx="06" V="0xffff" Enable="true" Type="error" Description="sensor_range_max"/>
+				<X Idx="07" V="0x0000" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<X Idx="08" V="0xffff" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<X Idx="09" V="nc" Enable="false" Type="error" Description="X9"/>
+				<X Idx="10" V="nc" Enable="true" Type="error" Description="comm_fail"/>
+				<X Idx="11" V="nc" Enable="true" Type="error" Description="device"/>
+				<X Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<X Idx="13" V="nc" Enable="false" Type="error" Description="X13"/>
+				<X Idx="14" V="nc" Enable="false" Type="error" Description="X14"/>
+				<X Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</DataControl>
+			<IntervalDataControl>
+				<Y Idx="00" V="0x0000" Enable="true" Type="warning" Description="low_value"/>
+				<Y Idx="01" V="0xffff" Enable="true" Type="warning" Description="high_value"/>
+				<Y Idx="02" V_min="-40" V_max="70" Enable="true" Type="warning" Description="out_of_temp"/>
+				<Y Idx="03" V="nc" Enable="false" Type="warning" Description="Y3"/>
+				<Y Idx="04" V="nc" Enable="false" Type="warning" Description="Y4"/>
+				<Y Idx="05" V="0x0000" Enable="true" Type="error" Description="sensor_range_min"/>
+				<Y Idx="06" V="0xffff" Enable="true" Type="error" Description="sensor_range_max"/>
+				<Y Idx="07" V="0x0000" Enable="true" Type="error" Description="logical_sensor_range_min"/>
+				<Y Idx="08" V="0xffff" Enable="true" Type="error" Description="logical_sensor_range_max"/>
+				<Y Idx="09" V="nc" Enable="true" Type="error" Description="max_min_absolute_deviation"/>
+				<Y Idx="10" V="nc" Enable="true" Type="error" Description="max-avg-min"/>
+				<Y Idx="11" V="nc" Enable="true" Type="error" Description="aq_ratio V[%]"/>
+				<Y Idx="12" V="nc" Enable="true" Type="error" Description="step_value"/>
+				<Y Idx="13" V="nc" Enable="false" Type="error" Description="Y13"/>
+				<Y Idx="14" V="nc" Enable="false" Type="error" Description="Y14"/>
+				<Y Idx="15" V="nc" Enable="true" Type="warning" Description="servis"/>
+			</IntervalDataControl>
+ 			<Information>
+				<location>
+					<name>#LOCATION_NAME#</name>
+					<code>#LOCATION_CODE#</code>
+					<Gx>#LOCATION_GX</Gx>
+					<Gy>#LOCATION_GY</Gy>
+					<Gz>#LOCATION_GZ</Gz>
+				</location>			
+				<info>
+					<project_version>smp11d.#VERSION#</project_version>
+					<data_link>RS485_2W</data_link>
+					<OS>#OS#</OS>
+					<IDE>#IDE#</IDE>
+					<power_supply>24Vdc</power_supply>
+				</info>
+				<meta>
+					<manufacturer>www.kippzonen.com</manufacturer>
+					<device_type>smp11</device_type>
+					<serial_number>1234567</serial_number>
+					<calibration_certificate>dd/mm/yyyy</calibration_certificate>
+				</meta>
+			</Information>
+		</Channel>
+	</Channels>
+	<Links>
+		<Link Description="Example: Link from data of the channel to the Modbus register(s)"/>
+	</Links>
+</Data>
+</smp11d.h>

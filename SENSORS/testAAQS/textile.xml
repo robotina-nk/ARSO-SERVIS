@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><wiki_page><title>Wiki</title><text>h1. 4000_E4000_Test_WIKI (Ljubljana_Bezigrad)
+
+*STATUS:* Postaja ni vključena v omrežje ARSO *o.net*, Test!
+
+h2. Osnovna dokumentacija
+
+* *Topologija* [TODO] http://pivka.arso.sigov.si/svn/xober_op_location/...
+* *Senzorji* [TODO] http://pivka.arso.sigov.si/svn/xober_op_location/...
+* *Procesiranje* [TODO] http://pivka.arso.sigov.si/svn/xober_op_location/...
+* *MASTER dokumentacija* [TODO] http://pivka.arso.sigov.si/svn/xober_dv_location/...
+
+h2. Merilni sistem
+
+|_\5=. Glavna merilna plošča - CPU0 |
+|\2=.IT Merilni sistem||\2=.Merilna plošča|
+|_&#60;.Ime lokacije|%{background:lightgreen}Sinica-master%||_&#60;.Tip|%{background:lightgreen}4000KO2500%|
+|_&#60;.Koda lokacije|%{background:lightgreen}4000%||_&#60;.Ser. št.|%{background:lightgreen}nnnn%|
+|_&#60;.Koda postaje|%{background:lightgreen}Exxx%||_&#60;.Inv. št.||
+|\5=.|
+|\2=.Komunikacijske nastavitve||\2=.VPN/GPRS|
+|_&#60;.DNS name|.mpls.arso.sigov.si||_&#60;.DNS name||
+|_&#60;.Tip VPN/GPRS,HSDPA| DA ||_&#60;.username|  |
+|_&#60;.Tip ADSL/MPLS| NE ||_&#60;.password|  |
+|_&#60;.IP1 Qnap-ts251/TS-463U-RP|%{background:lightgreen}172.19.6.80%||_&#60;.IP radius server||
+|_&#60;.IP2 VM-d8s|%{background:lightgreen}172.19.6.81%||\2=.SIM KARTICA|
+|_&#60;.IP3 VM-d8s_zobervis|%{background:lightgreen}172.19.74.90%||_&#60;.Ser. Št.||
+|_&#60;.IP4 N2 UC-8410A-T-LX|%{background:lightgreen}172.19.6.xx%||_&#60;.Tel. Številka||
+|_&#60;.IP5 |/||_&#60;.PIN||
+|_&#60;.DNS|%{background:lightgreen}172.19.0.40, 172.19.0.51, 172.19.0.55%||_&#60;.PUK||
+|_&#60;.netmask|%{background:lightgreen}255.255.255.0%||||
+|_&#60;.broadcast|%{background:lightgreen}172.19.6.255%||||
+|_&#60;.network|%{background:lightgreen}172.19.6.0/24%||||
+|_&#60;.HostMin (gateway)|%{background:lightgreen}172.19.0.1%||||
+|_&#60;.HostMax|?||||
+|_&#60;.Host/Net|?||||
+|\5=.Komunikacijske nastavitve com strežnikov|
+|_&#60;.ComServer1 Nport-6650|%{background:lightgreen}172.19.6.82%|%{background:lightgreen}64001:19200/8/none/1&#10;64002:9600/8/none/1&#10;64005:19200/8/none/1&#10;64006:34800/8/none/1%|%{background:lightgreen}cli-uSonie3d (3d wind)&#10;cli-hmp155d (T, RH)&#10;cli-smp11d (W/m2)&#10;cli-seq47-50d (leckeld)%|%{background:lightgreen}172.19.6.xx:64101&#10;172.19.6.xx:64102&#10;172.19.6.xx:64105&#10;172.19.6.xx:64106%|
+|_&#60;.APOA-370 O3|%{background:lightgreen}172.19.6.83%||cli-apoa370d (O3)|172.19.6.xx:53700|
+|_&#60;.APNA-370 NOx|%{background:lightgreen}172.19.6.84%||cli-apna370d (NOx)|172.19.6.xx:53700|
+|_&#60;.APSA-370 SO2|%{background:lightgreen}172.19.6.85%||cli-apsa370d (SO2)|172.19.6.xx:53700|
+|_&#60;.APMA-370 CO|%{background:lightgreen}172.19.6.86%||cli-apma370d (CO)|172.19.6.xx:53700|
+|_&#60;.APDA-372 PM1|%{background:lightgreen}172.19.6.87%||cli-apda372d (PM1,2.5,4,10,TSP)|172.19.6.xx:53700|
+|_&#60;.AE33 BC|%{background:lightgreen}172.19.6.88%||cli-ae33d (BC)|172.19.6.xx:xxx|
+
+
+
+
+
+
+ 
+</text></wiki_page>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logfile txt="4000_sinica-system-config.xml 15.02.2017 by bcer"> 
+
+<Station Zober="4000_Exxx_master">
+	<zober-name txt="Sinica-master"/>
+	<location-code txt="4000"/>
+	<station-code txt="Exxx"/>
+	<Gx txt="xxxxxx"/>
+	<Gy txt="xxxxxx"/>
+	<Gz txt="xxx"/>
+	<MM>
+		<Manufacturer txt="www.robotina.com"/>
+		<Type txt="4000KO2500"/>
+		<Sn txt="nnnn"/>
+	</MM>
+</Station>
+
+<Servers_KAZ-KONTEJNER>	
+	<Server  Idx="ZK1" Oznaka="zober" Host="nasXXXXXX" Lokacija="KAZ-KONTEJNER" Tip="Qnap-ts251/TS-463U-RP" DNSname="xxx.mpls.arso.sigov.si" Desc="QNAP-linux and GUI">
+		<Net ethPort="eth0" IP="172.19.6.80" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.6.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+			<Account protocol="HDMI, http:80 vnc:59xx, ssh:22, telnet:23">
+					user: 	admin
+					passwd: admin
+			</Account>	
+		</Net> 
+		<Guest vmGuest="d8s" DNSname="Exxx.mpls.arso.sigov.si" Desc="VM debian 8.7 server_KAZ-zober">
+			<Account protocol="ssh:22, telnet:23" >
+					user: 	xober
+					passwd: rebox
+			</Account>
+			<Net ethPort="eth0" IP="172.19.6.81" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.6.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+			</Net> 
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="60000" op="telnet">
+				<process proc="jmd" Desc="cli-jmd"/>
+			</Net> 	
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="61000" op="telnet">
+				<process proc="dgwd" Desc="cli-dgwd"/>
+			</Net> 	
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64100" op="telnet" IPport="172.19.6.xx:64100">
+				<process proc="mbIO120d" Desc="cli-mbIO120d (T, RH, status-vrat)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64101" op="telnet" IPport="172.19.6.xx:64101">
+				<process proc="uSonie3d" Desc="cli-uSonie3d (3d wind)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64102" op="telnet" IPport="172.19.6.xx:64102">
+				<process proc="hmp155d" Desc="cli-hmp155d (T, RH)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64105" op="telnet" IPport="172.19.6.xx:64105">
+				<process proc="smp11d" Desc="cli-smp11d (W/m2)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64106" op="telnet" IPport="172.19.6.xx:64106">
+				<process proc="seq47-50d" Desc="cli-seq47-50d (leckeld)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64108" op="telnet" IPport="172.19.6.xx:64108">
+				<process proc="iod" Desc="cli-iod (dT)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64001" op="telnet" IPport="172.19.6.xx:53700">
+				<process proc="apoa370d" Desc="cli-apoa370d (O3)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64002" op="telnet" IPport="172.19.6.xx:53700">
+				<process proc="apna370d" Desc="cli-apna370d (NOx)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64003" op="telnet" IPport="172.19.6.xx:53700">
+				<process proc="apsa370d" Desc="cli-apsa370d (SO2)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64004" op="telnet" IPport="172.19.6.xx:53700">
+				<process proc="apma370d" Desc="cli-apma370d (CO)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64005" op="telnet" IPport="172.19.6.xx:53700">
+				<process proc="apdaA372d" Desc="cli-apda372d (PM1,2.5,4,10,TSP)"/>
+			</Net>
+			<Net ethPort="eth0" IP="172.19.6.81" tcpPort="64006" op="telnet" IPport="172.19.6.xx:xxx">
+				<process proc="ae33d" Desc="cli-ae33d (BC)"/>
+			</Net>
+			<serServ Idx="N3" Oznaka="zober" Host="np6650" Lokacija="KAZ-MM" Tip="Nport-6650" DNSname="Exxx.mpls.arso.sigov.si" Desc="Nport-6650">
+				<Account protocol="http:80, telnet:23" >
+						user: 	-
+						passwd: -
+				</Account>	
+				<Net ethPort="eth0" IP="172.19.6.82" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.6.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+				</Net> 	
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64001" op="tcpServer" comPort="P1">
+					<serConnection Port="rs485-2w" serConfig="19200/8/none/1"/>
+					<target Device="Sonie3d" Desc="3d Wind sensor"/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64002" op="tcpServer" comPort="P2">
+					<serConnection Port="rs485-2w" serConfig="9600/8/none/1"/>
+					<target Device="hmp155" Desc="hmp155 (T, RH)"/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64003" op="tcpServer" comPort="P3">
+					<serConnection Port="rs485-2w" serConfig="34800/8/none/1"/>
+					<target Device="loopback" Desc=""/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64004" op="tcpServer" comPort="P4">
+					<serConnection Port="rs485-4w" serConfig="34800/8/none/1"/>
+					<target Device="loopback" Desc=""/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64005" op="tcpServer" comPort="P5">
+					<serConnection Port="rs485-2w" serConfig="19200/8/none/1"/>
+					<target Device="smp11" Desc="sun-radiation-global"/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64006" op="tcpServer" comPort="P6">
+					<serConnection Port="rs485-4w" serConfig="34800/8/none/1"/>
+					<target Device="seq47-50" Desc="leckel"/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64007" op="tcpServer" comPort="P7">
+					<serConnection Port="rs485-4w" serConfig="34800/8/none/1"/>
+					<target Device="loop-back" Desc=""/>
+				</Net> 
+				<Net ethPort="eth0" IP="172.19.6.82" tcpPort="64008" op="tcpServer" comPort="P8">
+					<process proc="iod" Desc="cli-iod"/>
+					<serConnection Port="rs485-2w-multidrop" serConfig="34800/8/none/1"/>
+					<target Device="nd6013" Desc=" (dT) 3xRTD"/>
+					<target Device="nd6052" Desc="8xDin"/>
+				</Net> 
+			</serServ>
+			<Servers_AQ-Devices>
+				<serServ Idx="O3" Oznaka="O3" Host="apoa370" Lokacija="Kontejner-Rack" Tip="apoa370">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.83" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.83" tcpPort="53700" op="tcpServer" Desc="O3_data">
+					</Net> 
+				</serServ>
+				<serServ Idx="NOx" Oznaka="NOx" Host="apna370" Lokacija="Kontejner-Rack" Tip="apna370">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.84" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.84" tcpPort="53700" op="tcpServer" Desc="NOx_data">
+					</Net> 
+				</serServ>
+				<serServ Idx="SO2" Oznaka="SO2" Host="apsa370" Lokacija="Kontejner-Rack" Tip="apsa370">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.85" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.85" tcpPort="53700" op="tcpServer" Desc="SO2_data">
+					</Net> 
+				</serServ>
+				<serServ Idx="CO" Oznaka="CO" Host="apma370" Lokacija="Kontejner-Rack" Tip="apma370">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.86" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.86" tcpPort="53700" op="tcpServer" Desc="CO_data">
+					</Net> 
+				</serServ>
+				<serServ Idx="PM" Oznaka="PM" Host="apda372" Lokacija="Kontejner-Rack" Tip="apda372">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.87" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.87" udpPort="56790" op="tcpServer" Desc="PM1,2.5,4,10,TSP_data">
+					</Net> 
+				</serServ>
+				<serServ Idx="BC" Oznaka="BC" Host="ae33" Lokacija="Kontejner-Rack" Tip="ae33">
+					<Account protocol="http:80, telnet:23" >
+							user: 	-
+							passwd: -
+					</Account>	
+					<Net ethPort="eth0" IP="172.19.6.88" mask="255.255.255.0" bcast="172.19.6.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+					</Net> 
+					<Net ethPort="eth0" IP="172.19.6.88" udpPort="xxx" op="tcpServer" Desc="BC_data">
+					</Net> 
+				</serServ>
+			</Servers_AQ-Devices>
+		</Guest>
+		<Guest vmGuest="d8s-zobervis" DNSname="zobervis.mpls.arso.sigov.si" Desc="VM debian 8.7 server_zobervis">
+			<Account protocol="http:80, ssh:22, telnet:23" >
+					user: 	xober
+					passwd: rebox
+			</Account>	
+			<Net ethPort="eth0" IP="172.19.74.90" mask="255.255.255.0" bcast="172.19.67.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+			</Net> 
+		</Guest>
+	</Server>
+</Servers_KAZ-KONTEJNER>
+
+<Servers_KAZ-miniKONTEJNER>
+	<Server  Idx="N2" Oznaka="zober" Host="moxa" Lokacija="KAZ-miniKONTEJNER" Tip="UC-8410A-T-LX" DNSname="xxx.mpls.arso.sigov.si" Desc="KAZ-zober">
+		<Account protocol="http:80, ssh:22, telnet:23" >
+				user: 	root
+				passwd: rebox
+		</Account>
+		<Net ethPort="eth0" IP="172.19.6.xx" mask="255.255.255.0" bcast="172.19.67.255" network="172.19.67.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+		</Net> 	
+		<Net ethPort="eth1" ip="192.168.4.127" mask="255.255.255.0" bcast="172.19.67.255" network="192.168.4.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+		</Net> 	
+		<Net ethPort="eth2" ip="192.168.5.127" mask="255.255.255.0" bcast="172.19.67.255" network="192.168.5.0/24" gw="172.19.0.1" dns="172.19.0.40, 172.19.0.51, 172.19.0.55">
+		</Net> 	
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60001" op="telnet" comPort="P1">
+			<process proc="uSonie3d" Desc="cli-uSonic3d, cli-us3d"/>
+			<serConnection Port="rs485-4w" serConfig="34800/8/none/1"/>
+			<target Device="uSonie3d" Desc="cli-uSonie3d (3d wind)"/>
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60002" op="telnet" comPort="P2">
+			<serConnection Port="rs485-2w" serConfig="/19200/7/none/1"/>
+			<target Device="hmp155" Desc="hmp155_data"/>
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60003" op="telnet" comPort="P3">
+			<process proc="nc" Desc="nc"/>
+			<serConnection Port="rs485-2w" serConfig="19200/8/none/1"/>
+			<target Device="loopback" Desc="ptb330_data"/>
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60004" op="telnet" comPort="P4">
+			<process proc="nc" Desc="cli-pluvio2d"/>		
+			<serConnection Port="rs485-2w" serConfig="19200/8/none/1"/>
+			<target Device="loopback" Desc="pluvio2_data"/>		
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60005" op="telnet" comPort="P5">
+			<process proc="nc" Desc="nc"/>		
+			<serConnection Port="rs485-2w" serConfig="34800/8/none/1"/>
+			<target Device="loopback" Desc="nc"/>		
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60006" op="telnet" comPort="P6">
+			<process proc="nc" Desc="cli-lpmd"/>		
+			<serConnection Port="rs485-4w" serConfig="19200/8/none/1"/>
+			<target Device="loopback" Desc="lpm_data"/>		
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60007" op="telnet" comPort="P7">
+			<process proc="nc" Desc="cli-shm30d"/>
+			<serConnection Port="rs485-2w" serConfig="9600/8/none/1"/>
+			<target Device="mbIO120" Desc="mbIO120_data (Kont Temp, Humitity, door status)"/>
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60008" op="telnet" comPort="P8">
+			<process proc="iod" Desc="cli-iodd"/>
+			<serConnection Port="rs485-2w-multidrop" serConfig="34800/8/none/1"/>
+			<target Device="nd6013" Desc="3xRTD"/>
+			<target Device="nd6052" Desc="8xDin"/>
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="60010" op="telnet" sysCall="uc8410io">
+			<serConnection Port="rs485-2w" serConfig="34800/8/none/1"/>
+			<target Device="uc8410iod" Desc="cli-uc8410iod"/>		
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="64004" op="telnet" IPport="172.19.74.84:64004">
+			<process proc="spn1d" Desc="cli-spn1d"/>	
+		</Net> 
+		<Net ethPort="eth0" IP="172.19.6.xx" tcpPort="64005" op="telnet" IPport="172.19.74.84:64005">
+			<process proc="smp11d" Desc="cli-smp11d"/>	
+		</Net> 
+	</Server>	
+
+</Servers_KAZ-miniKONTEJNER>
+
+</logfile>
